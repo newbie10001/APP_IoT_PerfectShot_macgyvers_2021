@@ -33,7 +33,7 @@ public class Muzzle : MonoBehaviour
         audioSource.Play();
         // 총알은 일단 직선. 추후 점을 더 추가할 예정임.
         bulletLineRenderer.SetPosition(0, transform.position);
-        Vector3? hitPosition = Shot();
+        // Vector3? hitPosition = Shot();
         // 발사하는 이펙트 재생
         // null 값을 전해줄 수 있다.
         // 1인칭에서 안 보이는 문제점이 있음. 검토 후 삭제 예정.
@@ -61,7 +61,7 @@ public class Muzzle : MonoBehaviour
         return null;
     }
 
-    // 발사되는 궤적을 그린다.
+    // 발사되는 궤적을 그린다. 현재는 쓰지 않음!
     private IEnumerator DrawShotEffect(Vector3? hitPosition)
     {
         bulletLineRenderer.SetPosition(0, transform.position);

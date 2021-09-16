@@ -29,12 +29,6 @@ public class HumanoidTargetManager : MonoBehaviour
         Result.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void GetUp()
     {
         animator.ResetTrigger("GetDown");
@@ -46,6 +40,14 @@ public class HumanoidTargetManager : MonoBehaviour
     {
         animator.ResetTrigger("GetUp");
         animator.SetTrigger("GetDown");
+        IsSet = false;
+    }
+
+    // 일어나기만 하고 맞춰도 OnHit이 되지 않음.
+    public void OnlyGetUp()
+    {
+        animator.ResetTrigger("GetDown");
+        animator.SetTrigger("GetUp");
         IsSet = false;
     }
 
