@@ -152,7 +152,7 @@ public class RealShootingManager : MonoBehaviour
         for(int i = 0; i < targets.Count; i++)
         {
             targets[i].OnlyGetUp();
-            StartCoroutine(MoveTo(targets[i].transform, resultPos[i], 1f));
+            StartCoroutine(Utility.MoveTo(targets[i].transform, resultPos[i], 1f));
         }
         targets[0].ShowResult($"{targets[0].Hits.Count} / 9");
         targets[1].ShowResult($"{targets[1].Hits.Count} / 9");
@@ -178,25 +178,6 @@ public class RealShootingManager : MonoBehaviour
         return "탈락";
     }
 
-    // 오브젝트를 옮기는 메서드
-    IEnumerator MoveTo(Transform transform, Vector3 dest, float speed)
-    {
-        float count = 0;
-        Vector3 startPos = transform.position;
-        while(true)
-        {
-            count += Time.deltaTime * speed;
-            transform.position = Vector3.Lerp(startPos, dest, count);
-
-            if(count >= 1)
-            {
-                transform.position = dest;
-                break;
-            }
-            yield return null;
-        }
-    }
-
     // 메뉴 아이템들을 던지는 메서드
     IEnumerator ThrowMenuItems()
     {
@@ -206,8 +187,8 @@ public class RealShootingManager : MonoBehaviour
         {
             GameObject retry = Instantiate(RetryMenuItem, new Vector3(-2, 7, 10), Quaternion.Euler(Vector3.zero));
             GameObject main = Instantiate(MainMenuItem, new Vector3(2, 7, 10), Quaternion.Euler(Vector3.zero));
-            StartCoroutine(MoveTo(retry.transform, new Vector3(-2, 7, 40), 1f));
-            StartCoroutine(MoveTo(main.transform, new Vector3(2, 7, 40), 1f));
+            StartCoroutine(Utility.MoveTo(retry.transform, new Vector3(-2, 7, 40), 1f));
+            StartCoroutine(Utility.MoveTo(main.transform, new Vector3(2, 7, 40), 1f));
             yield return new WaitForSeconds(10.0f);
         }
     }

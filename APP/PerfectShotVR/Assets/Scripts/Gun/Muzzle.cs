@@ -44,10 +44,9 @@ public class Muzzle : MonoBehaviour
     // 맞았을 경우에 맞은 지점의 vector3를 반환한다. 맞지 않았을 경우 null 반환.
     protected Vector3? Shot()
     {
-        RaycastHit hit;
         // 충돌한 경우 조건문 진입
         // Debug.Log($"레이캐스트 : ({transform.position.x}, {transform.position.y}, {transform.position.z})에서 ({transform.forward.x}, {transform.forward.y}, {transform.forward.z})으로");
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 300))
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 300))
         {
             ITarget target = hit.collider.GetComponent<ITarget>();
             // 맞은 게 표적이고 활성화 상태일 때
@@ -74,11 +73,5 @@ public class Muzzle : MonoBehaviour
 
         // 라인 렌더러를 비활성화하여 총알 궤적을 지운다
         bulletLineRenderer.enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
