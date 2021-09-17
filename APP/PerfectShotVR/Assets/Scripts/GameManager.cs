@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
     /// 1 : true
     /// -1 : false
     /// </summary>
-    // 가늠자 UI 활성화 옵션. 0이면 false 반환
+    // 가늠쇠 UI 활성화 옵션. 0이면 false 반환
     public bool FrontSightEnabled
     {
         get
