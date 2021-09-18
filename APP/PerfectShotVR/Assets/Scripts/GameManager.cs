@@ -6,6 +6,9 @@ using UnityEngine;
 // 게임 종류에 따라 서브매니저를 호출해 이용할 수 있도록 한다.
 public class GameManager : MonoBehaviour
 {
+    /// <summary>
+    /// 싱글톤 패턴
+    /// </summary>
     #region singleton
     public static GameManager instance
     {

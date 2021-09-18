@@ -12,7 +12,7 @@ public class DrawFrontSight : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log($"가늠자 활성화 옵션 : {GameManager.instance.FrontSightEnabled}");
+        // Debug.Log($"가늠자 활성화 옵션 : {GameManager.instance.FrontSightEnabled}");
         // 옵션 적용
         this.gameObject.SetActive(GameManager.instance.FrontSightEnabled);
     }

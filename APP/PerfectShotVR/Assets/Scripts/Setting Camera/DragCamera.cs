@@ -48,5 +48,6 @@ public class DragCamera : MonoBehaviour
             centerText.text = $"카메라 렌즈 시프트 : ({Camera.main.lensShift.x}, {Camera.main.lensShift.y})";
             yield return null;
         }
+        centerText.text = "드래그하여 카메라 조정";
     }
 }

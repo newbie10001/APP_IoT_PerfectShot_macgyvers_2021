@@ -7,7 +7,7 @@ public class SettingCamera : MonoBehaviour
 {
     void Start()
     {
-        ApplyClick();
+        InitCamAndApplyClick();
     }
 
     private void Update()
@@ -23,8 +23,8 @@ public class SettingCamera : MonoBehaviour
         return _click * VALUE_PER_CLICK;
     }
 
-    // 크리크 값을 적용하는 메서드
-    public void ApplyClick()
+    // 렌즈시프트값을 초기화하고 크리크 값을 적용하는 메서드
+    public void InitCamAndApplyClick()
     {
         Camera.main.lensShift = GameManager.instance.InitialCameraShift + ConvertClickToLensShift();
     }

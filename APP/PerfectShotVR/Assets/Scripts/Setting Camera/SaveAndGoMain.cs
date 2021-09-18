@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 // Save 버튼을 누르면 설정을 한 후 메인 화면으로 나감.
 public class SaveAndGoMain : MonoBehaviour
 {
-    private void Update()
-    {
-
-    }
-
     public void SaveAndExit()
     {
         Vector2 _clickShift = FindObjectOfType<SettingCamera>().ConvertClickToLensShift();
