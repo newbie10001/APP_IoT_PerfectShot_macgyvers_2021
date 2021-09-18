@@ -510,4 +510,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e34cea20dfda604eb92c8ba9301a164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitMarkPrefab: {fileID: 2406513203120848417, guid: f337db85a02f4694b8e1f1ed7b1350cd, type: 3}
+  hitMarkPrefab: {fileID: 2406513203120848417, guid: a3517974781ef834d85fadb76e9978b4, type: 3}
