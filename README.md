@@ -1,5 +1,5 @@
 # 퍼펙트 샷 : 만발의 법칙
-![Logo](https://logosbynick.com/wp-content/uploads/2018/03/final-logo-example.png)
+![Logo](blob:null/c4652246-0a2f-4ae0-b06a-7772a1f13aed)
 
 퍼펙트 샷 : 만발의 법칙 (로고 수정 예정)
 
