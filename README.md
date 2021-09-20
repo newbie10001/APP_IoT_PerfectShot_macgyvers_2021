@@ -1,8 +1,7 @@
 # 퍼펙트 샷 : 만발의 법칙
 ![Logo](https://raw.githubusercontent.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/main/APP/PerfectShotVR/Image/logo.PNG)
 
-퍼펙트 샷 : 만발의 법칙 (로고 수정 예정)
-
+퍼펙트 샷 : 만발의 법칙
 ## 프로젝트 소개
 - 본 프로젝트에서는 모바일 가상현실 사격훈련 앱을 만듭니다.
 - 앱의 이름은 퍼펙트샷 : 만발의 법칙입니다.
