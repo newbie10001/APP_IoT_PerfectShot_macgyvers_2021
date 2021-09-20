@@ -62,20 +62,22 @@
     <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetHit.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Gun\Muzzle.cs" />
+    <Compile Include="Assets\Scripts\UI\SettingPanel.cs" />
     <Compile Include="Assets\Scripts\PlayerControl\GyroRotate.cs" />
-    <Compile Include="Assets\Scripts\UI\DrawFrontSight.cs" />
+    <Compile Include="Assets\Scripts\UI\TrackFrontSight.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetAlwaysOn.cs" />
     <Compile Include="Assets\Scripts\PlayerControl\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Gun\Gun.cs" />
     <Compile Include="Assets\Scripts\Setting Camera\DragCamera.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetManager.cs" />
+    <Compile Include="Assets\Scripts\UI\ClickValueText.cs" />
     <Compile Include="Assets\Scripts\Gun\InfiniteAmmo.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\NohitZone.cs" />
     <Compile Include="Assets\Scripts\Setting Camera\SettingCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerControl\MouseRotate.cs" />
-    <Compile Include="Assets\Scripts\UI\SettingPanel.cs" />
-    <Compile Include="Assets\Scripts\UI\ClickValueText.cs" />
+    <Compile Include="Assets\Scripts\UI\TrackCircleSlider.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl\StaringMode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
