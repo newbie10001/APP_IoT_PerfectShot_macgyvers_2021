@@ -23,7 +23,10 @@ public class SettingPanel : MonoBehaviour
         Reset.onClick.AddListener(ResetSettings);
         InitCam.onClick.AddListener(() => SceneManager.LoadScene("SetCamera"));
         Save.onClick.AddListener(() => SaveSettings());
-        Confirm.onClick.AddListener(() => TogglePanel());
+        Confirm.onClick.AddListener(() =>{
+            SaveSettings();
+            this.gameObject.SetActive(false);
+        });
     }
 
     private void OnEnable()
