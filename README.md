@@ -1,5 +1,5 @@
 # 퍼펙트 샷 : 만발의 법칙
-![Logo](blob:null/c4652246-0a2f-4ae0-b06a-7772a1f13aed)
+![Logo](https://raw.githubusercontent.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/main/APP/PerfectShotVR/Image/logo.PNG)
 
 퍼펙트 샷 : 만발의 법칙 (로고 수정 예정)
 
