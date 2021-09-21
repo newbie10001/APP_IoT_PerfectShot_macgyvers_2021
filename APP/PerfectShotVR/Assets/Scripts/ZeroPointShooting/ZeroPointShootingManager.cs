@@ -116,7 +116,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         // 평균 지점
         Vector2 _avg = new Vector2(0, 0);
         // 커트라인 (5크리크)
-        float _cutOffPoint = 0.035f;
+        float _cutOffPoint = 0.075f;
         // 중앙 지점(플레이어)
         Vector2 _center = gun.transform.position;
         foreach(Vector3 _point in points)
@@ -173,7 +173,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         Debug.Log($"X축 표준편차 : {stdDevX}, Y축 표준편차 : {stdDevY}");
         // 결과 판정
         // 표준편차의 커트라인
-        const float STD_DEV_CUT = 0.018f;
+        const float STD_DEV_CUT = 0.02f;
         // 탄착군이 좌우로 넓게 형성되었는가?
         bool isWide = stdDevX > STD_DEV_CUT;
         // 탄착군이 상하로 넓게 형성되었는가?

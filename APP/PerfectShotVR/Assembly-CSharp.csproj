@@ -54,27 +54,28 @@
      <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetHit.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gun\Muzzle.cs" />
+     <Compile Include="Assets\Scripts\ToggleObject.cs" />
      <Compile Include="Assets\Scripts\UI\SettingPanel.cs" />
      <Compile Include="Assets\Scripts\PlayerControl\GyroRotate.cs" />
      <Compile Include="Assets\Scripts\UI\TrackFrontSight.cs" />
      <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetAlwaysOn.cs" />
      <Compile Include="Assets\Scripts\PlayerControl\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Gun\Gun.cs" />
+     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTargetController.cs" />
+     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroPointShootingManager.cs" />
      <Compile Include="Assets\Scripts\Setting Camera\DragCamera.cs" />
+     <Compile Include="Assets\Scripts\ClickValue3DText.cs" />
      <Compile Include="Assets\Scripts\Utility.cs" />
      <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetManager.cs" />
      <Compile Include="Assets\Scripts\UI\ClickValueText.cs" />
+     <Compile Include="Assets\Scripts\Button3D.cs" />
      <Compile Include="Assets\Scripts\Gun\InfiniteAmmo.cs" />
      <Compile Include="Assets\Scripts\HumanoidTarget\NohitZone.cs" />
      <Compile Include="Assets\Scripts\Setting Camera\SettingCamera.cs" />
      <Compile Include="Assets\Scripts\PlayerControl\MouseRotate.cs" />
      <Compile Include="Assets\Scripts\UI\TrackCircleSlider.cs" />
      <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
-     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTargetController.cs" />
-     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroPointShootingManager.cs" />
-     <Compile Include="Assets\Scripts\ToggleObject.cs" />
-     <Compile Include="Assets\Scripts\Button3D.cs" />
-     <Compile Include="Assets\Scripts\ClickValue3DText.cs" />
+     <Compile Include="Assets\Scripts\SceneChanger3D.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

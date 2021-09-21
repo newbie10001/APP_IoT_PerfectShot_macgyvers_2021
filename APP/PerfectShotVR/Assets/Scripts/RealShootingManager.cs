@@ -160,9 +160,9 @@ public class RealShootingManager : MonoBehaviour
 
         ResultText.GetComponent<TextMesh>().text = $"결과 : {Score} / 20 ({GetGrade(Score)})\n하이스코어 : {HighScore} ({GetGrade(HighScore)})";
         // 3D 메뉴 아이템은 추후 구현 예정
-        // StartCoroutine(MoveTo(RetryMenuItem.transform, new Vector3(-2, 7, 40), 1f));
-        // StartCoroutine(MoveTo(MainMenuItem.transform, new Vector3(2, 7, 40), 1f));
-        // StartCoroutine(ThrowMenuItems());
+        StartCoroutine(Utility.MoveTo(RetryMenuItem.transform, new Vector3(-2, 7, 40), 1f));
+        StartCoroutine(Utility.MoveTo(MainMenuItem.transform, new Vector3(2, 7, 40), 1f));
+        StartCoroutine(ThrowMenuItems());
     }
 
     // 사격 등급을 문자열로 반환.
