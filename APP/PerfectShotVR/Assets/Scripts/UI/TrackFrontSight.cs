@@ -26,6 +26,7 @@ public class TrackFrontSight : MonoBehaviour
     private IEnumerator UpdateUI()
     {
         Vector2 screenPos = Camera.main.WorldToScreenPoint(frontSight.transform.position);
+        Debug.Log($"screenPos : ({screenPos.x}, {screenPos.y})");
         this.GetComponent<RectTransform>().position = screenPos;
         yield return new WaitForSeconds(0.5f);
         // false¿œ ∞ÊøÏ ∑Á«¡∞° ∏ÿ√„.

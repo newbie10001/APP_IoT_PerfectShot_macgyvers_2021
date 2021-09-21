@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3186927884125516915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889127028823829613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c75476315629a48b84677d29decf9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CircleSlider: {fileID: 0}
 --- !u!1 &1889127029521541136
 GameObject:
   m_ObjectHideFlags: 0
@@ -49,7 +62,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 4, y: 8}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 45.72021
+  m_FocalLength: 20.784609
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -58,7 +71,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 10
+  field of view: 21.786789
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -163,7 +176,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889127029638933605}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9547e8ab680bfc45a6778b4e2fdc0bd, type: 3}
   m_Name: 
@@ -261,3 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165a9a264a5b3db49be95d3565b66fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1889127028823829613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7374164971422392760, guid: 8a97beec662d045439030fce1e1f0e27, type: 3}
+  m_PrefabInstance: {fileID: 8962670127495548373}
+  m_PrefabAsset: {fileID: 0}

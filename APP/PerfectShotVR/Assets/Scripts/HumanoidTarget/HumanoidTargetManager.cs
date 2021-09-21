@@ -58,7 +58,7 @@ public class HumanoidTargetManager : MonoBehaviour
         {
             Hits.Add(hit.transform.position);
             Debug.Log($"{this.gameObject.name} ¸íÁß È½¼ö {Hits.Count}");
-            GameObject hithole = Instantiate(hitMarkPrefab, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+            GameObject hithole = Instantiate(hitMarkPrefab, hit.point - new Vector3(0, 0, 1f), Quaternion.FromToRotation(Vector3.up, hit.normal));
             hithole.transform.parent = hit.transform;
             GetDown();
         }
