@@ -4,48 +4,49 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
-// ÃÑÀÌ ½ÇÁ¦·Î ¹ß»çµÇ´Â ºÎºĞÀº ÃÑ±¸ÀÌ´Ù.
+// ì´ì´ ì‹¤ì œë¡œ ë°œì‚¬ë˜ëŠ” ë¶€ë¶„ì€ ì´êµ¬ì´ë‹¤.
 public class Muzzle : MonoBehaviour, IMuzzle
 {
     private AudioSource audioSource;
 
     public AudioClip fireSound;
-    // ½ÇÁ¦·Î ¹ß»çÇÒ ÃÑ¾Ë ¿ÀºêÁ§Æ®
+    // ì‹¤ì œë¡œ ë°œì‚¬í•  ì´ì•Œ ì˜¤ë¸Œì íŠ¸
     public GameObject Bullet;
 
     private void Awake()
     {
-        // ¿Àµğ¿À ¼Ò½º ÃÊ±âÈ­ ºÎºĞ.
+        // ì˜¤ë””ì˜¤ ì†ŒìŠ¤ ì´ˆê¸°í™” ë¶€ë¶„.
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = fireSound;
     }
 
-    // ShotÀÇ °ªÀ» °¡Á®¿À¸é¼­ ¹ßÆ÷ÇÏ´Â ÀÌÆåÆ®¸¦ Ã³¸®ÇÔ.
-    // ¼Ò¸® È¿°ú µîÀ» ÀÌ°÷¿¡ °¡Á®¿È.
+    // Shotì˜ ê°’ì„ ê°€ì ¸ì˜¤ë©´ì„œ ë°œí¬í•˜ëŠ” ì´í™íŠ¸ë¥¼ ì²˜ë¦¬í•¨.
+    // ì†Œë¦¬ íš¨ê³¼ ë“±ì„ ì´ê³³ì— ê°€ì ¸ì˜´.
     public void Fire()
     {
-        // ÃÑÀÌ ¹ß»çµÇ´Â ¼Ò¸®ºÎÅÍ Àç»ı
+        // ì´ì´ ë°œì‚¬ë˜ëŠ” ì†Œë¦¬ë¶€í„° ì¬ìƒ
         audioSource.Play();
+        if(BluetoothManager.instance != null)  BluetoothManager.instance.SendMessage("fire");
         RealShot();
     }
 
-    // ¹ß»ç Ã³¸®
-    // ¸Â¾ÒÀ» °æ¿ì¿¡ ¸ÂÀº ÁöÁ¡ÀÇ vector3¸¦ ¹İÈ¯ÇÑ´Ù. ¸ÂÁö ¾Ê¾ÒÀ» °æ¿ì null ¹İÈ¯.
+    // ë°œì‚¬ ì²˜ë¦¬
+    // ë§ì•˜ì„ ê²½ìš°ì— ë§ì€ ì§€ì ì˜ vector3ë¥¼ ë°˜í™˜í•œë‹¤. ë§ì§€ ì•Šì•˜ì„ ê²½ìš° null ë°˜í™˜.
     protected void Shot()
     {
-        // Ãæµ¹ÇÑ °æ¿ì Á¶°Ç¹® ÁøÀÔ
-        // Debug.Log($"·¹ÀÌÄ³½ºÆ® : ({transform.position.x}, {transform.position.y}, {transform.position.z})¿¡¼­ ({transform.forward.x}, {transform.forward.y}, {transform.forward.z})À¸·Î");
+        // ì¶©ëŒí•œ ê²½ìš° ì¡°ê±´ë¬¸ ì§„ì…
+        // Debug.Log($"ë ˆì´ìºìŠ¤íŠ¸ : ({transform.position.x}, {transform.position.y}, {transform.position.z})ì—ì„œ ({transform.forward.x}, {transform.forward.y}, {transform.forward.z})ìœ¼ë¡œ");
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 300))
         {
             ITarget target = hit.collider.GetComponent<ITarget>();
-            // ¸ÂÀº °Ô Ç¥ÀûÀÌ°í È°¼ºÈ­ »óÅÂÀÏ ¶§
+            // ë§ì€ ê²Œ í‘œì ì´ê³  í™œì„±í™” ìƒíƒœì¼ ë•Œ
             if (target != null && target.GetState()) target.OnHit(hit);
-            // Å¸°ÙÀÌ ¸ÂÁö ¾ÊÀº °æ¿ì
-            else Debug.Log($"Å¸°Ù ´ë½Å {hit.collider.name} ¸ÂÀ½");
+            // íƒ€ê²Ÿì´ ë§ì§€ ì•Šì€ ê²½ìš°
+            else Debug.Log($"íƒ€ê²Ÿ ëŒ€ì‹  {hit.collider.name} ë§ìŒ");
         }
     }
 
-    // ½ÇÁ¦ ÃÑ¾Ë ¿ÀºêÁ§Æ®¸¦ ¹ß»çÇÏ´Â, ´õ »ç½ÇÀûÀÎ »ç°İ ±¸Çö
+    // ì‹¤ì œ ì´ì•Œ ì˜¤ë¸Œì íŠ¸ë¥¼ ë°œì‚¬í•˜ëŠ”, ë” ì‚¬ì‹¤ì ì¸ ì‚¬ê²© êµ¬í˜„
     public float bullet_speed = 960f;
     protected void RealShot()
     {

@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using ArduinoBluetoothAPI;
 
-// ºí·çÅõ½º ¿¬°á, ÀÔ·ÂÀ» °ü¸®ÇÔ.
+// ë¸”ë£¨íˆ¬ìŠ¤ ì—°ê²°, ì…ë ¥ì„ ê´€ë¦¬í•¨.
 public class BluetoothManager : MonoBehaviour
 {
-    // ½Ì±ÛÅæ. ¾À ÀüÈ¯ ½Ã¿¡µµ À¯ÁöµÇµµ·Ï ÇÔ.
+    // ì‹±ê¸€í†¤
     public static BluetoothManager instance
     {
         get
@@ -23,11 +23,11 @@ public class BluetoothManager : MonoBehaviour
     }
     private static BluetoothManager m_instance;
 
-    // ¾ÆµÎÀÌ³ë ºí·çÅõ½º API È°¿ë
+    // ì•„ë‘ì´ë…¸ ë¸”ë£¨íˆ¬ìŠ¤ API í™œìš©
     BluetoothHelper bluetoothHelper;
-    // ºí·çÅõ½º ±â±âÀÇ ÀÌ¸§
+    // ë¸”ë£¨íˆ¬ìŠ¤ ê¸°ê¸°ì˜ ì´ë¦„
     public string deviceName;
-    // Æä¾î¸µ »óÅÂ¸¦ ³ªÅ¸³¿
+    // í˜ì–´ë§ ìƒíƒœë¥¼ ë‚˜íƒ€ëƒ„
     public bool IsPaired
     {
         get
@@ -36,7 +36,7 @@ public class BluetoothManager : MonoBehaviour
             return false;
         }
     }
-    // ÇöÀç ¿¬°á »óÅÂ¸¦ ³ªÅ¸³¿.
+    // í˜„ì¬ ì—°ê²° ìƒíƒœë¥¼ ë‚˜íƒ€ëƒ„.
     public bool IsConnected
     {
         get
@@ -45,18 +45,18 @@ public class BluetoothManager : MonoBehaviour
             return false;
         }
     }
-    // ÇöÀç ºí·çÅõ½º ¿¬°á »óÅÂ¸¦ ³ªÅ¸³¿
+    // í˜„ì¬ ë¸”ë£¨íˆ¬ìŠ¤ ì—°ê²° ìƒíƒœë¥¼ ë‚˜íƒ€ëƒ„
     public string State { get; private set; }
-    // ºí·çÅõ½ºÀÇ ÀÔ·Â »óÅÂ(on / off)¸¦ ³ªÅ¸³¿.
-    public bool Input { get; private set; } = false;
-    // ºí·çÅõ½º·Î ÀÔ·ÂÇÑ ¸¶Áö¸· ½Ã°£. 0.3ÃÊ°¡ Áö³ª¸é inputÀ» false·Î µÇµ¹¸².
+    // ë¸”ë£¨íˆ¬ìŠ¤ì˜ ì…ë ¥ ìƒíƒœ(on / off)ë¥¼ ë‚˜íƒ€ëƒ„.
+    public bool input = false;
+    // ë¸”ë£¨íˆ¬ìŠ¤ë¡œ ì…ë ¥í•œ ë§ˆì§€ë§‰ ì‹œê°„. 0.3ì´ˆê°€ ì§€ë‚˜ë©´ inputì„ falseë¡œ ë˜ëŒë¦¼.
     float lastTime;
 
-    // µğ¹ö±×¿ë.
-    public bool debugging = false;
+    // ë””ë²„ê·¸ìš©.
+    public bool debugging = true;
     public Text debugText;
 
-    // ¾Èµå·ÎÀÌµå ºí·çÅõ½º È°¼ºÈ­ ÇÔ¼ö
+    // ì•ˆë“œë¡œì´ë“œ ë¸”ë£¨íˆ¬ìŠ¤ í™œì„±í™” í•¨ìˆ˜
     private void setAndroidBluetoothEnabled()
     {
         try
@@ -89,13 +89,13 @@ public class BluetoothManager : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time > lastTime + 0.3f) Input = false;
+        if (Time.time > lastTime + 0.3f) input = false;
         if(debugging)
         {
-            debugText.text = $"Æä¾î¸µ : {IsPaired} Ä¿³ØÆÃ : {IsConnected}\nµğ¹ÙÀÌ½º ÀÌ¸§ : {bluetoothHelper.getDeviceName()}" +
+            debugText.text = $"í˜ì–´ë§ : {IsPaired} ì»¤ë„¥íŒ… : {IsConnected}\në””ë°”ì´ìŠ¤ ì´ë¦„ : {bluetoothHelper.getDeviceName()}" +
                 $"\nbluetoothHelper.Available : {bluetoothHelper.Available}\nreadData : {bluetoothHelper.Read()}";
         }
-        // ÀÌº¥Æ®°¡ ¾È ¸Ô¾î¼­... ¾îÂ¿ ¼ö ¾ø´Â ¼±ÅÃ.
+        // ì´ë²¤íŠ¸ê°€ ì•ˆ ë¨¹ì–´ì„œ... ì–´ì©” ìˆ˜ ì—†ëŠ” ì„ íƒ.
         if (bluetoothHelper.Read() != "")
         {
             OnMessageReceived();
@@ -106,15 +106,15 @@ public class BluetoothManager : MonoBehaviour
     {
         Debug.Log("bluetooth manager awake");
         //setAndroidBluetoothEnabled();
-        // ½Ì±ÛÅæ!
-        if (instance != this.GetComponent<BluetoothManager>())
+        // ì‹±ê¸€í†¤!
+        if (instance != this)
         {
             Destroy(gameObject);
             return;
         }
         deviceName = "trigger";
         InstantiateBluetoothHelper();
-        // ºí·çÅõ½º ¼³Á¤ÀÌ µÇ¾îÀÖ¾ú´Ù¸é Ä¿³ØÆ®
+        // ë¸”ë£¨íˆ¬ìŠ¤ ì„¤ì •ì´ ë˜ì–´ìˆì—ˆë‹¤ë©´ ì»¤ë„¥íŠ¸
         if (GameManager.instance.Bluetooth) OnConnectButtonClick();
     }
 
@@ -126,30 +126,35 @@ public class BluetoothManager : MonoBehaviour
 
             bluetoothHelper.OnConnected += OnConnected;
             bluetoothHelper.OnConnectionFailed += OnConnectionFailed;
-            // ¾ÀÀÌ ³Ñ¾î°¡¸é¼­ ÀÌº¥Æ®°¡ ¹ß»ıÇÏÁö ¾Ê´Â ¹®Á¦ ¹ß»ı
-            // µû¶ó¼­ ¾÷µ¥ÀÌÆ® ·çÇÁ¿¡¼­ ÀÌ¸¦ ÇØ°áÇÔ.
+            // ì”¬ì´ ë„˜ì–´ê°€ë©´ì„œ ì´ë²¤íŠ¸ê°€ ë°œìƒí•˜ì§€ ì•ŠëŠ” ë¬¸ì œ ë°œìƒ
+            // ë”°ë¼ì„œ ì—…ë°ì´íŠ¸ ë£¨í”„ì—ì„œ ì´ë¥¼ í•´ê²°í•¨.
             bluetoothHelper.OnDataReceived += OnMessageReceived;
 
             bluetoothHelper.setTerminatorBasedStream("\n");
-            State = "TryConnectToDevice ¼º°ø";
+            State = "TryConnectToDevice ì„±ê³µ";
         }
         catch (Exception ex)
         {
-            Debug.Log($"ºí·çÅõ½º ¿¬°á ¿¹¿Ü : {ex}");
+            Debug.Log($"ë¸”ë£¨íˆ¬ìŠ¤ ì—°ê²° ì˜ˆì™¸ : {ex}");
         }
+    }
+
+    public void SendMessage(string msg)
+    {
+        if(bluetoothHelper.Available) bluetoothHelper.SendData(msg);
     }
 
     public void OnConnectButtonClick()
     {
         //TryConnectToDevice();
-        Debug.Log("¿¬°á ¹öÆ° ´­¸²");
+        Debug.Log("ì—°ê²° ë²„íŠ¼ ëˆŒë¦¼");
         if (IsPaired && !IsConnected)
         {
             if (bluetoothHelper != null)
             {
-                State = "±â±â ÀÌ¸§ ¹İ¿µ";
+                State = "ê¸°ê¸° ì´ë¦„ ë°˜ì˜";
                 bluetoothHelper.setDeviceName(deviceName);
-                State = "¿¬°áÀ» ½ÃµµÇÕ´Ï´Ù...";
+                State = "ì—°ê²°ì„ ì‹œë„í•©ë‹ˆë‹¤...";
                 bluetoothHelper.Connect();
             }
         }
@@ -157,61 +162,61 @@ public class BluetoothManager : MonoBehaviour
 
     public void OnDisconnectButtonClick()
     {
-        State = "¿¬°áÀ» ÇØÁ¦ÇÕ´Ï´Ù.";
+        State = "ì—°ê²°ì„ í•´ì œí•©ë‹ˆë‹¤.";
         if(bluetoothHelper != null) bluetoothHelper.Disconnect();
     }
 
     public void OnConnected()
     {
-        // ¼º°øÇÑ µğ¹ÙÀÌ½º³×ÀÓÀ» ÀúÀåÇÔ.
+        // ì„±ê³µí•œ ë””ë°”ì´ìŠ¤ë„¤ì„ì„ ì €ì¥í•¨.
         PlayerPrefs.SetString("DeviceName", deviceName);
         try
         {
-            Debug.Log("ºí·çÅõ½º ¸®½º´× ½ºÅ¸Æ®");
+            Debug.Log("ë¸”ë£¨íˆ¬ìŠ¤ ë¦¬ìŠ¤ë‹ ìŠ¤íƒ€íŠ¸");
             bluetoothHelper.StartListening();
-            State = "¿¬°á ¼º°ø";
+            State = "ì—°ê²° ì„±ê³µ";
         }
         catch
         {
-            Debug.Log("ºí·çÅõ½º ¸®½º´× ½ÇÆĞ");
+            Debug.Log("ë¸”ë£¨íˆ¬ìŠ¤ ë¦¬ìŠ¤ë‹ ì‹¤íŒ¨");
         }
     }
 
     bool _triedToConnect = false;
     void OnConnectionFailed()
     {
-        Debug.Log("¿¬°á ½ÇÆĞ");
-        State = "¿¬°áÀÌ ²÷¾îÁ³½À´Ï´Ù.";
-        // ¿¬°á Àç½Ãµµ(ÇÑ¹ø¸¸)
+        Debug.Log("ì—°ê²° ì‹¤íŒ¨");
+        State = "ì—°ê²°ì´ ëŠì–´ì¡ŒìŠµë‹ˆë‹¤.";
+        // ì—°ê²° ì¬ì‹œë„(í•œë²ˆë§Œ)
         if(!_triedToConnect) OnConnectButtonClick();
         _triedToConnect = true;
     }
 
     void OnMessageReceived()
     {
-        Debug.Log("ºí·çÅõ½º ½ÅÈ£ µé¾î¿È");
-        Input = true;
+        Debug.Log("ë¸”ë£¨íˆ¬ìŠ¤ ì‹ í˜¸ ë“¤ì–´ì˜´");
+        input = true;
         lastTime = Time.time;
     }
 
-    // Á¾·á ½Ã ½ÇÇàµÇ´Â ¸Ş¼­µå
+    // ì¢…ë£Œ ì‹œ ì‹¤í–‰ë˜ëŠ” ë©”ì„œë“œ
     private void OnDisable()
     {
-        Debug.Log("ºí·çÅõ½º disabled");
+        Debug.Log("ë¸”ë£¨íˆ¬ìŠ¤ disabled");
         if (bluetoothHelper != null)
             bluetoothHelper.Disconnect();
     }
 
     void OnDestroy()
     {
-        Debug.Log("ºí·çÅõ½º destroyed");
+        Debug.Log("ë¸”ë£¨íˆ¬ìŠ¤ destroyed");
         if (bluetoothHelper != null)
             bluetoothHelper.Disconnect();
     }
 
     void OnApplicationQuit()
     {
-        Debug.Log("¾Û quit");
+        Debug.Log("ì•± quit");
         if (bluetoothHelper != null)
             bluetoothHelper.Disconnect();
     }
