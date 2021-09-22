@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroPointShootingManager.cs" />
      <Compile Include="Assets\Scripts\Setting Camera\DragCamera.cs" />
      <Compile Include="Assets\Scripts\ClickValue3DText.cs" />
+     <Compile Include="Assets\Scripts\SceneChanger3D.cs" />
      <Compile Include="Assets\Scripts\Utility.cs" />
      <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetManager.cs" />
      <Compile Include="Assets\Scripts\UI\ClickValueText.cs" />
@@ -75,7 +76,7 @@
      <Compile Include="Assets\Scripts\PlayerControl\MouseRotate.cs" />
      <Compile Include="Assets\Scripts\UI\TrackCircleSlider.cs" />
      <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
-     <Compile Include="Assets\Scripts\SceneChanger3D.cs" />
+     <Compile Include="Assets\Scripts\Gun\Bullet.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

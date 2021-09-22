@@ -7,18 +7,14 @@ using UnityEngine;
 // 총이 실제로 발사되는 부분은 총구이다.
 public class Muzzle : MonoBehaviour
 {
-    private LineRenderer bulletLineRenderer;
     private AudioSource audioSource;
 
     public AudioClip fireSound;
-    public GameObject hitholePrefab;
+    // 실제로 발사할 총알 오브젝트
+    public GameObject Bullet;
 
     private void Awake()
     {
-        // 라인렌더러 초기화 부분.
-        bulletLineRenderer = GetComponent<LineRenderer>();
-        bulletLineRenderer.positionCount = 2;
-        bulletLineRenderer.enabled = false;
         // 오디오 소스 초기화 부분.
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = fireSound;
@@ -30,9 +26,7 @@ public class Muzzle : MonoBehaviour
     {
         // 총이 발사되는 소리부터 재생
         audioSource.Play();
-        // 총알은 일단 총구로부터 시작
-        bulletLineRenderer.SetPosition(0, transform.position);
-        Shot();
+        RealShot();
     }
 
     // 발사 처리
@@ -49,5 +43,14 @@ public class Muzzle : MonoBehaviour
             // 타겟이 맞지 않은 경우
             else Debug.Log($"타겟 대신 {hit.collider.name} 맞음");
         }
+    }
+
+    // 실제 총알 오브젝트를 발사하는, 더 사실적인 사격 구현
+    public float bullet_speed = 960f;
+    protected void RealShot()
+    {
+        GameObject bullet = Instantiate(Bullet, this.transform.position, this.transform.rotation);
+        Rigidbody rigidbody = bullet.GetComponentInChildren<Rigidbody>();
+        rigidbody.velocity = bullet.transform.forward * bullet_speed;
     }
 }
