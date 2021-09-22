@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +16,7 @@ public class BluetoothManager : MonoBehaviour
             if (m_instance == null)
             {
                 m_instance = FindObjectOfType<BluetoothManager>();
-                if(m_instance != null) DontDestroyOnLoad(m_instance.gameObject);
+                if (m_instance != null) DontDestroyOnLoad(m_instance.gameObject);
             }
             return m_instance;
         }
@@ -90,7 +90,7 @@ public class BluetoothManager : MonoBehaviour
     private void Update()
     {
         if (Time.time > lastTime + 0.3f) input = false;
-        if(debugging)
+        if (debugging)
         {
             debugText.text = $"페어링 : {IsPaired} 커넥팅 : {IsConnected}\n디바이스 이름 : {bluetoothHelper.getDeviceName()}" +
                 $"\nbluetoothHelper.Available : {bluetoothHelper.Available}\nreadData : {bluetoothHelper.Read()}";
@@ -139,9 +139,9 @@ public class BluetoothManager : MonoBehaviour
         }
     }
 
-    public void SendMessage(string msg)
+    public void SendMessageToDevice(string msg)
     {
-        if(bluetoothHelper.Available) bluetoothHelper.SendData(msg);
+        if (bluetoothHelper.Available) bluetoothHelper.SendData(msg);
     }
 
     public void OnConnectButtonClick()
@@ -163,7 +163,7 @@ public class BluetoothManager : MonoBehaviour
     public void OnDisconnectButtonClick()
     {
         State = "연결을 해제합니다.";
-        if(bluetoothHelper != null) bluetoothHelper.Disconnect();
+        if (bluetoothHelper != null) bluetoothHelper.Disconnect();
     }
 
     public void OnConnected()
@@ -188,7 +188,7 @@ public class BluetoothManager : MonoBehaviour
         Debug.Log("연결 실패");
         State = "연결이 끊어졌습니다.";
         // 연결 재시도(한번만)
-        if(!_triedToConnect) OnConnectButtonClick();
+        if (!_triedToConnect) OnConnectButtonClick();
         _triedToConnect = true;
     }
 

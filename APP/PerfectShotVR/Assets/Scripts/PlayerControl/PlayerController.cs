@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         return (
             (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) == false)
             || (Input.GetMouseButtonDown(1) && EventSystem.current.IsPointerOverGameObject() == false)
-            || (BluetoothManager.instance != null && BluetoothManager.instance.Input)
+            || (BluetoothManager.instance != null && BluetoothManager.instance.input)
             );
     }
 
