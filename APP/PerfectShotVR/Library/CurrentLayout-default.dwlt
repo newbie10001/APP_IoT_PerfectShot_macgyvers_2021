@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1368
     height: 830
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 4}
   m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 471}
   m_MaxSize: {x: 10002, y: 14021}
   vertical: 1
-  controlID: 89
+  controlID: 85
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,10 +150,10 @@ MonoBehaviour:
     y: 30
     width: 1368
     height: 780
-  m_MinSize: {x: 709, y: 471}
-  m_MaxSize: {x: 18004, y: 14021}
+  m_MinSize: {x: 708, y: 471}
+  m_MaxSize: {x: 18003, y: 14021}
   vertical: 0
-  controlID: 60
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -452,21 +452,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 78e0ffff8ae0ffff8ce0ffff38f4ffff4cf4ffff0af5ffff00f9ffff364100007241000000530000
+      m_ExpandedIDs: 20c8ffff3cc8ffffbccbffff58d0ffff60d0ffff68d0ffff76f4ffff08f5ffff3cf5ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Gun
-        m_OriginalName: Gun
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 19680
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -564,9 +564,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da400000
-    m_LastClickedID: 16602
-    m_ExpandedIDs: 00000000cc400000dc40000000ca9a3b
+    m_SelectedIDs: 923e0000
+    m_LastClickedID: 16018
+    m_ExpandedIDs: 000000007e3e0000943e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc400000
+    m_ExpandedIDs: 000000007e3e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

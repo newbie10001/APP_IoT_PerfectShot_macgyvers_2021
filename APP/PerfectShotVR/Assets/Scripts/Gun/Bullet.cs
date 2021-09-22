@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     {
         Vector3 pos = transform.position;
         if (pos.z > 20 && pos.z < 30) Debug.Log($"{pos.z}m일 때 y값 : {pos.y}");
-        if (pos.z > 90 && pos.z < 110) Debug.Log($"{pos.z}m일 때 y값 : {pos.y}");
+        else if (pos.z > 90 && pos.z < 110) Debug.Log($"{pos.z}m일 때 y값 : {pos.y}");
         else if (pos.z > 190 && pos.z < 210) Debug.Log($"{pos.z}m일 때 y값 : {pos.y}");
         else if (pos.z > 249 && pos.z < 251) Debug.Log($"{pos.z}m일 때 y값 : {pos.y}");
         if (pos.z > 600)

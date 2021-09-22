@@ -1683,12 +1683,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -3947,6 +3947,7 @@ GameObject:
   - component: {fileID: 948002740061008387}
   - component: {fileID: 8119741840134891657}
   - component: {fileID: 4887304899898719610}
+  - component: {fileID: 5001575857703884441}
   m_Layer: 5
   m_Name: Bluetooth Setting
   m_TagString: Untagged
@@ -4015,6 +4016,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5001575857703884441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8027400521892238313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58649f177d1a98e46aa34bece89ca1dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BluetoothToggle: {fileID: 3346242936763153416}
+  StateIndicator: {fileID: 3850966345624306774}
+  DeviceNameInputField: {fileID: 6244974466147597388}
+  ConnectButton: {fileID: 4967615673194566138}
+  DisconnectButton: {fileID: 5151096640451600282}
 --- !u!1 &8084858477527995405
 GameObject:
   m_ObjectHideFlags: 0
