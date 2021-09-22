@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 // 총이 실제로 발사되는 부분은 총구이다.
-public class Muzzle : MonoBehaviour
+public class Muzzle : MonoBehaviour, IMuzzle
 {
     private AudioSource audioSource;
 

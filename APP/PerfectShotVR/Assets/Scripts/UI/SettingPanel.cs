@@ -81,6 +81,7 @@ public class SettingPanel : MonoBehaviour
     public void SaveClick()
     {
         GameManager.instance.Click = new Vector2(int.Parse(ClickHorizontal.text), int.Parse(ClickVertical.text));
-        FindObjectOfType<SettingCamera>().InitCamAndApplyClick();
+        SettingCamera settingCamera = FindObjectOfType<SettingCamera>();
+        if(settingCamera != null) settingCamera.InitCamAndApplyClick();
     }
 }

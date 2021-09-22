@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165a9a264a5b3db49be95d3565b66fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  muzzle: {fileID: 4476600182396422223}
+  MuzzleObject: {fileID: 7374164970997789753}
 --- !u!114 &6879320815184452512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireSound: {fileID: 8300000, guid: f4cd3aec361b3dd40875557ade730e57, type: 3}
   Bullet: {fileID: 1800117570209921414, guid: b635a92e34af3a54194c12a55c5d1d42, type: 3}
+  bullet_speed: 960
 --- !u!82 &6683814863056613097
 AudioSource:
   m_ObjectHideFlags: 0

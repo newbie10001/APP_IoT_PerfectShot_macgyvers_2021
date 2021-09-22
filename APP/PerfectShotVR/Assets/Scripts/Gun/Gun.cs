@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    // 총구 인스턴스를 할당
-    public Muzzle muzzle;
+    // 총구 오브젝트를 할당
+    public GameObject MuzzleObject;
+    private IMuzzle muzzle;
 
     // 발사 속도 조절
     private float lastShot;
@@ -15,6 +16,7 @@ public class Gun : MonoBehaviour
 
     void Awake()
     {
+        muzzle = MuzzleObject.GetComponent<IMuzzle>();
         Ammo = 0;
         lastShot = Time.time;
     }

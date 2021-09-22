@@ -56,7 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ITarget.cs" />
+    <Compile Include="Assets\Scripts\Interface\ITarget.cs" />
+    <Compile Include="Assets\Scripts\Bluetooth\BluetoothController.cs" />
+    <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\SphereContRot.cs" />
     <Compile Include="Assets\Scripts\PlayerControl\StaringMode.cs" />
     <Compile Include="Assets\Scripts\RealShootingManager.cs" />
     <Compile Include="Assets\Scripts\Setting Camera\SaveAndGoMain.cs" />
@@ -76,8 +78,11 @@
     <Compile Include="Assets\Scripts\ClickValue3DText.cs" />
     <Compile Include="Assets\Scripts\SceneChanger3D.cs" />
     <Compile Include="Assets\Scripts\Gun\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Bluetooth\BluetoothManager.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
+    <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\manager.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetManager.cs" />
+    <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\ScanSceneManager.cs" />
     <Compile Include="Assets\Scripts\UI\ClickValueText.cs" />
     <Compile Include="Assets\Scripts\Button3D.cs" />
     <Compile Include="Assets\Scripts\Gun\InfiniteAmmo.cs" />
@@ -85,13 +90,10 @@
     <Compile Include="Assets\Scripts\Setting Camera\SettingCamera.cs" />
     <Compile Include="Assets\Scripts\PlayerControl\MouseRotate.cs" />
     <Compile Include="Assets\Scripts\UI\TrackCircleSlider.cs" />
-    <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
-    <Compile Include="Assets\Scripts\Bluetooth\BluetoothController.cs" />
-    <Compile Include="Assets\Scripts\Bluetooth\BluetoothManager.cs" />
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\BTManager.cs" />
-    <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\ScanSceneManager.cs" />
-    <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\SphereContRot.cs" />
-    <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\manager.cs" />
+    <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
+    <Compile Include="Assets\Scripts\Interface\IMuzzle.cs" />
+    <Compile Include="Assets\Scripts\Setting Camera\SetCamByShooting.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Imported Assets\ArduinoBluetoothAPI\changelogs.txt" />

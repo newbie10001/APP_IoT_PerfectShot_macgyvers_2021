@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ZeroPointShoot.unity
     guid: 3b315379fa58b8645bfa4a726ecb865a
+  - enabled: 1
+    path: Assets/Scenes/SetCameraByShot.unity
+    guid: 134614dd6ecea2146a7c7451ea61b5bf
   m_configObjects: {}

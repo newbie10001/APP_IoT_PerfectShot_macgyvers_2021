@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952981292577094275, guid: 08b51b999ec83fd40bbb0710b4987dc5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 100
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2952981292577094275, guid: 08b51b999ec83fd40bbb0710b4987dc5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -265,6 +265,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3186927884125516915, guid: 1f75ffb85b72171498226e9984e79ddd, type: 3}
+      propertyPath: CircleSlider
+      value: 
+      objectReference: {fileID: 2038635182}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f75ffb85b72171498226e9984e79ddd, type: 3}
 --- !u!1 &347706473

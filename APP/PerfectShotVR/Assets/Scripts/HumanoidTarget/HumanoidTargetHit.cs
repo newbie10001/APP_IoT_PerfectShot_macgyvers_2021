@@ -14,7 +14,7 @@ public class HumanoidTargetHit : MonoBehaviour, ITarget
 
     public void OnHit(RaycastHit hit)
     {
-        Vector3 position = hit.transform.position;
+        Vector3 position = hit.point;
         Debug.Log($"hit at : ({position.x}, {position.y}, {position.z})");
         // 기기 진동
         Handheld.Vibrate();
