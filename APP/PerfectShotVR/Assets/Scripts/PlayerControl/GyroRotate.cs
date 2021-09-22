@@ -7,11 +7,34 @@ public class GyroRotate : MonoBehaviour
     void Start()
     {
         Input.gyro.enabled = true;
+        StartCoroutine(SetZAxisAngle());
     }
 
     void Update()
     {
-        // ÃßÈÄ zÃà È¸Àü¿¡ ´ëÇØ¼­´Â ¿ÀÂ÷¸¦ ¼öÁ¤ÇÒ ¼ö ÀÖµµ·Ï Á¶Á¤ÇÏ´Â ¹æ¹ıÀ» °í¾È
-        transform.Rotate(-Input.gyro.rotationRate.x, -Input.gyro.rotationRate.y, 0);
+        transform.Rotate(-Input.gyro.rotationRate.x, -Input.gyro.rotationRate.y, Input.gyro.rotationRate.z);
+    }
+
+    IEnumerator SetZAxisAngle()
+    {
+        float z_angle;
+        while (true)
+        {
+            z_angle = GetZAxisAngle();
+            if (Mathf.Abs(transform.eulerAngles.z - z_angle) > 5f)
+            {
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, z_angle);
+            }
+            yield return new WaitForSeconds(1);
+        }
+    }
+
+    // ì¤‘ë ¥ì´ í–¥í•˜ëŠ” ê¸°ì¤€ì ì¸ e_y ë²¡í„°
+    // ê°€ì†ë„ ì„¼ì„œì—ì„œ ë°›ì€ ê°’ê³¼ e_yê°€ ì–‘ì˜ ë°©í–¥ìœ¼ë¡œ ì´ë£¨ëŠ” ê°ë„ê°€ ë°”ë¡œ ì¹´ë©”ë¼ì˜ zíšŒì „ê°’ì´ë‹¤.
+    readonly Vector3 e_y = new Vector3(0, -1, 0);
+    float GetZAxisAngle()
+    {
+        Vector3 angleAcceler = Input.acceleration;
+        return -Vector2.SignedAngle(e_y, new Vector2(angleAcceler.x, angleAcceler.y));
     }
 }
