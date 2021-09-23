@@ -15,11 +15,11 @@ C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-12094
+12938
 Successfully changed project path to: C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR
 C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 87.42 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.03 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,95 +35,888 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004986 seconds.
+Registered in 0.001338 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 109.00 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.87 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.371 seconds
+- Completed reload, in  1.774 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004301 seconds.
+Registered in 0.001195 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.726 seconds
+- Completed reload, in  1.092 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1157 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.2 MB.
+System memory in use before: 61.1 MB.
 System memory in use after: 61.2 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1598.
-Total: 3.778700 ms (FindLiveObjects: 0.369000 ms CreateObjectMapping: 0.100700 ms MarkObjects: 3.109400 ms  DeleteObjects: 0.196500 ms)
+Total: 3.026500 ms (FindLiveObjects: 0.135000 ms CreateObjectMapping: 0.125700 ms MarkObjects: 2.593900 ms  DeleteObjects: 0.170500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b74700b0d36a747c9a6fa6f1750759') in 0.045045 seconds
-  Import took 0.049208 seconds .
+  path: Assets/Scripts/Gun/Muzzle.cs
+  artifactKey: Guid(55cb2a1149858314684119adab01fc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gun/Muzzle.cs using Guid(55cb2a1149858314684119adab01fc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e8ad59e7a6a7455636c2214538494f') in 0.034057 seconds
+  Import took 0.036450 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000491 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothController.cs
-  artifactKey: Guid(58649f177d1a98e46aa34bece89ca1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothController.cs using Guid(58649f177d1a98e46aa34bece89ca1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fba6a23958357d7fff1bdc19e82c5b') in 0.012230 seconds
-  Import took 0.016080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 259.029535 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba6e821063d202fa4704da03c24bdb3') in 0.006967 seconds
-  Import took 0.013196 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.246327 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba6e821063d202fa4704da03c24bdb3') in 0.005773 seconds
-  Import took 0.014387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.986931 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b2441f875f750611d579b115025aa7') in 0.004231 seconds
-  Import took 0.010181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.055407 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b2441f875f750611d579b115025aa7') in 0.008800 seconds
-  Import took 0.015846 seconds .
+  Time since last request: 81820.542711 seconds.
+  path: Assets/Scripts/RealShotPlayerMoving.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/RealShotPlayerMoving.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e13e92eec7d44103f88a1e2c79583b5') in 0.023550 seconds
+  Import took 0.032938 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005282 seconds.
+Registered in 0.004033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.774 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.0 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1602.
+Total: 3.836900 ms (FindLiveObjects: 0.307100 ms CreateObjectMapping: 0.105600 ms MarkObjects: 3.307800 ms  DeleteObjects: 0.113500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003305 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.875 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.0 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1605.
+Total: 5.588500 ms (FindLiveObjects: 0.367800 ms CreateObjectMapping: 0.088300 ms MarkObjects: 4.952800 ms  DeleteObjects: 0.175300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.123759 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.536 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.0 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1608.
+Total: 9.503500 ms (FindLiveObjects: 0.336600 ms CreateObjectMapping: 0.136200 ms MarkObjects: 8.783400 ms  DeleteObjects: 0.242400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 744.061704 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.004438 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.009498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013800 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000776 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.181156 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000913 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.196094 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001001 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035001 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001095 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036233 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000753 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030810 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001423 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028935 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001471 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027364 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000619 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031205 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001073 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031811 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001131 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.045275 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001079 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020262 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000862 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028023 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001014 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024108 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000935 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034084 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001274 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032045 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001107 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030693 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001681 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030783 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001946 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050564 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001362 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.009873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014524 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000868 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033150 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000805 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023740 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000788 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029010 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000591 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040000 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000880 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032166 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000845 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035931 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001550 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029564 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001385 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.031684 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001657 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034996 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001612 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032876 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001377 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.035874 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000632 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032424 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000818 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046293 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000728 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050071 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001763 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043405 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002596 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034880 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001685 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.009216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029236 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001339 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023927 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001889 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.010115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027370 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001064 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028838 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001027 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040387 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000775 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034563 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000812 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034931 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000753 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034490 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000749 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030817 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000764 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036446 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001245 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023001 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001170 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.009093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016705 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000978 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.040655 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000876 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047854 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000981 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032217 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000751 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.043483 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000847 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.006951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028410 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001232 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024466 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000878 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.007036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027587 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001019 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.005981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023184 seconds.
+  path: Assets/Scripts/PlayerControl/RealShotPlayer.cs
+  artifactKey: Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerControl/RealShotPlayer.cs using Guid(47777a01be078d74b86243598d126353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000924 seconds
+  ERROR: Build asset version error: assets/scripts/playercontrol/realshotplayer.cs in SourceAssetDB has modification time of '2021-09-23T10:00:14.6208776Z' while content on disk has modification time of '2021-09-23T10:05:33.2769895Z'
+  Import took 0.008137 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002418 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.466 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1611.
+Total: 4.907500 ms (FindLiveObjects: 0.398800 ms CreateObjectMapping: 0.106200 ms MarkObjects: 4.204100 ms  DeleteObjects: 0.194700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.062463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.976 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1614.
+Total: 9.357200 ms (FindLiveObjects: 0.531400 ms CreateObjectMapping: 0.151700 ms MarkObjects: 8.475200 ms  DeleteObjects: 0.181600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004513 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.544 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1617.
+Total: 4.253900 ms (FindLiveObjects: 0.452500 ms CreateObjectMapping: 0.130000 ms MarkObjects: 3.506400 ms  DeleteObjects: 0.162100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003532 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.446 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1620.
+Total: 4.169700 ms (FindLiveObjects: 0.420900 ms CreateObjectMapping: 0.172300 ms MarkObjects: 3.469500 ms  DeleteObjects: 0.101800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003347 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.499 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1623.
+Total: 5.890300 ms (FindLiveObjects: 0.325100 ms CreateObjectMapping: 0.071500 ms MarkObjects: 4.229500 ms  DeleteObjects: 1.260700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003607 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.511 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1626.
+Total: 2.859900 ms (FindLiveObjects: 0.243800 ms CreateObjectMapping: 0.070700 ms MarkObjects: 2.440700 ms  DeleteObjects: 0.102500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.231 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1629.
+Total: 4.088200 ms (FindLiveObjects: 0.290900 ms CreateObjectMapping: 0.083700 ms MarkObjects: 3.511600 ms  DeleteObjects: 0.146700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004264 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.503 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1632.
+Total: 3.998500 ms (FindLiveObjects: 0.387200 ms CreateObjectMapping: 0.123000 ms MarkObjects: 3.220600 ms  DeleteObjects: 0.263100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.429 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1635.
+Total: 3.509000 ms (FindLiveObjects: 0.410600 ms CreateObjectMapping: 0.086500 ms MarkObjects: 2.883200 ms  DeleteObjects: 0.124600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004494 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
@@ -132,105 +925,304 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.553 seconds
+- Completed reload, in  2.467 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1601.
-Total: 4.257000 ms (FindLiveObjects: 0.302000 ms CreateObjectMapping: 0.089900 ms MarkObjects: 3.698800 ms  DeleteObjects: 0.161800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003510 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.291 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 61.0 MB.
-System memory in use after: 61.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1604.
-Total: 4.395300 ms (FindLiveObjects: 0.376400 ms CreateObjectMapping: 0.108800 ms MarkObjects: 3.672800 ms  DeleteObjects: 0.234000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 219.155164 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3232430263b900557402f96c30b59e36') in 0.011066 seconds
-  Import took 0.016022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004138 seconds.
-  path: Assets/Scripts/Bluetooth/BluetoothManager.cs
-  artifactKey: Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bluetooth/BluetoothManager.cs using Guid(e5f3b3710da439e4e86440a6e5e89cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3232430263b900557402f96c30b59e36') in 0.004242 seconds
-  Import took 0.008575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.108740 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2890e6e45ff6e8382491d70e01ee6d63') in 0.048253 seconds
-  Import took 0.053539 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003550 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.375 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1155 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 61.1 MB.
-System memory in use after: 61.1 MB.
+System memory in use after: 61.2 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1607.
-Total: 4.780100 ms (FindLiveObjects: 0.401300 ms CreateObjectMapping: 0.084400 ms MarkObjects: 4.036400 ms  DeleteObjects: 0.254400 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1638.
+Total: 4.186900 ms (FindLiveObjects: 0.411500 ms CreateObjectMapping: 0.084700 ms MarkObjects: 3.493900 ms  DeleteObjects: 0.193700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 4.08 ms, found 0 plugins.
+Registering precompiled user dll's ...
+Registered in 0.003607 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 38.5 MB.
-System memory in use after: 38.6 MB.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.388 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1607.
-Total: 4.658400 ms (FindLiveObjects: 0.328400 ms CreateObjectMapping: 0.156800 ms MarkObjects: 4.057300 ms  DeleteObjects: 0.113300 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 4.956300 ms (FindLiveObjects: 0.517600 ms CreateObjectMapping: 0.163100 ms MarkObjects: 4.069000 ms  DeleteObjects: 0.203200 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003230 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.456 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1644.
+Total: 4.148300 ms (FindLiveObjects: 0.366500 ms CreateObjectMapping: 0.108000 ms MarkObjects: 3.506000 ms  DeleteObjects: 0.164800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.421 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1647.
+Total: 3.862300 ms (FindLiveObjects: 0.374500 ms CreateObjectMapping: 0.113400 ms MarkObjects: 3.222800 ms  DeleteObjects: 0.147900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004233 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.254 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1650.
+Total: 3.536700 ms (FindLiveObjects: 0.330900 ms CreateObjectMapping: 0.083800 ms MarkObjects: 2.995400 ms  DeleteObjects: 0.124000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002696 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.594 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1653.
+Total: 4.089600 ms (FindLiveObjects: 0.462200 ms CreateObjectMapping: 0.083200 ms MarkObjects: 3.405500 ms  DeleteObjects: 0.135100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003318 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.487 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.1 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1656.
+Total: 5.073200 ms (FindLiveObjects: 0.524500 ms CreateObjectMapping: 0.140200 ms MarkObjects: 4.225500 ms  DeleteObjects: 0.176300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003344 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.635 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.2 MB.
+System memory in use after: 61.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1659.
+Total: 3.628800 ms (FindLiveObjects: 0.327200 ms CreateObjectMapping: 0.089800 ms MarkObjects: 3.078200 ms  DeleteObjects: 0.130400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003493 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.255 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.2 MB.
+System memory in use after: 61.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1662.
+Total: 3.732500 ms (FindLiveObjects: 0.387400 ms CreateObjectMapping: 0.093200 ms MarkObjects: 3.087600 ms  DeleteObjects: 0.160700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003283 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.492 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.2 MB.
+System memory in use after: 61.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1665.
+Total: 4.602600 ms (FindLiveObjects: 0.424300 ms CreateObjectMapping: 0.155200 ms MarkObjects: 3.732600 ms  DeleteObjects: 0.286000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.481 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.2 MB.
+System memory in use after: 61.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1668.
+Total: 3.620300 ms (FindLiveObjects: 0.263000 ms CreateObjectMapping: 0.119000 ms MarkObjects: 3.061900 ms  DeleteObjects: 0.174400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003323 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.765 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.2 MB.
+System memory in use after: 61.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1671.
+Total: 4.577000 ms (FindLiveObjects: 0.404100 ms CreateObjectMapping: 0.118800 ms MarkObjects: 3.897600 ms  DeleteObjects: 0.152900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

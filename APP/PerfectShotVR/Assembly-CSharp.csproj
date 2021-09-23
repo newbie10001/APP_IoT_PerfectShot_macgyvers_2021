@@ -85,6 +85,7 @@
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\ScanSceneManager.cs" />
     <Compile Include="Assets\Scripts\UI\ClickValueText.cs" />
     <Compile Include="Assets\Scripts\Button3D.cs" />
+    <Compile Include="Assets\Scripts\Setting Camera\SetCamByShooting.cs" />
     <Compile Include="Assets\Scripts\Gun\InfiniteAmmo.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\NohitZone.cs" />
     <Compile Include="Assets\Scripts\Setting Camera\SettingCamera.cs" />
@@ -93,7 +94,7 @@
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\BTManager.cs" />
     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
     <Compile Include="Assets\Scripts\Interface\IMuzzle.cs" />
-    <Compile Include="Assets\Scripts\Setting Camera\SetCamByShooting.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl\RealShotPlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Imported Assets\ArduinoBluetoothAPI\changelogs.txt" />

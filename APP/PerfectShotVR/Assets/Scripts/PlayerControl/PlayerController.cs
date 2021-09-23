@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // 각각 터치, 마우스, 블루투스 입력을 받는다.
-    bool GetInput()
+    // 행마다 각각 터치, 마우스, 블루투스 입력을 받는다.
+    public bool GetInput()
     {
         return (
             (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) == false)
