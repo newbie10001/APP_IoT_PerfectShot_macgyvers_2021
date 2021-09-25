@@ -5,9 +5,20 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    public Gun gun;
+    // 플레이어의 자식인 총
+    private Gun gun;
+    // 플레이어 자이로 무브 스크립트
+    private GyroRotate gyro;
+    // 플레이어의 입력 여부를 계속하여 갱신
+    public bool PlayerInput { get; private set; }
     // 누르고 있을 경우 true, 떼는 순간 false가 됨.
     private bool pressed;
+
+    private void Start()
+    {
+        gun = GetComponentInChildren<Gun>();
+        gyro = GetComponent<GyroRotate>();
+    }
 
     void Update()
     {
@@ -17,7 +28,8 @@ public class PlayerController : MonoBehaviour
     // 입력을 감지하여 격발 실행
     void GetInputAndFire()
     {
-        if (GetInput())
+        PlayerInput = GetInput();
+        if (PlayerInput)
         {
             // 연사 방지
             if (!pressed)
@@ -49,4 +61,6 @@ public class PlayerController : MonoBehaviour
         //this.transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
         transform.eulerAngles = Vector3.zero;
     }
+    
+    public void SetGyroEnabled(bool value) => gyro.enabled = value;
 }

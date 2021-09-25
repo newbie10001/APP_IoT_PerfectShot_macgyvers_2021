@@ -60,7 +60,7 @@
     <Compile Include="Assets\Scripts\Bluetooth\BluetoothController.cs" />
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\SphereContRot.cs" />
     <Compile Include="Assets\Scripts\PlayerControl\StaringMode.cs" />
-    <Compile Include="Assets\Scripts\RealShootingManager.cs" />
+    <Compile Include="Assets\Scripts\Real Distance Shooting\RealShootingManager.cs" />
     <Compile Include="Assets\Scripts\Setting Camera\SaveAndGoMain.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetHit.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\SceneChanger3D.cs" />
     <Compile Include="Assets\Scripts\Gun\Bullet.cs" />
     <Compile Include="Assets\Scripts\Bluetooth\BluetoothManager.cs" />
+    <Compile Include="Assets\Scripts\Real Distance Shooting\RealShotPlayerMove.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\manager.cs" />
     <Compile Include="Assets\Scripts\HumanoidTarget\HumanoidTargetManager.cs" />
@@ -94,7 +95,7 @@
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\BTManager.cs" />
     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
     <Compile Include="Assets\Scripts\Interface\IMuzzle.cs" />
-    <Compile Include="Assets\Scripts\PlayerControl\RealShotPlayerMove.cs" />
+    <Compile Include="Assets\Scripts\Real Distance Shooting\RealShotNarrationSound.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Imported Assets\ArduinoBluetoothAPI\changelogs.txt" />
