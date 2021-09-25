@@ -77,7 +77,6 @@ public class RealShootingManager : MonoBehaviour
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
         yield return new WaitForSeconds(1.0f);
-        Indicator.text = "자신의 사로를\n외치면서 입장합니다";
         yield return playerMove.EnteringShootingLane();
         yield return new WaitForSeconds(2.0f);
         narrator.PlaySetProne();

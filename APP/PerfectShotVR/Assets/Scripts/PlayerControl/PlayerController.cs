@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // 누르고 있을 경우 true, 떼는 순간 false가 됨.
     private bool pressed;
 
-    private void Start()
+    private void Awake()
     {
         gun = GetComponentInChildren<Gun>();
         gyro = GetComponent<GyroRotate>();
