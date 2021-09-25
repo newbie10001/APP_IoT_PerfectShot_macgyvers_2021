@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
         if (pos.z > 600)
         {
             Debug.Log("유효사거리는 600");
-            Destroy(this.transform.parent.gameObject);
+            //Destroy(this.transform.parent.gameObject);
         }
     }
 

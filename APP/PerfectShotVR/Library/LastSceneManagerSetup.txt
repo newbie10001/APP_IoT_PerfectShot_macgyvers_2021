@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/RealShooting.unity
+- path: Assets/Scenes/BallisticShow.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

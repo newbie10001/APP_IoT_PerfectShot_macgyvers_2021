@@ -726,7 +726,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5734795820208596825, guid: 84a57e561e9d81a458e9797277389de4, type: 3}
       propertyPath: sceneName
-      value: ZeroPointShooting
+      value: ZeroPointShoot
       objectReference: {fileID: 0}
     - target: {fileID: 5734795820208596826, guid: 84a57e561e9d81a458e9797277389de4, type: 3}
       propertyPath: m_RootOrder
