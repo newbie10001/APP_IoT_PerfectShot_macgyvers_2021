@@ -12,17 +12,17 @@ public class RealShotPlayerMove : MonoBehaviour
 {
     // {위치, 오일러 회전값}으로 플레이어의 상태를 결정함.
     // 사로 입장
-    readonly Vector3[] Enter0 = { new Vector3(-15, 1.5f, -20), new Vector3(0, 0, 0) };
-    readonly Vector3[] Enter1 = { new Vector3(-15, 1.5f, -5), new Vector3(0, 0, 0) };
-    readonly Vector3[] Enter2 = { new Vector3(-15, 1.5f, -5), new Vector3(0, 90, 0) };
-    readonly Vector3[] Enter3 = { new Vector3(0, 1.5f, -5), new Vector3(0, 90, 0) };
-    readonly Vector3[] Enter4 = { new Vector3(0, 1.5f, -5), new Vector3(0, 0, 0) };
+    readonly Vector3[] Enter0 = { new Vector3(-15, 1.5f, -15), new Vector3(0, 0, 0) };
+    readonly Vector3[] Enter1 = { new Vector3(-15, 1.5f, -2), new Vector3(0, 0, 0) };
+    readonly Vector3[] Enter2 = { new Vector3(-15, 1.5f, -2), new Vector3(0, 90, 0) };
+    readonly Vector3[] Enter3 = { new Vector3(0, 1.5f, -2), new Vector3(0, 90, 0) };
+    readonly Vector3[] Enter4 = { new Vector3(0, 1.5f, -2), new Vector3(0, 0, 0) };
     // 엎드려 쏴
-    readonly Vector3[] Prone0 = { new Vector3(0, 1.5f, -5), new Vector3(0, 0, 0) };
+    readonly Vector3[] Prone0 = { new Vector3(0, 1.5f, -2), new Vector3(0, 0, 0) };
     readonly Vector3[] Prone1 = { new Vector3(0, 0.5f, 0), new Vector3(0, 0, 0) };
     // 무릎 앉아 대기
     readonly Vector3[] Sitting0 = { new Vector3(0, 0.5f, 0), new Vector3(0, 0, 0) };
-    readonly Vector3[] Sitting1 = { new Vector3(0, 1.5f, -5), new Vector3(0, 0, 0) };
+    readonly Vector3[] Sitting1 = { new Vector3(0, 1.0f, -2), new Vector3(0, 0, 0) };
 
     private void Start()
     {

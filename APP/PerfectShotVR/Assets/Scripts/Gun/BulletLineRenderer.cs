@@ -24,8 +24,8 @@ public class BulletLineRenderer : MonoBehaviour
     // 0.01초마다 라인을 그림
     IEnumerator DrawLine()
     {
-        // 대략 3초동안.
-        while(idx < 300)
+        // 대략 5초동안.
+        while(idx < 500)
         {
             lineRenderer.positionCount = idx + 1;
             lineRenderer.SetPosition(idx++, transform.position);
