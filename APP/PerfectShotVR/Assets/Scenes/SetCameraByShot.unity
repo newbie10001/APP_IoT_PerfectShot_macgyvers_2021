@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deviceName: 
+  input: 0
   debugging: 0
   debugText: {fileID: 0}
 --- !u!4 &1261579617
@@ -3445,7 +3446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e12b6c4da60204398c0b2b1570b99d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 7110461558469326246}
 --- !u!4 &5876092356409665089
 Transform:
   m_ObjectHideFlags: 0
@@ -3500,7 +3500,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5876092356409665091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9547e8ab680bfc45a6778b4e2fdc0bd, type: 3}
   m_Name: 

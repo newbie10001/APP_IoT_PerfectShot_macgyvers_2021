@@ -628,6 +628,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1889127029638933609, guid: 1f75ffb85b72171498226e9984e79ddd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2960829535898730368, guid: 1f75ffb85b72171498226e9984e79ddd, type: 3}
       propertyPath: MuzzleObject
       value: 
@@ -958,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deviceName: 
+  input: 0
   debugging: 0
   debugText: {fileID: 0}
 --- !u!4 &1546989365
