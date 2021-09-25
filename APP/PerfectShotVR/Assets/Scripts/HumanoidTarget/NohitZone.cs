@@ -9,20 +9,9 @@ public class NohitZone : MonoBehaviour, ITarget
     // ÅºÂø ÁöÁ¡¿¡ ³õÀ» ÇÁ¸®ÆÕ.
     public GameObject hitMarkPrefab;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnHit(RaycastHit hit)
     {
         GameObject hithole = Instantiate(hitMarkPrefab, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
-        hithole.transform.parent = hit.transform;
+        hithole.transform.parent = this.transform;
     }
 }

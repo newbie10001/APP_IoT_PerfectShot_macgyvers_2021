@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 66
+  controlID: 92
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -97,7 +97,7 @@ MonoBehaviour:
     y: 0
     width: 1368
     height: 830
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -150,10 +150,10 @@ MonoBehaviour:
     y: 30
     width: 1368
     height: 780
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 65
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,9 +317,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 15, z: 200.2375}
+    m_Target: {x: 3.7589865, y: 32.509937, z: 300.42053}
     speed: 2
-    m_Value: {x: 0, y: 15, z: 200.2375}
+    m_Value: {x: 3.7589865, y: 32.509937, z: 300.42053}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -366,13 +366,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.15068959, y: -0.20974815, z: 0.03270262, w: -0.9655511}
+    m_Target: {x: 0.20416753, y: 0.12443854, z: -0.026145458, w: 0.9706742}
     speed: 2
-    m_Value: {x: -0.15068507, y: -0.20974188, z: 0.03270164, w: -0.96552217}
+    m_Value: {x: 0.20416127, y: 0.124434724, z: -0.026144657, w: 0.9706445}
   m_Size:
-    m_Target: 2.1374996
+    m_Target: 40.806923
     speed: 2
-    m_Value: 2.1374996
+    m_Value: 40.806923
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -449,10 +449,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8ae3ffffa6e3ffff4ee4ffff2ce7ffff42e7ffff4ae7ffff78e9ffff4cedffff68edffff26eeffff04f1ffff1af1ffff22f1ffff50f3ffffb8faffff52fbffffba3b0000
+      scrollPos: {x: 0, y: 415}
+      m_SelectedIDs: 34faffff
+      m_LastClickedID: -1484
+      m_ExpandedIDs: bcf8ffff78f9ffff50fbffff52fbffffb03a0000f43a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -551,22 +551,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/HumanoidTarget
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/HumanoidTarget
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\src\git_local\APP_IoT_PerfectShot\APP\PerfectShotVR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 883b0000
-    m_LastClickedID: 15240
-    m_ExpandedIDs: 00000000763b000000ca9a3b
+    m_SelectedIDs: 98410000
+    m_LastClickedID: 16792
+    m_ExpandedIDs: 00000000b4400000c840000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000763b0000
+    m_ExpandedIDs: 00000000b4400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
