@@ -23,7 +23,7 @@ public class RealShootingManager : MonoBehaviour
     // 사격 실시 절차를 밟는지 여부 off이면 바로 시작
     public bool useShootingSequence;
     // 사격 실시 절차
-    readonly string[] _shootingSeq = { "탄알집 인계\n(우상탄 이상무)", "탄알집 결합", "탄알 일발 장전", "조정간 단발" };
+    readonly string[] _shootingSeq = { "탄알집 인계\n(우상탄 20발 이상무)", "탄알집 결합", "탄알 일발 장전", "조정간 단발" };
     // 사격 종료 절차
     readonly string[] _shootEndingSeq = { "사격 종료", "조정간 안전", "탄알집 제거", "소총 놓고 무릎앉아대기", "" };
     // 타겟들을 세우는 순서. 가까운거(100m)부터 0번.
@@ -70,7 +70,7 @@ public class RealShootingManager : MonoBehaviour
         StartCoroutine(StartShooting());
     }
 
-    // 스킵 여부를 확인하기 위해 time초 동안 플레이어의 입력값을 관찰함.
+    // 스킵 여부를 확인하기 위해 endTime초 동안 플레이어의 입력값을 관찰함.
     bool playerSkip;
     IEnumerator SkipInputCheckForSeconds(float endTime)
     {
@@ -149,6 +149,7 @@ public class RealShootingManager : MonoBehaviour
         narrator.PlayInitiateShot();
         yield return new WaitForSeconds(3.0f);
     }
+
 
     // 사격 시작
     IEnumerator StartShooting()

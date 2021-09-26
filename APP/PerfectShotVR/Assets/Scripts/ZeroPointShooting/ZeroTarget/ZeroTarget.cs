@@ -14,7 +14,7 @@ public class ZeroTarget : MonoBehaviour, ITarget
     // 초기 위치
     private Vector3 _initPos;
     // 플레이어 눈앞 위치
-    private Vector3 DestPos { get => _initPos - new Vector3(0, 0, 21.5f); }
+    private Vector3 DestPos { get => _initPos - new Vector3(0, -0.5f, 23.5f); }
     // 맞은 지점들을 기록
     public List<Vector3> HitPoints { get; private set; }
 

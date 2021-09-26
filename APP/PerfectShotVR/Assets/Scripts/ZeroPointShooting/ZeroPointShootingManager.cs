@@ -12,6 +12,8 @@ using UnityEngine.UI;
 /// </summary>
 public class ZeroPointShootingManager : MonoBehaviour
 {
+    // 씬 내에 있는 플레이어
+    private GameObject player;
     // 플레이어가 들고 있는 총
     private Gun gun;
     // 한 턴마다 장전할 탄알 수
@@ -20,6 +22,8 @@ public class ZeroPointShootingManager : MonoBehaviour
     public GameObject ClickSettingMenu;
     // 안내 UI
     public Text Indicator;
+    // 사운드를 재생하는 스크립트
+    private RealShotNarrationSound narrator;
     // 영점사격지
     private ZeroTarget zeroPaper;
     // 영점을 획득했는지 여부
@@ -31,26 +35,158 @@ public class ZeroPointShootingManager : MonoBehaviour
 
     void Start()
     {
+        // 플레이어 할당
+        player = GameObject.FindGameObjectWithTag("Player");
+        // 총 할당
         gun = FindObjectOfType<Gun>();
+        // 타겟 할당
         zeroPaper = FindObjectOfType<ZeroTarget>();
+        // 현재 게임오브젝트 내에 있는 내레이션 컴포넌트 가져오기
+        narrator = GetComponent<RealShotNarrationSound>();
         StartCoroutine(StartShooting());
+    }
+
+    // 스킵 여부를 확인하기 위해 time초 동안 플레이어의 입력값을 관찰함.
+    bool playerSkip;
+    IEnumerator SkipInputCheckForSeconds(float endTime)
+    {
+        float t = 0;
+        playerSkip = false;
+        var playerController = player.GetComponent<PlayerController>();
+        while (true)
+        {
+            t += Time.deltaTime;
+            if (playerController.PlayerInput)
+            {
+                Debug.Log("장면 스킵");
+                playerSkip = true;
+                break;
+            }
+            if (t > endTime) break;
+            yield return null;
+        }
+    }
+
+    // 사로 입장 및 엎드려쏴
+    IEnumerator EnteringShootingLane()
+    {
+        RealShotPlayerMove playerMove = player.GetComponent<RealShotPlayerMove>();
+        Coroutine coroutine;
+        Indicator.text = "사로 입장";
+        narrator.PlayEntrance();
+        yield return new WaitForSeconds(1.5f);
+        coroutine = StartCoroutine(playerMove.EnteringShootingLane());
+        yield return SkipInputCheckForSeconds(9.0f);
+        // 스킵버튼이 눌려서 도착하였을 때
+        if (playerSkip)
+        {
+            StopCoroutine(coroutine);
+            playerMove.GoToShootingLane();
+        }
+    }
+
+    // 사격 준비 단계
+    IEnumerator GetReadyToShot()
+    {
+        Indicator.text = "사격 준비...";
+        narrator.PlaySetProne();
+        Indicator.text = "사수 엎드려 쏴";
+        yield return SkipInputCheckForSeconds(2.0f);
+        player.GetComponent<RealShotPlayerMove>().AssumingPronePosition();
+        do
+        {
+            if (!playerSkip)
+            {
+                // 부사수 탄알집 인계
+                Indicator.text = "부사수 탄알집 인계\n(좌상탄 5발 이상무)";
+                narrator.PlayTakeOverMagazine();
+                yield return SkipInputCheckForSeconds(3.0f);
+                if (playerSkip) break;
+                // 사수 탄알집 결합
+                Indicator.text = "사수 탄알집 결합";
+                narrator.PlayCombineMagazine();
+                yield return SkipInputCheckForSeconds(4.0f);
+                if (playerSkip) break;
+                // 탄알일발장전
+                Indicator.text = "탄알 일발 장전";
+                narrator.PlayLoadShot();
+                yield return SkipInputCheckForSeconds(2.5f);
+                if (playerSkip) break;
+                // 조정간 단발
+                Indicator.text = "조정간 단발";
+                narrator.PlaySetSingle();
+                yield return SkipInputCheckForSeconds(2.0f);
+                if (playerSkip) break;
+            }
+        } while (false);
+        // 탄알 장전
+        gun.Reload(AMMO);
+        Indicator.text = "사격 개시";
+        narrator.PlayInitiateShot();
+        yield return new WaitForSeconds(3.0f);
+    }
+
+    // 발사 개수 알려주는 부사수 역할
+    IEnumerator ShotCounting()
+    {
+        int lastAmmo = AMMO;
+        while (gun.Ammo > 0)
+        {
+            if (gun.Ammo < lastAmmo)
+            {
+                Indicator.text = $"{AMMO - gun.Ammo}발";
+                lastAmmo = gun.Ammo;
+            }
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    // 사격 종료 절차
+    IEnumerator ShotEnd()
+    {
+        Indicator.text = "사격 종료";
+        narrator.PlayShotEnd();
+        yield return new WaitForSeconds(2.0f);
+        // 조정간 안전
+        Indicator.text = "조정간 안전";
+        narrator.PlaySetSafe();
+        yield return new WaitForSeconds(2.0f);
+        // 탄알집 제거(분해)
+        Indicator.text = "탄알집 제거";
+        narrator.PlayDetachMagazine();
+        yield return new WaitForSeconds(2.0f);
+        // 사수 소총놓고 무릎앉아대기
+        Indicator.text = "사수 소총놓고 무릎앉아대기";
+        narrator.PlayLayGunAndSit();
+        yield return new WaitForSeconds(2.0f);
+        player.GetComponent<RealShotPlayerMove>().GetSittingPosition();
     }
 
     IEnumerator StartShooting()
     {
-        yield return new WaitForSeconds(1.0f);
+        // 플레이어를 조작하기 위한 스크립트
+        var playerController = player.GetComponent<PlayerController>();
+        // 시작 전에는 자이로 off
+        playerController.SetGyroEnabled(false);
+        // 사로 입장
+        yield return EnteringShootingLane();
+        yield return SkipInputCheckForSeconds(2.0f);
+        playerController.SetGyroEnabled(true);
         // 5발씩 3번 사격
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
+            // 사격 준비
+            yield return GetReadyToShot();
+            StartCoroutine(ShotCounting());
             zeroPaper.MoveToSet();
-            gun.Reload(AMMO);
             Indicator.text = "사격 개시";
             while (gun.Ammo > 0)
             {
                 yield return new WaitForSeconds(1.0f);
             }
+            yield return ShotEnd();
             // ammo발이 전부 맞지 않았을 경우를 대비.
-            if(zeroPaper.HitPoints.Count < AMMO)
+            if (zeroPaper.HitPoints.Count < AMMO)
             {
                 Indicator.text = $"{JudgePoints(zeroPaper.HitPoints)}";
             }
@@ -77,6 +213,9 @@ public class ZeroPointShootingManager : MonoBehaviour
     private bool isSettingDone;
     IEnumerator StartClickSetting()
     {
+        Indicator.text = "표적지 확인";
+        // narrator.표적지확인() --> 예정
+        yield return new WaitForSeconds(2.0f);
         if(!ClickSettingMenu.activeSelf) ClickSettingMenu.GetComponent<ToggleObject>().Toggle();
         zeroPaper.MoveToPlayer();
         isSettingDone = false;
@@ -173,7 +312,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         Debug.Log($"X축 표준편차 : {stdDevX}, Y축 표준편차 : {stdDevY}");
         // 결과 판정
         // 표준편차의 커트라인
-        const float STD_DEV_CUT = 0.02f;
+        const float STD_DEV_CUT = 0.03f;
         // 탄착군이 좌우로 넓게 형성되었는가?
         bool isWide = stdDevX > STD_DEV_CUT;
         // 탄착군이 상하로 넓게 형성되었는가?
