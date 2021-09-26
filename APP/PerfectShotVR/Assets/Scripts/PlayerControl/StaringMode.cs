@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class StaringMode : MonoBehaviour
 {
     // 곧 응시모드의 시간을 설정할 수 있는 방법을 구현
-    public float TriggerTime { get { return PlayerPrefs.GetFloat("StaringTime") == default(float) ? 1.5f : PlayerPrefs.GetFloat("StaringTime"); } }
+    public float TriggerTime { get { return PlayerPrefs.GetFloat("StaringTime") == default ? 1.5f : PlayerPrefs.GetFloat("StaringTime"); } }
     float elapsed;
     Gun gun;
     // 응시모드 원형 UI

@@ -70,20 +70,51 @@ public class RealShootingManager : MonoBehaviour
         StartCoroutine(StartShooting());
     }
 
+    // 스킵 여부를 확인하기 위해 time초 동안 플레이어의 입력값을 관찰함.
+    bool playerSkip;
+    IEnumerator SkipInputCheckForSeconds(float endTime)
+    {
+        float t = 0;
+        playerSkip = false;
+        var playerController = player.GetComponent<PlayerController>();
+        while (true)
+        {
+            t += Time.deltaTime;
+            if (playerController.PlayerInput)
+            {
+                Debug.Log("장면 스킵");
+                playerSkip = true;
+                break;
+            }
+            if (t > endTime) break;
+            yield return null;
+        }
+    }
+
     // 사로 입장 및 엎드려쏴
     IEnumerator EnteringShootingLane()
     {
         RealShotPlayerMove playerMove = player.GetComponent<RealShotPlayerMove>();
+        Coroutine coroutine;
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
-        yield return new WaitForSeconds(1.0f);
-        yield return playerMove.EnteringShootingLane();
-        yield return new WaitForSeconds(2.0f);
+        yield return SkipInputCheckForSeconds(1.0f);
+        if(playerSkip) yield break;
+        coroutine = StartCoroutine(playerMove.EnteringShootingLane());
+        yield return SkipInputCheckForSeconds(9.0f);
+        // 스킵버튼이 눌려서 도착하였을 때
+        if (playerSkip)
+        {
+            StopCoroutine(coroutine);
+            playerMove.GoToShootingLane();
+        }
         narrator.PlaySetProne();
         Indicator.text = "사수 엎드려 쏴";
-        yield return new WaitForSeconds(2.0f);
+        yield return SkipInputCheckForSeconds(2.0f);
+        if (playerSkip) yield break;
         playerMove.AssumingPronePosition();
-        yield return new WaitForSeconds(1.0f);
+        yield return SkipInputCheckForSeconds(2.0f);
+        if (playerSkip) yield break;
     }
 
     // 사격 준비 단계
@@ -130,7 +161,7 @@ public class RealShootingManager : MonoBehaviour
         // 사격 시작 때는 자이로 on
         playerController.SetGyroEnabled(true);
         // 발사 개수 세기 (한 발, 두 발...)
-        StartCoroutine(ShotCheck());
+        StartCoroutine(ShotCounting());
         // 타겟을 순서에 따라 세움.
         foreach(int t in _targetSeq)
         {
@@ -174,7 +205,7 @@ public class RealShootingManager : MonoBehaviour
     }
 
     // 발사 개수 알려주는 부사수 역할
-    IEnumerator ShotCheck()
+    IEnumerator ShotCounting()
     {
         int lastAmmo = _ammo;
         while(gun.Ammo > 0)
@@ -220,7 +251,7 @@ public class RealShootingManager : MonoBehaviour
         for(int i = 0; i < targets.Count; i++)
         {
             targets[i].OnlyGetUp();
-            StartCoroutine(Utility.MoveTo(targets[i].transform, resultPos[i], 1f));
+            StartCoroutine(Utility.MoveTo(targets[i].transform, resultPos[i], 1f / 5.0f));
         }
         targets[0].ShowResult($"{targets[0].Hits.Count} / 9");
         targets[1].ShowResult($"{targets[1].Hits.Count} / 9");

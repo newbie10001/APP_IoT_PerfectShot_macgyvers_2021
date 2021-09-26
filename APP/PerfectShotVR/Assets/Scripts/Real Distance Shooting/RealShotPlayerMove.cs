@@ -24,11 +24,6 @@ public class RealShotPlayerMove : MonoBehaviour
     readonly Vector3[] Sitting0 = { new Vector3(0, 0.5f, 0), new Vector3(0, 0, 0) };
     readonly Vector3[] Sitting1 = { new Vector3(0, 1.0f, -2), new Vector3(0, 0, 0) };
 
-    private void Start()
-    {
-
-    }
-
     /// <summary>
     /// {위치, 회전} 값을 두 개 받아 from에서 to로 상태 이동
     /// </summary>
@@ -43,28 +38,39 @@ public class RealShotPlayerMove : MonoBehaviour
         StartCoroutine(Utility.RotateTo(this.transform, to[1], 1.0f / time));
     }
 
-    // 사로 입장
+    public void SkipCheckMove(ref bool skip, IEnumerator coroutine)
+    {
+        StartCoroutine(coroutine);
+        while (true)
+        {
+            if (skip)
+            {
+                StopCoroutine(coroutine);
+                break;
+            }
+        }
+    }
+
+    // 사로 입장 약 7초 가량 걸림
     public IEnumerator EnteringShootingLane()
     {
         // 시작 지점으로 가기
         transform.position = Enter0[0];
         transform.eulerAngles = Enter0[1];
         yield return new WaitForSeconds(2.0f);
-        StartCoroutine(Utility.MoveTo(transform, Enter1[0], 1.5f / 3.0f));
-        yield return new WaitForSeconds(1.5f);
+        yield return Utility.MoveTo(transform, Enter1[0], 1.5f / 3.0f);
         // 회전
-        StartCoroutine(Utility.RotateTo(transform, Enter2[1], 1.5f));
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(Utility.MoveTo(transform, Enter3[0], 1.0f / 3.0f));
-        yield return new WaitForSeconds(2.5f);
+        yield return Utility.RotateTo(transform, Enter2[1], 1.5f);
+        yield return Utility.MoveTo(transform, Enter3[0], 1.0f / 3.0f);
         // 회전
-        StartCoroutine(Utility.RotateTo(transform, Enter4[1], 1.5f));
+        yield return (Utility.RotateTo(transform, Enter4[1], 1.5f));
     }
 
     // 엎드려 쏴
     public void AssumingPronePosition()
     {
         transform.position = Prone0[0];
+        transform.eulerAngles = Prone0[1];
         StartCoroutine(Utility.MoveTo(transform, Prone1[0], 1.25f));
     }
 
@@ -73,5 +79,11 @@ public class RealShotPlayerMove : MonoBehaviour
     {
         transform.position = Sitting0[0];
         StartCoroutine(Utility.MoveSlerpTo(transform, Sitting1[0], 2.0f));
+    }
+
+    // 어떤 위치에서든 즉시 사로입장
+    public void GoToShootingLane()
+    {
+        MoveToState(new Vector3[] { transform.position, transform.eulerAngles}, Enter4, 1.0f );
     }
 }
