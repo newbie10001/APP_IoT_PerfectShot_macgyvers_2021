@@ -98,8 +98,7 @@ public class RealShootingManager : MonoBehaviour
         Coroutine coroutine;
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
-        yield return SkipInputCheckForSeconds(1.0f);
-        if(playerSkip) yield break;
+        yield return new WaitForSeconds(1.5f);
         coroutine = StartCoroutine(playerMove.EnteringShootingLane());
         yield return SkipInputCheckForSeconds(9.0f);
         // 스킵버튼이 눌려서 도착하였을 때
@@ -110,36 +109,40 @@ public class RealShootingManager : MonoBehaviour
         }
         narrator.PlaySetProne();
         Indicator.text = "사수 엎드려 쏴";
-        yield return SkipInputCheckForSeconds(2.0f);
-        if (playerSkip) yield break;
+        yield return new WaitForSeconds(2.0f);
         playerMove.AssumingPronePosition();
-        yield return SkipInputCheckForSeconds(2.0f);
-        if (playerSkip) yield break;
     }
 
     // 사격 준비 단계
     IEnumerator GetReadyToShot()
     {
         Indicator.text = "사격 준비...";
-        if (useShootingSequence)
+        do
         {
-            // 부사수 탄알집 인계
-            Indicator.text = _shootingSeq[0];
-            narrator.PlayTakeOverMagazine();
-            yield return new WaitForSeconds(3.0f);
-            // 사수 탄알집 결합
-            Indicator.text = _shootingSeq[1];
-            narrator.PlayCombineMagazine();
-            yield return new WaitForSeconds(4.0f);
-            // 탄알일발장전
-            Indicator.text = _shootingSeq[2];
-            narrator.PlayLoadShot();
-            yield return new WaitForSeconds(2.5f);
-            // 조정간 단발
-            Indicator.text = _shootingSeq[3];
-            narrator.PlaySetSingle();
-            yield return new WaitForSeconds(2.0f);
-        }
+            if (!playerSkip)
+            {
+                // 부사수 탄알집 인계
+                Indicator.text = _shootingSeq[0];
+                narrator.PlayTakeOverMagazine();
+                yield return SkipInputCheckForSeconds(3.0f);
+                if (playerSkip) break;
+                // 사수 탄알집 결합
+                Indicator.text = _shootingSeq[1];
+                narrator.PlayCombineMagazine();
+                yield return SkipInputCheckForSeconds(4.0f);
+                if (playerSkip) break;
+                // 탄알일발장전
+                Indicator.text = _shootingSeq[2];
+                narrator.PlayLoadShot();
+                yield return SkipInputCheckForSeconds(2.5f);
+                if (playerSkip) break;
+                // 조정간 단발
+                Indicator.text = _shootingSeq[3];
+                narrator.PlaySetSingle();
+                yield return SkipInputCheckForSeconds(2.0f);
+                if (playerSkip) break;
+            }
+        } while (false);
         // 탄알 장전
         gun.Reload(_ammo);
         Indicator.text = "사격 개시";
@@ -156,6 +159,7 @@ public class RealShootingManager : MonoBehaviour
         playerController.SetGyroEnabled(false);
         // 사로 입장
         yield return EnteringShootingLane();
+        yield return SkipInputCheckForSeconds(2.0f);
         // 사격 준비
         yield return GetReadyToShot();
         // 사격 시작 때는 자이로 on
