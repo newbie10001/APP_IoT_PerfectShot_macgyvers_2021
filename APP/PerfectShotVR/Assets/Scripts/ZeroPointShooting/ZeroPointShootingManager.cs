@@ -176,9 +176,9 @@ public class ZeroPointShootingManager : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             // 사격 준비
+            zeroPaper.MoveToSet();
             yield return GetReadyToShot();
             StartCoroutine(ShotCounting());
-            zeroPaper.MoveToSet();
             Indicator.text = "사격 개시";
             while (gun.Ammo > 0)
             {
@@ -213,8 +213,9 @@ public class ZeroPointShootingManager : MonoBehaviour
     private bool isSettingDone;
     IEnumerator StartClickSetting()
     {
+        yield return new WaitForSeconds(1.0f);
         Indicator.text = "표적지 확인";
-        // narrator.표적지확인() --> 예정
+        narrator.PlayCheckPaper();
         yield return new WaitForSeconds(2.0f);
         if(!ClickSettingMenu.activeSelf) ClickSettingMenu.GetComponent<ToggleObject>().Toggle();
         zeroPaper.MoveToPlayer();
@@ -228,6 +229,7 @@ public class ZeroPointShootingManager : MonoBehaviour
             isSettingDone = !ClickSettingMenu.activeSelf;
             yield return new WaitForSeconds(1.0f);
         }
+        gun.Reload(0);
         yield return null;
     }
 
@@ -291,7 +293,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         // 커트라인 (중앙으로부터 5크리크 이내에 있어야 영점을 획득했다고 판정)
         float _cutOffPoint = 0.075f;
         // 중앙 지점(플레이어가 직선 정면으로 총을 쐈을 때, 탄도학 반영)
-        Vector3 _curPos = GameObject.FindWithTag("Player").transform.position;
+        Vector2 _curPos = new Vector2(0, 0.5f);
         Vector2 _center = new Vector2(_curPos.x, _curPos.y) - new Vector2(0, 0.015f);
         foreach (Vector3 _point in points)
         {
@@ -332,7 +334,7 @@ public class ZeroPointShootingManager : MonoBehaviour
     public void AutoSetClick()
     {
         // 중앙 지점(플레이어가 직선 전방으로 총을 쏠 때)
-        Vector3 _curPos = GameObject.FindWithTag("Player").transform.position;
+        Vector2 _curPos = new Vector2(0, 0.5f);
         Vector2 _center = new Vector2(_curPos.x, _curPos.y) - new Vector2(0, 0.015f);
         // 한 칸마다의 거리는 0.015유닛(현실은 7mm지만 크기를 고려하여...)
         const float DISTANCE_PER_CLICK = 0.015f;

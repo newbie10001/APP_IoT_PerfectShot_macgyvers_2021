@@ -352,17 +352,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb0e1c3e21d5d3949b8d735c22b9e47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Entrance: {fileID: 8300000, guid: d9ccc8ff8c552ef4881865face9bfbeb, type: 3}
-  SetProne: {fileID: 8300000, guid: f86640d63e41d1d46a29b42b36a3625f, type: 3}
-  TakeOverMagazine: {fileID: 8300000, guid: 8ca34a04ee56d2d43b14421074923dc7, type: 3}
-  CombineMagazine: {fileID: 8300000, guid: 88ad72130eaa8cf429b747409ceac36d, type: 3}
-  LoadShot: {fileID: 8300000, guid: d74fca0974a68074fa97c34bd266668b, type: 3}
-  SetSingle: {fileID: 8300000, guid: 31b6cb54563b1d645b5101c0220ca2db, type: 3}
-  InitiateShot: {fileID: 8300000, guid: cad61f498d2250840a7cb35fe15d9fb7, type: 3}
-  ShotEnd: {fileID: 8300000, guid: f13813ae3ed2c85419c42a1fbdffdef3, type: 3}
-  SetSafe: {fileID: 8300000, guid: 51c807d71175a1f4fa62691a4921c682, type: 3}
-  DetachMagazine: {fileID: 8300000, guid: b04468b3de85ab74bba6e0f0ef8d614c, type: 3}
-  LayGunAndSit: {fileID: 8300000, guid: de5b44384a087f843a9de58f483c4a99, type: 3}
+  Entrance: {fileID: 8300000, guid: fc089ba0e9b083141a8e9f8355ffaac7, type: 3}
+  SetProne: {fileID: 8300000, guid: 02f69720aea70bf4aae7d7c9adfec726, type: 3}
+  TakeOverMagazine: {fileID: 8300000, guid: 9f6734ce358c4a545b915a3c749bbbde, type: 3}
+  CombineMagazine: {fileID: 8300000, guid: 6746fd1b2dd525a4d954b813d0da6c1f, type: 3}
+  LoadShot: {fileID: 8300000, guid: 2b8ae4d232020cd47bd36f9cda5db13a, type: 3}
+  SetSingle: {fileID: 8300000, guid: c401c3a6a9df10a44bde40bc68e9a991, type: 3}
+  InitiateShot: {fileID: 8300000, guid: da50204fe6b7a05439ae7f1d8112f9c2, type: 3}
+  Sound100: {fileID: 8300000, guid: 086c76a583ae6de4f853185a87da23e6, type: 3}
+  Sound200: {fileID: 8300000, guid: 0eaf4aa6cabb3774b9b04bab8ebc5df7, type: 3}
+  Sound250: {fileID: 8300000, guid: cb7bc03137b43ff41a00f0df6855b103, type: 3}
+  CheckPaper: {fileID: 8300000, guid: 6b156402d6d83ee4c946b44b1f9907b2, type: 3}
+  ShotEnd: {fileID: 8300000, guid: ceb7185c8d988ac4080a00155d7103a0, type: 3}
+  SetSafe: {fileID: 8300000, guid: 651ed779f66c24c46ab1041d98d0b6b0, type: 3}
+  DetachMagazine: {fileID: 8300000, guid: ad0089941930ee448a64312bd8169cc4, type: 3}
+  LayGunAndSit: {fileID: 8300000, guid: f60fb18fb08682841ba3794104d78b93, type: 3}
 --- !u!1 &784418350
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1711919033062332132, guid: 5525fe2b13d992347b6a2ac4623639cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1711919033062332132, guid: 5525fe2b13d992347b6a2ac4623639cd, type: 3}
       propertyPath: m_LocalRotation.w

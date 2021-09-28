@@ -23,6 +23,15 @@ public class RealShotNarrationSound : MonoBehaviour
     // 사격 개시
     public AudioClip InitiateShot;
 
+    // 100m 음성
+    public AudioClip Sound100;
+    // 200m 음성
+    public AudioClip Sound200;
+    // 250m 음성
+    public AudioClip Sound250;
+    // 표적지 확인
+    public AudioClip CheckPaper;
+
     // 사격 종료
     public AudioClip ShotEnd;
     // 조정간 안전
@@ -56,7 +65,12 @@ public class RealShotNarrationSound : MonoBehaviour
     // 사격개시
     public void PlayInitiateShot() => audioSource.PlayOneShot(InitiateShot);
     #endregion
-
+    #region 사격 중 음성
+    public void Play100m() => audioSource.PlayOneShot(Sound100);
+    public void Play200m() => audioSource.PlayOneShot(Sound200);
+    public void Play250m() => audioSource.PlayOneShot(Sound250);
+    public void PlayCheckPaper() => audioSource.PlayOneShot(CheckPaper);
+    #endregion
     #region 사격 종료 절차
     // 사격 종료
     public void PlayShotEnd() => audioSource.PlayOneShot(ShotEnd);

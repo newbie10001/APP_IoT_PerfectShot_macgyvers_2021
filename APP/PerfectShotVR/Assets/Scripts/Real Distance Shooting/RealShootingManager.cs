@@ -172,6 +172,18 @@ public class RealShootingManager : MonoBehaviour
         {
             targets[t].GetUp();
             Indicator.text = _targetName[t];
+            switch (t)
+            {
+                case 0:
+                    narrator.Play100m();
+                    break;
+                case 1:
+                    narrator.Play200m();
+                    break;
+                case 2:
+                    narrator.Play250m();
+                    break;
+            }
             yield return new WaitForSeconds(_times[t]);
             targets[t].GetDown();
             yield return new WaitForSeconds(3.0f);

@@ -49,7 +49,9 @@ public class GameManager : MonoBehaviour
         }
         set
         {
-            SetVector2("Click", value);
+            float x = Mathf.Clamp(value.x, -17, 17);
+            float y = Mathf.Clamp(value.y, -20, 20);
+            SetVector2("Click", new Vector2(x, y));
         }
     }
     /// <summary>
