@@ -18,6 +18,7 @@ public class ZeroTarget : MonoBehaviour, ITarget
     // 맞은 지점들을 기록
     public List<Vector3> HitPoints { get; private set; }
 
+
     void Start()
     {
         HitPoints = new List<Vector3>();

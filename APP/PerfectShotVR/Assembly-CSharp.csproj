@@ -98,6 +98,9 @@
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\BTManager.cs" />
     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
     <Compile Include="Assets\Scripts\Interface\IMuzzle.cs" />
+    <Compile Include="Assets\Scripts\KeepRotate.cs" />
+    <Compile Include="Assets\Scripts\Interface\IReactAtLooking.cs" />
+    <Compile Include="Assets\Scripts\PlayerControl\PlayerLooking.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Imported Assets\TextMesh Pro\Shaders\TMPro.cginc" />

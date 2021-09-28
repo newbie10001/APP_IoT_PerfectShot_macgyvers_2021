@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,7 +30,7 @@ public class GyroRotate : MonoBehaviour
     }
 
     // 중력이 향하는 기준점인 e_y 벡터
-    // 가속도 센서에서 받은 값과 e_y가 양의 방향으로 이루는 각도가 바로 카메라의 z회전값이다.
+    // 가속도 센서의 벡터와 e_y가 이루는 각도가 z방향 회전값이다.
     readonly Vector3 e_y = new Vector3(0, -1, 0);
     float GetZAxisAngle()
     {

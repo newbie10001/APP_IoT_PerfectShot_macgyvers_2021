@@ -1,13 +1,13 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÃÑ°ıÀûÀÎ °ÔÀÓ ¸Å´ÏÀú·Î¼­, °ÔÀÓÀÇ ±âº» ¼³Á¤ÀÌ³ª »ç¿ëÀÚ »óÈ£ÀÛ¿ë ¸Ş´º¸¦ °ü¸®ÇÑ´Ù.
-// °ÔÀÓ Á¾·ù¿¡ µû¶ó ¼­ºê¸Å´ÏÀú¸¦ È£ÃâÇØ ÀÌ¿ëÇÒ ¼ö ÀÖµµ·Ï ÇÑ´Ù.
+// ì´ê´„ì ì¸ ê²Œì„ ë§¤ë‹ˆì €ë¡œì„œ, ê²Œì„ì˜ ê¸°ë³¸ ì„¤ì •ì´ë‚˜ ì‚¬ìš©ì ìƒí˜¸ì‘ìš© ë©”ë‰´ë¥¼ ê´€ë¦¬í•œë‹¤.
+// ê²Œì„ ì¢…ë¥˜ì— ë”°ë¼ ì„œë¸Œë§¤ë‹ˆì €ë¥¼ í˜¸ì¶œí•´ ì´ìš©í•  ìˆ˜ ìˆë„ë¡ í•œë‹¤.
 public class GameManager : MonoBehaviour
 {
     /// <summary>
-    /// ½Ì±ÛÅæ ÆĞÅÏ
+    /// ì‹±ê¸€í†¤ íŒ¨í„´
     /// </summary>
     #region singleton
     public static GameManager instance
@@ -25,10 +25,10 @@ public class GameManager : MonoBehaviour
     private static GameManager m_instance;
     #endregion
     /// <summary>
-    /// ¼³Á¤°ªµéÀº ÇÁ·ÎÆÛÆ¼·Î ±¸Çö
+    /// ì„¤ì •ê°’ë“¤ì€ í”„ë¡œí¼í‹°ë¡œ êµ¬í˜„
     /// </summary>
     #region setting values
-    // Ä«¸Ş¶ó ½ÃÇÁÆ® ÃÊ±â°ª
+    // ì¹´ë©”ë¼ ì‹œí”„íŠ¸ ì´ˆê¸°ê°’
     public Vector2 InitialCameraShift
     {
         get
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
             SetVector2("InitialCameraShift", value);
         }
     }
-    // ÃÑÀÇ Å©¸®Å© °ª Á¶Á¤. °¢°¢ ÁÂ¿ì, »óÇÏ
+    // ì´ì˜ í¬ë¦¬í¬ ê°’ ì¡°ì •. ê°ê° ì¢Œìš°, ìƒí•˜
     public Vector2 Click
     {
         get
@@ -55,12 +55,12 @@ public class GameManager : MonoBehaviour
         }
     }
     /// <summary>
-    /// bool °ªÀ» int·Î ¹Ş¾Æ¿Â´Ù.
-    /// 0 : ¼³Á¤µÇÁö ¾ÊÀ½. ±âº»°ª ÇÒ´ç
+    /// bool ê°’ì„ intë¡œ ë°›ì•„ì˜¨ë‹¤.
+    /// 0 : ì„¤ì •ë˜ì§€ ì•ŠìŒ. ê¸°ë³¸ê°’ í• ë‹¹
     /// 1 : true
     /// -1 : false
     /// </summary>
-    // °¡´Æ¼è UI È°¼ºÈ­ ¿É¼Ç. 0ÀÌ¸é false ¹İÈ¯
+    // ê°€ëŠ ì‡  UI í™œì„±í™” ì˜µì…˜. 0ì´ë©´ false ë°˜í™˜
     public bool FrontSightEnabled
     {
         get
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
             else PlayerPrefs.SetInt("FrontSightEnabled", -1);
         }
     }
-    // ÃÑÀÇ È°¼ºÈ­ ¿©ºÎ
+    // ì´ì˜ í™œì„±í™” ì—¬ë¶€
     public bool GunState
     {
         get
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
             else PlayerPrefs.SetInt("GunState", -1);
         }
     }
-    // ºí·çÅõ½º È°¼ºÈ­ ¿©ºÎ
+    // ë¸”ë£¨íˆ¬ìŠ¤ í™œì„±í™” ì—¬ë¶€
     public bool Bluetooth
     {
         get
@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             else PlayerPrefs.SetInt("Bluetooth", -1);
         }
     }
-    // ÀÀ½Ã¸ğµå È°¼ºÈ­ ¿©ºÎ
+    // ì‘ì‹œëª¨ë“œ í™œì„±í™” ì—¬ë¶€
     public bool StaringMode
     {
         get
@@ -122,12 +122,12 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    // ¼³Á¤°ªÀ¸·Î Vector2¸¦ ÀúÀåÇÏ±â À§ÇÑ Á¤Àû ¸Ş¼­µå.
+    // ì„¤ì •ê°’ìœ¼ë¡œ Vector2ë¥¼ ì €ì¥í•˜ê¸° ìœ„í•œ ì •ì  ë©”ì„œë“œ.
     public static void SetVector2(string key, Vector2 vector2)
     {
         PlayerPrefs.SetFloat(key + "X", vector2.x);
         PlayerPrefs.SetFloat(key + "Y", vector2.y);
-        Debug.Log($"{key} ¼³Á¤ : ({vector2.x}, {vector2.y})");
+        Debug.Log($"{key} ì„¤ì • : ({vector2.x}, {vector2.y})");
     }
     public static Vector2 GetVector2(string key)
     {
@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // È­¸é ²¨Áü ¹æÁö
+        // í™”ë©´ êº¼ì§ ë°©ì§€
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
     }
 }

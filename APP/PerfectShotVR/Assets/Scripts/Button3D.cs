@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,9 +6,9 @@ using UnityEngine.EventSystems;
 
 public class Button3D: MonoBehaviour, ITarget
 {
-    // ½ÇÁ¦·Î ÀÛµ¿µÉ ¹öÆ°À» ÄÄÆ÷³ÍÆ®·Î ÇÒ´ç
+    // ì‹¤ì œë¡œ ì‘ë™ë  ë²„íŠ¼ì„ ì»´í¬ë„ŒíŠ¸ë¡œ í• ë‹¹
     private Button _button;
-    // Áøµ¿ È¿°ú°¡ ¹ß»ıÇÏ°í µ¹¾Æ°¥ À§Ä¡.
+    // ì§„ë™ íš¨ê³¼ê°€ ë°œìƒí•˜ê³  ëŒì•„ê°ˆ ìœ„ì¹˜.
     private Vector3 originPos;
 
     private void Start()
@@ -26,10 +26,10 @@ public class Button3D: MonoBehaviour, ITarget
     }
 
     /// <summary>
-    /// ¿ÀºêÁ§Æ®¸¦ Èçµå´Â ÇÔ¼ö
+    /// ì˜¤ë¸Œì íŠ¸ë¥¼ í”ë“œëŠ” í•¨ìˆ˜
     /// </summary>
-    /// <param name="_amount">Áøµ¿ ¼¼±â</param>
-    /// <param name="_duration">Áøµ¿ ½Ã°£</param>
+    /// <param name="_amount">ì§„ë™ ì„¸ê¸°</param>
+    /// <param name="_duration">ì§„ë™ ì‹œê°„</param>
     /// <returns></returns>
     public IEnumerator Shake(float _amount, float _duration)
     {
