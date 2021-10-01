@@ -15,11 +15,11 @@ C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-2676
+1174
 Successfully changed project path to: C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR
 C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 36.36 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1291 +35,229 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001367 seconds.
+Registered in 0.001509 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 26.19 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.810 seconds
+- Completed reload, in  4.329 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001266 seconds.
+Registered in 0.001220 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.791 seconds
+- Completed reload, in  0.878 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1181 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 76.9 MB.
-System memory in use after: 77.0 MB.
+System memory in use before: 77.1 MB.
+System memory in use after: 77.2 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1640.
-Total: 1.565400 ms (FindLiveObjects: 0.112000 ms CreateObjectMapping: 0.034500 ms MarkObjects: 1.284900 ms  DeleteObjects: 0.132900 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1641.
+Total: 2.269800 ms (FindLiveObjects: 0.141900 ms CreateObjectMapping: 0.061300 ms MarkObjects: 1.911500 ms  DeleteObjects: 0.153800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs
-  artifactKey: Guid(e1dd350f3f35b6c4d89f78aa1c3ce9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs using Guid(e1dd350f3f35b6c4d89f78aa1c3ce9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de04ce09d67d6228c3692f0a1c3665a3') in 0.008623 seconds
-  Import took 0.010679 seconds .
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(67714a4bfdb36d24da590885b0803fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(67714a4bfdb36d24da590885b0803fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0692ae52dd6c345850af15eb4122bc04') in 0.262876 seconds
+  Import took 0.266802 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000552 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows
-  artifactKey: Guid(5e73a584303c1f6499ba0e34cef9f661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows using Guid(5e73a584303c1f6499ba0e34cef9f661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8091365c4072ef709c3180024699c3c4') in 0.005812 seconds
-  Import took 0.007841 seconds .
+  Time since last request: 1.478151 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(355a2c0b649c14f4fb73cc0d4e5b1558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(355a2c0b649c14f4fb73cc0d4e5b1558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68874725d90daa2ec7b4a286c3e24321') in 0.010505 seconds
+  Import took 0.014866 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.465911 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow01.prefab
-  artifactKey: Guid(167c086585a7da8449ed8c950a365d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow01.prefab using Guid(167c086585a7da8449ed8c950a365d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3843d3a481e8570ff9aa743345bbbed4') in 0.159774 seconds
-  Import took 0.163874 seconds .
+  Time since last request: 126.755672 seconds.
+  path: Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf
+  artifactKey: Guid(a5ef2586b7c63f946a752c5342803eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf using Guid(a5ef2586b7c63f946a752c5342803eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcea7c70ea993601ca59935c38134b4') in 0.138624 seconds
+  Import took 0.142278 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow12.prefab
-  artifactKey: Guid(df6492b708b6be5419c7e6b5d9f5c2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow12.prefab using Guid(df6492b708b6be5419c7e6b5d9f5c2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a810f1917302e4ce1d28095ea92c3dd') in 0.013007 seconds
-  Import took 0.015287 seconds .
+  Time since last request: 0.000359 seconds.
+  path: Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundL.ttf
+  artifactKey: Guid(4b178b9f6420fa848adb9736d9037916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundL.ttf using Guid(4b178b9f6420fa848adb9736d9037916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e79b72b597136a8e09a94bb692722af') in 0.021232 seconds
+  Import took 0.024867 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow28.prefab
-  artifactKey: Guid(b6c310379784fa14eabfca787f21f527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow28.prefab using Guid(b6c310379784fa14eabfca787f21f527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b305403330c7241f04631d8bb6affe') in 0.013827 seconds
-  Import took 0.016172 seconds .
+  Time since last request: 0.000391 seconds.
+  path: Assets/Fonts/강한육군체TTF/강한육군 Bold.ttf
+  artifactKey: Guid(6dc4a44dee234cd47a16314af08d5426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/강한육군체TTF/강한육군 Bold.ttf using Guid(6dc4a44dee234cd47a16314af08d5426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7f78d70d573032e3e7bb1a74ce2f0b') in 0.023746 seconds
+  Import took 0.028513 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow06.prefab
-  artifactKey: Guid(adc199897cf9e32419d3a6c39d1e5068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow06.prefab using Guid(adc199897cf9e32419d3a6c39d1e5068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd042479e7a2aa7e12385d14bbe190bab') in 0.023828 seconds
-  Import took 0.026142 seconds .
+  Time since last request: 0.000565 seconds.
+  path: Assets/Fonts/강한육군체TTF/강한육군 Bold Vert.ttf
+  artifactKey: Guid(c7d3257267abde54a8059ae046b02455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/강한육군체TTF/강한육군 Bold Vert.ttf using Guid(c7d3257267abde54a8059ae046b02455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19a68eb590e892f3158b5e7b5d9b4f5') in 0.042750 seconds
+  Import took 0.046815 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow14.prefab
-  artifactKey: Guid(5a5354a6eaee5364f89e3d9ed9d5ebe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow14.prefab using Guid(5a5354a6eaee5364f89e3d9ed9d5ebe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ef0091c9617fa69e131d52eb78580f') in 0.076799 seconds
-  Import took 0.080077 seconds .
+  Time since last request: 0.000268 seconds.
+  path: Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf
+  artifactKey: Guid(a5ef2586b7c63f946a752c5342803eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundB.ttf using Guid(a5ef2586b7c63f946a752c5342803eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcea7c70ea993601ca59935c38134b4') in 0.042332 seconds
+  Import took 0.045933 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000697 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow15.prefab
-  artifactKey: Guid(841a72298c7e35b478eaab0b4c0b659b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow15.prefab using Guid(841a72298c7e35b478eaab0b4c0b659b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb9ca173ca59e4efbb994760410d721') in 0.029279 seconds
-  Import took 0.033074 seconds .
+  Time since last request: 0.000253 seconds.
+  path: Assets/Fonts/강한육군체TTF/강한육군 Medium.ttf
+  artifactKey: Guid(d6bf9491b1502c2488dbcb2287b2917c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/강한육군체TTF/강한육군 Medium.ttf using Guid(d6bf9491b1502c2488dbcb2287b2917c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd247a403669d5b2057f79b1802861998') in 0.018036 seconds
+  Import took 0.021507 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000315 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow25.prefab
-  artifactKey: Guid(1323693182c8485458f25dbce1d9baa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow25.prefab using Guid(1323693182c8485458f25dbce1d9baa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd797536c1810e87868260f66d283b912') in 0.033704 seconds
-  Import took 0.037123 seconds .
+  Time since last request: 0.000275 seconds.
+  path: Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundEB.ttf
+  artifactKey: Guid(09cd44fc16bd44b429350a5a5cc84523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundEB.ttf using Guid(09cd44fc16bd44b429350a5a5cc84523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca9b37c01503b2fa0490564002719d0') in 0.042812 seconds
+  Import took 0.046546 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000508 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow39.prefab
-  artifactKey: Guid(ef8fb04193b63ab4b954b8da298c8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow39.prefab using Guid(ef8fb04193b63ab4b954b8da298c8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b9c90c341d7d16fdda3af776ef3a5b') in 0.033012 seconds
-  Import took 0.035307 seconds .
+  Time since last request: 0.000327 seconds.
+  path: Assets/Fonts/강한육군체TTF/강한육군 Medium Vert.ttf
+  artifactKey: Guid(9fa233e34ded5464390af8e8b12f26ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/강한육군체TTF/강한육군 Medium Vert.ttf using Guid(9fa233e34ded5464390af8e8b12f26ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8b18f9c1a0978765863bb3af2e35a2') in 0.023714 seconds
+  Import took 0.027025 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow16.prefab
-  artifactKey: Guid(3a3dde0689c0d8f4abd9a19a4e586e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow16.prefab using Guid(3a3dde0689c0d8f4abd9a19a4e586e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee38bbd03ab0cea5facd72f555910555') in 0.033333 seconds
-  Import took 0.037195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000855 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow26.prefab
-  artifactKey: Guid(e790cc23deb982d4a925b0d6de747c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow26.prefab using Guid(e790cc23deb982d4a925b0d6de747c9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097418825b187a37bf0f9f5bf60f9e55') in 0.028400 seconds
-  Import took 0.032181 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow24.prefab
-  artifactKey: Guid(35c3e48573dab384d83d2540511411d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow24.prefab using Guid(35c3e48573dab384d83d2540511411d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bbb99669190bab6c6af6ab1eb6fb443') in 0.025039 seconds
-  Import took 0.027857 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow30.prefab
-  artifactKey: Guid(60dd76af84c72684d9d2ff33df62fdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow30.prefab using Guid(60dd76af84c72684d9d2ff33df62fdd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25de0ba7eb4f23cc57ac7ca626a4657') in 0.024292 seconds
-  Import took 0.027315 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000538 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow36.prefab
-  artifactKey: Guid(8265ccf741e7463439fe91842c4b6903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow36.prefab using Guid(8265ccf741e7463439fe91842c4b6903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2870125ba60d7d3819245150d575c846') in 0.020426 seconds
-  Import took 0.023110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000420 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow21.prefab
-  artifactKey: Guid(3c428a58c004b304bbdca6d1e1858570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow21.prefab using Guid(3c428a58c004b304bbdca6d1e1858570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5cc9eedbd3992331fdc8fd77f48145') in 0.028535 seconds
-  Import took 0.031914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow08.prefab
-  artifactKey: Guid(04dddd4a5acee8849bf0c7c4bfdae2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow08.prefab using Guid(04dddd4a5acee8849bf0c7c4bfdae2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2737a90414f9e8b4085db6840c918667') in 0.032833 seconds
-  Import took 0.035410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001398 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow11.prefab
-  artifactKey: Guid(e90c5f1652afc174585165fc5f03e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow11.prefab using Guid(e90c5f1652afc174585165fc5f03e652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cacb596298010335d67647b42355f584') in 0.023184 seconds
-  Import took 0.025959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000470 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow42.prefab
-  artifactKey: Guid(4cdf93d971abf5b429f40090b1dcdb74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow42.prefab using Guid(4cdf93d971abf5b429f40090b1dcdb74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8526ae240e35288073464a141e2f93') in 0.028243 seconds
-  Import took 0.030773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow32.prefab
-  artifactKey: Guid(1142f88319c61d74cb8b6fc377322bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow32.prefab using Guid(1142f88319c61d74cb8b6fc377322bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1d0a3cf90ecc5e91c38ed99f011b1f') in 0.029773 seconds
-  Import took 0.033323 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow49.prefab
-  artifactKey: Guid(b9f987f1b90fd314e805bc8a2b105866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow49.prefab using Guid(b9f987f1b90fd314e805bc8a2b105866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2116270518c5b248747bc2968a92640') in 0.030427 seconds
-  Import took 0.032791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000796 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow17.prefab
-  artifactKey: Guid(5b6282e41fd5423468b962e710ed37b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow17.prefab using Guid(5b6282e41fd5423468b962e710ed37b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b02a002b54c293faf9f6507c787092a2') in 0.024120 seconds
-  Import took 0.028476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow45.prefab
-  artifactKey: Guid(ce045960e1845aa47bd760dfc9f8b0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow45.prefab using Guid(ce045960e1845aa47bd760dfc9f8b0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79446c2818dd7208e9a98f33421f0805') in 0.023739 seconds
-  Import took 0.026376 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow09.prefab
-  artifactKey: Guid(e2b886abad5fae7408b43b620148e54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow09.prefab using Guid(e2b886abad5fae7408b43b620148e54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69c9bbf0f45ed29ceed62b287b24cb0') in 0.025736 seconds
-  Import took 0.028993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000353 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow31.prefab
-  artifactKey: Guid(3eb47275b8c39964c946744c3392064d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow31.prefab using Guid(3eb47275b8c39964c946744c3392064d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '750344e8ca7651cf35c001b18a701fad') in 0.032393 seconds
-  Import took 0.036148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow44.prefab
-  artifactKey: Guid(7dfbb4615df2e69418089fd637526ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow44.prefab using Guid(7dfbb4615df2e69418089fd637526ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4d980d45fff03d19c948f49ba2d509') in 0.026615 seconds
-  Import took 0.029499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow48.prefab
-  artifactKey: Guid(c58c797927176f949a1cd63b37c212e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow48.prefab using Guid(c58c797927176f949a1cd63b37c212e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb45dcdade7236b3f1dea262549dd7ff') in 0.028425 seconds
-  Import took 0.031023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow05.prefab
-  artifactKey: Guid(88bd9514dca963941bdd25787e651835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow05.prefab using Guid(88bd9514dca963941bdd25787e651835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a17115a13498787fab905fc109e1c1') in 0.029669 seconds
-  Import took 0.032284 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow35.prefab
-  artifactKey: Guid(e97c0d1616b8ae7499981dabc41e0ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow35.prefab using Guid(e97c0d1616b8ae7499981dabc41e0ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37741a754fec41c90e6dd38e4fb1a986') in 0.023457 seconds
-  Import took 0.025946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow10.prefab
-  artifactKey: Guid(7782248a6b205b34eb62baaebd1c8240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow10.prefab using Guid(7782248a6b205b34eb62baaebd1c8240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c84888c98687bcb98eec3ea4e8451d') in 0.023229 seconds
-  Import took 0.026394 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow47.prefab
-  artifactKey: Guid(bd486336d4f1f8d4d9ec445cd1407640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow47.prefab using Guid(bd486336d4f1f8d4d9ec445cd1407640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b737528bf400fc85cd3d10fa5b40d5c') in 0.022700 seconds
-  Import took 0.025540 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow18.prefab
-  artifactKey: Guid(16a0853b7311677419d7c6ef46917a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow18.prefab using Guid(16a0853b7311677419d7c6ef46917a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8149a01584eec7b39f07c3cc6fd834bc') in 0.020813 seconds
-  Import took 0.023724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow34.prefab
-  artifactKey: Guid(97f997bf70087f043a1cf8dc32285dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow34.prefab using Guid(97f997bf70087f043a1cf8dc32285dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c96809b0c3e569deff4556fd566eba') in 0.020449 seconds
-  Import took 0.025374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000646 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow23.prefab
-  artifactKey: Guid(1028af91f45e92d44affecab5c406dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow23.prefab using Guid(1028af91f45e92d44affecab5c406dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85103ed17de9d682bd66aeda4061547') in 0.025363 seconds
-  Import took 0.029059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow13.prefab
-  artifactKey: Guid(e6228bfba0ef76b4bb3c38d024f0a523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow13.prefab using Guid(e6228bfba0ef76b4bb3c38d024f0a523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0085e8105fcdc114f444c0e4567e5d') in 0.023862 seconds
-  Import took 0.027041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow43.prefab
-  artifactKey: Guid(987cd971507e32049ab53664443523f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow43.prefab using Guid(987cd971507e32049ab53664443523f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6af688ab462513e85eed9308fccfd89') in 0.022626 seconds
-  Import took 0.025567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow46.prefab
-  artifactKey: Guid(46867eed35363114193792779450799c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow46.prefab using Guid(46867eed35363114193792779450799c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '670270924eaf4b9211eefc0b659568d8') in 0.021418 seconds
-  Import took 0.023865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000765 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow22.prefab
-  artifactKey: Guid(27eb9c6851627e548a55eade0020c542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow22.prefab using Guid(27eb9c6851627e548a55eade0020c542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af41dcfb6657cdb60e669ea79dfa2cfd') in 0.018342 seconds
-  Import took 0.021365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow27.prefab
-  artifactKey: Guid(a5928f8c0474d574bbc72008ed0c485c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow27.prefab using Guid(a5928f8c0474d574bbc72008ed0c485c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf060c489eaf1871519a3d18c52260c') in 0.025346 seconds
-  Import took 0.028123 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow02.prefab
-  artifactKey: Guid(e2796515c4bce8e40a16c958c29477cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow02.prefab using Guid(e2796515c4bce8e40a16c958c29477cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2d1a8c631cb572d78ed6bb40447269') in 0.024191 seconds
-  Import took 0.026506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000431 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow07.prefab
-  artifactKey: Guid(84b9ba232878f7e448234449ce70fc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow07.prefab using Guid(84b9ba232878f7e448234449ce70fc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a251128a041f0f523be85da19bb9923') in 0.022081 seconds
-  Import took 0.025417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow04.prefab
-  artifactKey: Guid(2f5be8a24b646fc4ca977d4bb917b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow04.prefab using Guid(2f5be8a24b646fc4ca977d4bb917b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fadffc066f8d444c78ddc7bcd67abc8') in 0.024883 seconds
-  Import took 0.027802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow37.prefab
-  artifactKey: Guid(452d101ac33df04428fd4df97bd97043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow37.prefab using Guid(452d101ac33df04428fd4df97bd97043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd4d479bb1f259baab9772efb23e2a9') in 0.029613 seconds
-  Import took 0.032306 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow41.prefab
-  artifactKey: Guid(7da361b742e1a874a85313c00a54815c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow41.prefab using Guid(7da361b742e1a874a85313c00a54815c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0198c19b3266ee890a43a8c221b8bb8') in 0.020963 seconds
-  Import took 0.024459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow40.prefab
-  artifactKey: Guid(b2858d36030f3c44d9dcdac2c8a2cdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow40.prefab using Guid(b2858d36030f3c44d9dcdac2c8a2cdf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b783e49d623410285c08ff4e4db7cb79') in 0.021962 seconds
-  Import took 0.025878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow29.prefab
-  artifactKey: Guid(6816c2ddaa38c5442ab020db53d072e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow29.prefab using Guid(6816c2ddaa38c5442ab020db53d072e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425b3876dfe643a85a1ae5550597e173') in 0.027831 seconds
-  Import took 0.030530 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow03.prefab
-  artifactKey: Guid(aeab820c155f2cb41a50b61b20d6cad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow03.prefab using Guid(aeab820c155f2cb41a50b61b20d6cad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae783f441e216b3d23c5095c7aa6fd90') in 0.022808 seconds
-  Import took 0.025069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow38.prefab
-  artifactKey: Guid(09278fa65617d2b438dac131fea7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow38.prefab using Guid(09278fa65617d2b438dac131fea7b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8cce049fa23f7d353d09e5e742ec2ce') in 0.018392 seconds
-  Import took 0.023408 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow19.prefab
-  artifactKey: Guid(494505e8fe8adff47b1ef24ae52d3626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow19.prefab using Guid(494505e8fe8adff47b1ef24ae52d3626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80f208cc96bf23babafcf35b592a7df') in 0.023239 seconds
-  Import took 0.026567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow20.prefab
-  artifactKey: Guid(a6ee95fab81d76c4e83635a084fce662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow20.prefab using Guid(a6ee95fab81d76c4e83635a084fce662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85962485b0cb8416f9194000d95ce01') in 0.019684 seconds
-  Import took 0.022825 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001294 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow33.prefab
-  artifactKey: Guid(c9625bf58b6e3524a819b53b2b925ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow33.prefab using Guid(c9625bf58b6e3524a819b53b2b925ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f998bdbdd38ae863b40dd2533f08df4') in 0.024684 seconds
-  Import took 0.027245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.655148 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow50.prefab
-  artifactKey: Guid(e9c70fdd1f7074e4daa10e78a17df1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow50.prefab using Guid(e9c70fdd1f7074e4daa10e78a17df1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f7a027fb793642965c9e9da4000b95') in 0.015340 seconds
-  Import took 0.017775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000500 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow53.prefab
-  artifactKey: Guid(7eed3a16afdbe334c9c80db40a3b445e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow53.prefab using Guid(7eed3a16afdbe334c9c80db40a3b445e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6464dc024e1512ddbcff1b2a49b800') in 0.017737 seconds
-  Import took 0.020667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow56.prefab
-  artifactKey: Guid(5201e4a9fb5bb2a41bd3df07163b3711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow56.prefab using Guid(5201e4a9fb5bb2a41bd3df07163b3711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30f793e1039b315113cf25dbce54baf') in 0.022616 seconds
-  Import took 0.025882 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow51.prefab
-  artifactKey: Guid(4844c862e253c04419f1a9baffe7a26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow51.prefab using Guid(4844c862e253c04419f1a9baffe7a26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e001aa755f2b6c2f56b8fae32e672fc1') in 0.031186 seconds
-  Import took 0.037014 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow50.prefab
-  artifactKey: Guid(e9c70fdd1f7074e4daa10e78a17df1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow50.prefab using Guid(e9c70fdd1f7074e4daa10e78a17df1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f7a027fb793642965c9e9da4000b95') in 0.013284 seconds
-  Import took 0.016245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000522 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow57.prefab
-  artifactKey: Guid(cba2f6ea53e9b93469b6772a0fe8360d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow57.prefab using Guid(cba2f6ea53e9b93469b6772a0fe8360d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b948e0e22e4aa28ba39c315e0879bb45') in 0.041662 seconds
-  Import took 0.044283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000601 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow58.prefab
-  artifactKey: Guid(585cb7f4ceb3e314e834a60177f9ef74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow58.prefab using Guid(585cb7f4ceb3e314e834a60177f9ef74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7babf19750ca2d874b0fe1fc14387ced') in 0.032784 seconds
-  Import took 0.035273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000528 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow54.prefab
-  artifactKey: Guid(d5a3215a36d068d46ab0a1ab961bfe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow54.prefab using Guid(d5a3215a36d068d46ab0a1ab961bfe43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef234a2c78b980fad0cf8bf4608256d') in 0.025408 seconds
-  Import took 0.030193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow55.prefab
-  artifactKey: Guid(0502d7172f3bffa458bca161f1ca9f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow55.prefab using Guid(0502d7172f3bffa458bca161f1ca9f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597e110fb99b535cf0a3f12789740003') in 0.039277 seconds
-  Import took 0.042461 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000693 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow52.prefab
-  artifactKey: Guid(fbd354669960e7f4f921b3a8b9189900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Arrows/arrow52.prefab using Guid(fbd354669960e7f4f921b3a8b9189900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4b97e99cc9a2bd5e19d024466bc8f4') in 0.016663 seconds
-  Import took 0.019143 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.051697 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions
-  artifactKey: Guid(7e26de863b0bdc242ac764388e9c9d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions using Guid(7e26de863b0bdc242ac764388e9c9d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f865bdf34e3136baaf907dd8f9e835') in 0.015996 seconds
-  Import took 0.020748 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.380174 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession01.prefab
-  artifactKey: Guid(0175b6023c165364897130f60b211b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession01.prefab using Guid(0175b6023c165364897130f60b211b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dab33849f1efa5c2722941bc4dcb46b') in 0.014191 seconds
-  Import took 0.017472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession03.prefab
-  artifactKey: Guid(8a356c6962c2404428e2b6b046513398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession03.prefab using Guid(8a356c6962c2404428e2b6b046513398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45abf707062621f77e907334d020f435') in 0.015295 seconds
-  Import took 0.017532 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000399 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession11.prefab
-  artifactKey: Guid(54420f27c46cc774aae34dca15ac4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession11.prefab using Guid(54420f27c46cc774aae34dca15ac4032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927e634add6d30fdefb593fadd3857e5') in 0.019179 seconds
-  Import took 0.021587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession08.prefab
-  artifactKey: Guid(61ded7d645d2b914da39d414da3c44ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession08.prefab using Guid(61ded7d645d2b914da39d414da3c44ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e63828a1d6e76c780231151f1251a6b') in 0.018458 seconds
-  Import took 0.021485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000579 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession13.prefab
-  artifactKey: Guid(17e1a90c0fd07d34db452f2c1caba734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession13.prefab using Guid(17e1a90c0fd07d34db452f2c1caba734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '508222dac0fbded0137c6429bf7dd4f2') in 0.034576 seconds
-  Import took 0.036925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000474 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession06.prefab
-  artifactKey: Guid(ed1783212a08cce408453e3504f35a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession06.prefab using Guid(ed1783212a08cce408453e3504f35a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3725f426eb03904ccdecb6298d808d3e') in 0.038968 seconds
-  Import took 0.041334 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession10.prefab
-  artifactKey: Guid(40966b01982c6724aaadaf3aae456466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession10.prefab using Guid(40966b01982c6724aaadaf3aae456466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b702c2a868892927e71635558b9fa24') in 0.033733 seconds
-  Import took 0.036339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000449 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession09.prefab
-  artifactKey: Guid(5095cda8732532941b006c8f2b58c584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession09.prefab using Guid(5095cda8732532941b006c8f2b58c584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717ef0e6b34178585296d203f748a457') in 0.029464 seconds
-  Import took 0.032419 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession02.prefab
-  artifactKey: Guid(ad1aa7dbe9180e042a5fbcb0a946b4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession02.prefab using Guid(ad1aa7dbe9180e042a5fbcb0a946b4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab34a7f84b736faee372670456b1a9c') in 0.016887 seconds
-  Import took 0.018976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession07.prefab
-  artifactKey: Guid(dcdcd55a3d1db924a834a23575d525fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession07.prefab using Guid(dcdcd55a3d1db924a834a23575d525fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0befcce3c03e633d78a8c8a723019114') in 0.014158 seconds
-  Import took 0.016229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession12.prefab
-  artifactKey: Guid(9b02989504b3c3f4f8f7991d41ee5928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession12.prefab using Guid(9b02989504b3c3f4f8f7991d41ee5928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c350aff354ba9c51e78c3f1ac1f103') in 0.012705 seconds
-  Import took 0.014776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000416 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession05.prefab
-  artifactKey: Guid(29358a054d861114d9f3a1a1787ed9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession05.prefab using Guid(29358a054d861114d9f3a1a1787ed9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aadfeb1b8ddf6c67da8cb95183fd4d2c') in 0.013070 seconds
-  Import took 0.015570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession04.prefab
-  artifactKey: Guid(2c97edcda33fe5b44883a92cdc1ebb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Professions/profession04.prefab using Guid(2c97edcda33fe5b44883a92cdc1ebb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554b7ce82f3ff46e605741b92bcd6d6b') in 0.015907 seconds
-  Import took 0.017872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.420179 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars
-  artifactKey: Guid(d8e36cb42da5ba94cbd2476d52637bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars using Guid(d8e36cb42da5ba94cbd2476d52637bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f8a14e638941251da971c6d1d5c3e8') in 0.011956 seconds
-  Import took 0.014962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.139295 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star01.prefab
-  artifactKey: Guid(419f0e1b9df1d28429289fa98ee51a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star01.prefab using Guid(419f0e1b9df1d28429289fa98ee51a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc7f0b44583e5e2f5fca4f23a1df7a7') in 0.053853 seconds
-  Import took 0.057460 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000578 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star03.prefab
-  artifactKey: Guid(886654f179738994eb9009514eb11fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star03.prefab using Guid(886654f179738994eb9009514eb11fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c763faa06bab446bd2d0532a0b90e3') in 0.018934 seconds
-  Import took 0.023792 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000436 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star05.prefab
-  artifactKey: Guid(13db3aed282a4a543b1f25987add7139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star05.prefab using Guid(13db3aed282a4a543b1f25987add7139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9753619b25dca9b097622d62050d8c79') in 0.026219 seconds
-  Import took 0.029101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000507 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star07.prefab
-  artifactKey: Guid(3503becbc5f384f4ba72798838317dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star07.prefab using Guid(3503becbc5f384f4ba72798838317dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4731b5a9f42300707bf2e69945731a6b') in 0.021235 seconds
-  Import took 0.023682 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star02.prefab
-  artifactKey: Guid(7e679c5cb9f08dc488f88138414ca1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star02.prefab using Guid(7e679c5cb9f08dc488f88138414ca1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21be1ae5fab687956f9924d8b186dada') in 0.030559 seconds
-  Import took 0.033159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star08.prefab
-  artifactKey: Guid(dd74c5338141d7749a59fc45afa66018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star08.prefab using Guid(dd74c5338141d7749a59fc45afa66018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3967102ebaaf8569c0bf616eab7c7c7b') in 0.033101 seconds
-  Import took 0.035669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000516 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star04.prefab
-  artifactKey: Guid(93ed5fcec1414004cae4ce9ad97a7254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star04.prefab using Guid(93ed5fcec1414004cae4ce9ad97a7254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dad291cd7612d3c9722334371abe25d') in 0.022307 seconds
-  Import took 0.024979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001061 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star06.prefab
-  artifactKey: Guid(9c76b8632a9b57242ba8bbc681fa931a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star06.prefab using Guid(9c76b8632a9b57242ba8bbc681fa931a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e139a9d91d604a87d57d951de3dc6725') in 0.023636 seconds
-  Import took 0.030506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000587 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star10.prefab
-  artifactKey: Guid(9ba248e3dab360a419cdd83ac4dcbf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star10.prefab using Guid(9ba248e3dab360a419cdd83ac4dcbf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4f7a95269835cc02f5daebfaac1f00') in 0.020931 seconds
-  Import took 0.024959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000602 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star09.prefab
-  artifactKey: Guid(0aa20ce88db4da545907a33901e16aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Prefabs/Stars/star09.prefab using Guid(0aa20ce88db4da545907a33901e16aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b88815ae66618adf94ceb6ee119087d') in 0.026299 seconds
-  Import took 0.030670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.661183 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials
-  artifactKey: Guid(e0f9bd398a16d604db44ee2e6ee01371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials using Guid(e0f9bd398a16d604db44ee2e6ee01371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585d57f5f667fa9556b8d924ca102efe') in 0.010761 seconds
-  Import took 0.013153 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013542 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/characters01.mat
-  artifactKey: Guid(209ce9a01870ba84d986a5e2dade5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/characters01.mat using Guid(209ce9a01870ba84d986a5e2dade5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5fe9e68d33cfe20ee632e191647dbc') in 0.110705 seconds
-  Import took 0.113047 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/map01.mat
-  artifactKey: Guid(3fd351783096ea643be444be806bbef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/map01.mat using Guid(3fd351783096ea643be444be806bbef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba763c9b5711f2519816639ab2200ed9') in 0.525591 seconds
-  Import took 0.527724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.546647 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors
-  artifactKey: Guid(b564c2cf7314ae74c85ecba5396151c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors using Guid(b564c2cf7314ae74c85ecba5396151c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840c0eb2758f5469f465694a2194f518') in 0.011316 seconds
-  Import took 0.014052 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.041246 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/black01.mat
-  artifactKey: Guid(893e6a019386cf54186755d92ac2ff96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/black01.mat using Guid(893e6a019386cf54186755d92ac2ff96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f2ff89d4806f395f2035f51c09b251') in 0.021851 seconds
-  Import took 0.024429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000554 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/yellow01.mat
-  artifactKey: Guid(4ea1d0baf09035a4db49d8d44d63bf18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/yellow01.mat using Guid(4ea1d0baf09035a4db49d8d44d63bf18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a64716ac65a3e6d120f7aa201fd179') in 0.036230 seconds
-  Import took 0.038331 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/purple01.mat
-  artifactKey: Guid(46b58fb5c5f2a9345bbb7d7a3d614fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/purple01.mat using Guid(46b58fb5c5f2a9345bbb7d7a3d614fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f9f624c73cbb98c9e273e9380af65a') in 0.011661 seconds
-  Import took 0.013859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/green01.mat
-  artifactKey: Guid(b89ded4fbb980f54bb77825ddcaff0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/green01.mat using Guid(b89ded4fbb980f54bb77825ddcaff0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4b883ad657ddf6f44f1a341050f199') in 0.011424 seconds
-  Import took 0.013431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000444 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/blue01.mat
-  artifactKey: Guid(f29123a5522b5ca4b8fd44e0f2a8d0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/blue01.mat using Guid(f29123a5522b5ca4b8fd44e0f2a8d0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601ff371f085bc60feb4c235d40f9063') in 0.016427 seconds
-  Import took 0.018846 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/red01.mat
-  artifactKey: Guid(982944b8de307ff419fa933201735a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/red01.mat using Guid(982944b8de307ff419fa933201735a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f501ae9ccf0328216adbd71009b8ead2') in 0.037504 seconds
-  Import took 0.039874 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000665 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/orange01.mat
-  artifactKey: Guid(a9c66b73467819848a6f69f699f21bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/orange01.mat using Guid(a9c66b73467819848a6f69f699f21bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a360400e64c057e0319ec353a148f4') in 0.041371 seconds
-  Import took 0.044144 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000455 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/teal01.mat
-  artifactKey: Guid(5b778d72a4d49654a8f4c6fb66f32d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/teal01.mat using Guid(5b778d72a4d49654a8f4c6fb66f32d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d8666c98c9af9615e2f292ec50e12d') in 0.034934 seconds
-  Import took 0.037496 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007763 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Materials/Colors/teal01.mat
-  artifactKey: Guid(5b778d72a4d49654a8f4c6fb66f32d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Materials/Colors/teal01.mat using Guid(5b778d72a4d49654a8f4c6fb66f32d9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d8666c98c9af9615e2f292ec50e12d') in 0.031606 seconds
-  Import took 0.034410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 145.837840 seconds.
-  path: Assets/Prefabs/HumanoidTarget.prefab
-  artifactKey: Guid(08b51b999ec83fd40bbb0710b4987dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/HumanoidTarget.prefab using Guid(08b51b999ec83fd40bbb0710b4987dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e82f4b185eca259b7cf4e77e1df52f') in 0.045734 seconds
-  Import took 0.049180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 52.009062 seconds.
-  path: Assets/Imported Assets/3D Quest Markers/Models/questMarkers01.FBX
-  artifactKey: Guid(2f875d266ca236f4d904c6653c4b6680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/3D Quest Markers/Models/questMarkers01.FBX using Guid(2f875d266ca236f4d904c6653c4b6680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146905536f11fd6a874bc26ede351f75') in 1.349862 seconds
-  Import took 1.354886 seconds .
+  Time since last request: 0.000385 seconds.
+  path: Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundR.ttf
+  artifactKey: Guid(bfbd918003d581943b9bd318a28dbbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/NanumFontSetup_TTF_SQUARE_ROUND/NanumSquareRoundR.ttf using Guid(bfbd918003d581943b9bd318a28dbbf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8574c81c0b2d68901d58508f3525f9') in 0.023901 seconds
+  Import took 0.027426 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001550 seconds.
+Registered in 0.002609 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.690 seconds
+- Completed reload, in  0.718 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1689.
+Total: 1.637500 ms (FindLiveObjects: 0.132100 ms CreateObjectMapping: 0.046000 ms MarkObjects: 1.389600 ms  DeleteObjects: 0.068300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001308 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.741 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
 Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.0 MB.
-System memory in use after: 79.1 MB.
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1687.
-Total: 1.742900 ms (FindLiveObjects: 0.149400 ms CreateObjectMapping: 0.035800 ms MarkObjects: 1.451700 ms  DeleteObjects: 0.104800 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1692.
+Total: 1.967800 ms (FindLiveObjects: 0.193600 ms CreateObjectMapping: 0.047500 ms MarkObjects: 1.637400 ms  DeleteObjects: 0.087700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002882 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.112 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.5 MB.
+System memory in use after: 78.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1695.
+Total: 3.554700 ms (FindLiveObjects: 0.809900 ms CreateObjectMapping: 0.091000 ms MarkObjects: 2.563700 ms  DeleteObjects: 0.087600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 361.277017 seconds.
+  Time since last request: 271.961014 seconds.
+  path: Assets/Fonts/강한육군체TTF
+  artifactKey: Guid(58a844df45a1b2c4eb0944aaa8c40cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/강한육군체TTF using Guid(58a844df45a1b2c4eb0944aaa8c40cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c97a7d8aa1a2ee03b2f5ef1b8ab71f98') in 0.017085 seconds
+  Import took 0.022851 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 153.119301 seconds.
   path: Assets/Scenes/ZeroPointShoot.unity
   artifactKey: Guid(3b315379fa58b8645bfa4a726ecb865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot.unity using Guid(3b315379fa58b8645bfa4a726ecb865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '001d8a9e0b4eaaad7e31194fbb75da84') in 0.025646 seconds
-  Import took 0.029809 seconds .
+Start importing Assets/Scenes/ZeroPointShoot.unity using Guid(3b315379fa58b8645bfa4a726ecb865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319ad54128d5d7727201e877cc933358') in 0.022648 seconds
+  Import took 0.025791 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001636 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.769 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.0 MB.
-System memory in use after: 79.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1690.
-Total: 2.378300 ms (FindLiveObjects: 0.227800 ms CreateObjectMapping: 0.073300 ms MarkObjects: 1.994600 ms  DeleteObjects: 0.080900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 87.919613 seconds.
-  path: Assets/Imported Assets/ADG_Textures/ground_vol1/ground6/ground6.mat
-  artifactKey: Guid(ae29ac02d08992344b9095971167e1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/ADG_Textures/ground_vol1/ground6/ground6.mat using Guid(ae29ac02d08992344b9095971167e1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1a2302fda3016911233bc5d62439fd') in 0.357528 seconds
-  Import took 0.360326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9effe56a08cd2156f7af31e426d9ac1') in 0.112939 seconds
-  Import took 0.115073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000413 seconds.
-  path: Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7b026d7eb27ba79ec0f96f4fe45e1f') in 0.131017 seconds
-  Import took 0.133591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c194066b5ddf713208b3818b9611a53a') in 0.106016 seconds
-  Import took 0.108178 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012442951c2af51cf6d0c4f6d14be546') in 0.051542 seconds
-  Import took 0.053989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000377 seconds.
-  path: Assets/Imported Assets/ADG_Textures/ground_vol1/ground12/ground12.mat
-  artifactKey: Guid(43f38029a9368894a9fb4dd19ce0bfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/ADG_Textures/ground_vol1/ground12/ground12.mat using Guid(43f38029a9368894a9fb4dd19ce0bfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '129c42d9e56f3914691e3af6f491038e') in 0.246642 seconds
-  Import took 0.248865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Imported Assets/ADG_Textures/ground_vol1/ground9/ground9.mat
-  artifactKey: Guid(808ad643de188e240b57498ca61b98a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/ADG_Textures/ground_vol1/ground9/ground9.mat using Guid(808ad643de188e240b57498ca61b98a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7683db2da816ed29b7123e65772c74') in 0.223414 seconds
-  Import took 0.225479 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Imported Assets/ArduinoBluetoothAPI/Materials/Red.mat
-  artifactKey: Guid(6067540c39a154e83a88a02fafdf4e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imported Assets/ArduinoBluetoothAPI/Materials/Red.mat using Guid(6067540c39a154e83a88a02fafdf4e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290f8c77daa776bd046bd1d477489ae6') in 0.022498 seconds
-  Import took 0.024594 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001129 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.739 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.1 MB.
-System memory in use after: 79.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1697.
-Total: 2.664900 ms (FindLiveObjects: 0.155900 ms CreateObjectMapping: 0.058500 ms MarkObjects: 2.303300 ms  DeleteObjects: 0.145500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001425 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.726 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.2 MB.
-System memory in use after: 79.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1700.
-Total: 1.813200 ms (FindLiveObjects: 0.182300 ms CreateObjectMapping: 0.048100 ms MarkObjects: 1.503000 ms  DeleteObjects: 0.078300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001237 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.777 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.2 MB.
-System memory in use after: 79.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1703.
-Total: 2.830700 ms (FindLiveObjects: 0.257500 ms CreateObjectMapping: 0.084700 ms MarkObjects: 2.399500 ms  DeleteObjects: 0.087100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 1281.687978 seconds.
-  path: Assets/Prefabs/ClickSetting(3D UI).prefab
-  artifactKey: Guid(abbe756b7a400e246a3b2d423af6c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ClickSetting(3D UI).prefab using Guid(abbe756b7a400e246a3b2d423af6c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e19e8b5aecf9812f87ef725fe20dfcd') in 0.130978 seconds
-  Import took 0.134413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Prefabs/Menues3D.prefab
-  artifactKey: Guid(5525fe2b13d992347b6a2ac4623639cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Menues3D.prefab using Guid(5525fe2b13d992347b6a2ac4623639cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d97533e0ded150b0c059c00e140b497') in 0.015365 seconds
-  Import took 0.018060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 118.158932 seconds.
-  path: Assets/Scenes/ZeroPointShoot
-  artifactKey: Guid(98d92e95c4dc1b1468e283626b2d45cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot using Guid(98d92e95c4dc1b1468e283626b2d45cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef050bdbb6b3a1d83070d2b699abd3f') in 0.009905 seconds
-  Import took 0.012087 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000475 seconds.
-  path: Assets/Scenes/ZeroPointShoot
-  artifactKey: Guid(98d92e95c4dc1b1468e283626b2d45cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot using Guid(98d92e95c4dc1b1468e283626b2d45cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef050bdbb6b3a1d83070d2b699abd3f') in 0.003547 seconds
-  Import took 0.006880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.074055 seconds.
-  path: Assets/Scenes/ZeroPointShoot/LightingData.asset
-  artifactKey: Guid(393b0a1a17434704b8366a4d26a14205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot/LightingData.asset using Guid(393b0a1a17434704b8366a4d26a14205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2946f30a5f5ee10e65c4736492c7250e') in 0.009758 seconds
-  Import took 0.011912 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000592 seconds.
-  path: Assets/Scenes/ZeroPointShoot/ReflectionProbe-0.exr
-  artifactKey: Guid(4c46dbd7c10d8784a8276b6b35162e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot/ReflectionProbe-0.exr using Guid(4c46dbd7c10d8784a8276b6b35162e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90884543ab00a367dbd146f5ef2fd51') in 0.038424 seconds
-  Import took 0.040573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000459 seconds.
-  path: Assets/Scenes/ZeroPointShoot/Lightmap-0_comp_dir.png
-  artifactKey: Guid(037344cf85e0cfd40a83ac5215c151cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot/Lightmap-0_comp_dir.png using Guid(037344cf85e0cfd40a83ac5215c151cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6111cee416042516b7dd72f4f327246e') in 0.033812 seconds
-  Import took 0.036152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Scenes/ZeroPointShoot/Lightmap-0_comp_light.exr
-  artifactKey: Guid(5d97f03a0b819e143bb833956bea3829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot/Lightmap-0_comp_light.exr using Guid(5d97f03a0b819e143bb833956bea3829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a9a14e3cc99696e58effd6ebf126a0') in 0.035944 seconds
-  Import took 0.038771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.188839 seconds.
-  path: Assets/Prefabs/Zero Paper.prefab
-  artifactKey: Guid(6b3055b5e80966d4988ca45787fa67e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Zero Paper.prefab using Guid(6b3055b5e80966d4988ca45787fa67e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc0ad6a29485463613736bf3791918b') in 0.023531 seconds
-  Import took 0.026076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011100 seconds.
-  path: Assets/Prefabs/Zero Paper.prefab
-  artifactKey: Guid(6b3055b5e80966d4988ca45787fa67e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Zero Paper.prefab using Guid(6b3055b5e80966d4988ca45787fa67e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc0ad6a29485463613736bf3791918b') in 0.020913 seconds
-  Import took 0.023453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.075320 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c6719d5549be61c0e714e355a0dc68') in 0.012493 seconds
-  Import took 0.015072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000646 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c6719d5549be61c0e714e355a0dc68') in 0.005306 seconds
-  Import took 0.007846 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001142 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.823 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.3 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1713.
-Total: 1.608400 ms (FindLiveObjects: 0.160900 ms CreateObjectMapping: 0.036200 ms MarkObjects: 1.338900 ms  DeleteObjects: 0.071000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001140 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.727 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.3 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1716.
-Total: 1.875000 ms (FindLiveObjects: 0.150500 ms CreateObjectMapping: 0.050800 ms MarkObjects: 1.593600 ms  DeleteObjects: 0.078700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 257.931232 seconds.
-  path: Assets/Scenes/ZeroPointShoot.unity
-  artifactKey: Guid(3b315379fa58b8645bfa4a726ecb865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/ZeroPointShoot.unity using Guid(3b315379fa58b8645bfa4a726ecb865a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0fa47259aad33c67fbc33d242d16d6') in 0.025364 seconds
-  Import took 0.029075 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001172 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.754 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.3 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1719.
-Total: 2.714200 ms (FindLiveObjects: 0.212300 ms CreateObjectMapping: 0.040500 ms MarkObjects: 2.392300 ms  DeleteObjects: 0.067300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001417 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.763 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.3 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1722.
-Total: 2.336600 ms (FindLiveObjects: 0.206300 ms CreateObjectMapping: 0.042500 ms MarkObjects: 2.002100 ms  DeleteObjects: 0.084000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001287 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.25 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.748 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.4 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1725.
-Total: 1.591300 ms (FindLiveObjects: 0.163800 ms CreateObjectMapping: 0.071600 ms MarkObjects: 1.286400 ms  DeleteObjects: 0.068500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001102 seconds.
+Registered in 0.004836 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.33 ms, found 0 plugins.
@@ -1328,115 +266,86 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.807 seconds
+- Completed reload, in  0.832 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.4 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1728.
-Total: 1.745800 ms (FindLiveObjects: 0.166900 ms CreateObjectMapping: 0.081900 ms MarkObjects: 1.413900 ms  DeleteObjects: 0.082100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001090 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.27 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.747 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.4 MB.
-System memory in use after: 79.4 MB.
+System memory in use before: 78.6 MB.
+System memory in use after: 78.6 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1731.
-Total: 1.564100 ms (FindLiveObjects: 0.171800 ms CreateObjectMapping: 0.035700 ms MarkObjects: 1.265100 ms  DeleteObjects: 0.090000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001153 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.820 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.4 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1734.
-Total: 1.742000 ms (FindLiveObjects: 0.163700 ms CreateObjectMapping: 0.033600 ms MarkObjects: 1.477800 ms  DeleteObjects: 0.065500 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1698.
+Total: 1.949900 ms (FindLiveObjects: 0.157300 ms CreateObjectMapping: 0.029700 ms MarkObjects: 1.676500 ms  DeleteObjects: 0.084600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Import Request.
-  Time since last request: 458.492329 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(4b670f01d3196904380bc233572a0798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fbd29c0de70edc439d762806508fc1') in 0.018125 seconds
-  Import took 0.021632 seconds .
+  Time since last request: 1518.883167 seconds.
+  path: Assets/Prefabs/HumanoidTarget.prefab
+  artifactKey: Guid(08b51b999ec83fd40bbb0710b4987dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HumanoidTarget.prefab using Guid(08b51b999ec83fd40bbb0710b4987dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb0219604975dacfde85de932638462') in 0.110520 seconds
+  Import took 0.115640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Prefabs/Model Menu Item.prefab
+  artifactKey: Guid(450bc36d80193d94fbe7e05da1b19c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Model Menu Item.prefab using Guid(450bc36d80193d94fbe7e05da1b19c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '474fe8d534200a6faf133eeb794a6d11') in 0.018960 seconds
+  Import took 0.023075 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001049 seconds.
+Registered in 0.001336 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.743 seconds
+- Completed reload, in  0.926 seconds
 Platform modules already initialized, skipping
 Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.4 MB.
-System memory in use after: 79.5 MB.
+System memory in use before: 78.6 MB.
+System memory in use after: 78.7 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1737.
-Total: 2.061100 ms (FindLiveObjects: 0.181400 ms CreateObjectMapping: 0.044800 ms MarkObjects: 1.753000 ms  DeleteObjects: 0.080100 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1702.
+Total: 1.921300 ms (FindLiveObjects: 0.299700 ms CreateObjectMapping: 0.062800 ms MarkObjects: 1.484100 ms  DeleteObjects: 0.072300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.69 ms, found 0 plugins.
+Registering precompiled user dll's ...
+Registered in 0.001176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 57.3 MB.
-System memory in use after: 57.3 MB.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1162 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 78.6 MB.
+System memory in use after: 78.7 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1737.
-Total: 1.885400 ms (FindLiveObjects: 0.185400 ms CreateObjectMapping: 0.058500 ms MarkObjects: 1.549500 ms  DeleteObjects: 0.090000 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1705.
+Total: 2.632500 ms (FindLiveObjects: 0.139600 ms CreateObjectMapping: 0.026400 ms MarkObjects: 2.318000 ms  DeleteObjects: 0.146800 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

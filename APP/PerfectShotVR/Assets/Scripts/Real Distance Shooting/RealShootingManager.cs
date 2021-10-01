@@ -17,7 +17,7 @@ public class RealShootingManager : MonoBehaviour
     // 타겟들의 매니저들을 리스트에 두어서 관리함.
     public List<HumanoidTargetManager> targets;
     // 사운드를 재생하는 스크립트
-    private RealShotNarrationSound narrator;
+    private ShootingNarrationSound narrator;
     // 사로 통제, 부사수 역할을 해주는 인디케이터
     public Text Indicator;
     // 사격 실시 절차를 밟는지 여부 off이면 바로 시작
@@ -58,7 +58,7 @@ public class RealShootingManager : MonoBehaviour
     void Start()
     {
         // 현재 게임오브젝트 내에 있는 내레이션 컴포넌트 가져오기
-        narrator = GetComponent<RealShotNarrationSound>();
+        narrator = GetComponent<ShootingNarrationSound>();
         // 플레이어 할당
         player = GameObject.FindGameObjectWithTag("Player");
         // 현재 씬에 있는 총을 할당.
@@ -94,7 +94,7 @@ public class RealShootingManager : MonoBehaviour
     // 사로 입장 및 엎드려쏴
     IEnumerator EnteringShootingLane()
     {
-        RealShotPlayerMove playerMove = player.GetComponent<RealShotPlayerMove>();
+        PlayerMove playerMove = player.GetComponent<PlayerMove>();
         Coroutine coroutine;
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
@@ -218,7 +218,7 @@ public class RealShootingManager : MonoBehaviour
         Indicator.text = _shootEndingSeq[3];
         narrator.PlayLayGunAndSit();
         yield return new WaitForSeconds(2.0f);
-        player.GetComponent<RealShotPlayerMove>().GetSittingPosition();
+        player.GetComponent<PlayerMove>().GetSittingPosition();
     }
 
     // 발사 개수 알려주는 부사수 역할

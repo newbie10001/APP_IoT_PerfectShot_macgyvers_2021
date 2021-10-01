@@ -23,7 +23,7 @@ public class ZeroPointShootingManager : MonoBehaviour
     // 안내 UI
     public Text Indicator;
     // 사운드를 재생하는 스크립트
-    private RealShotNarrationSound narrator;
+    private ShootingNarrationSound narrator;
     // 영점사격지
     private ZeroTarget zeroPaper;
     // 영점을 획득했는지 여부
@@ -42,7 +42,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         // 타겟 할당
         zeroPaper = FindObjectOfType<ZeroTarget>();
         // 현재 게임오브젝트 내에 있는 내레이션 컴포넌트 가져오기
-        narrator = GetComponent<RealShotNarrationSound>();
+        narrator = GetComponent<ShootingNarrationSound>();
         StartCoroutine(StartShooting());
     }
 
@@ -70,7 +70,7 @@ public class ZeroPointShootingManager : MonoBehaviour
     // 사로 입장 및 엎드려쏴
     IEnumerator EnteringShootingLane()
     {
-        RealShotPlayerMove playerMove = player.GetComponent<RealShotPlayerMove>();
+        PlayerMove playerMove = player.GetComponent<PlayerMove>();
         Coroutine coroutine;
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
@@ -92,7 +92,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         narrator.PlaySetProne();
         Indicator.text = "사수 엎드려 쏴";
         yield return SkipInputCheckForSeconds(2.0f);
-        player.GetComponent<RealShotPlayerMove>().AssumingPronePosition();
+        player.GetComponent<PlayerMove>().AssumingPronePosition();
         do
         {
             if (!playerSkip)
@@ -159,7 +159,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         Indicator.text = "사수 소총놓고 무릎앉아대기";
         narrator.PlayLayGunAndSit();
         yield return new WaitForSeconds(2.0f);
-        player.GetComponent<RealShotPlayerMove>().GetSittingPosition();
+        player.GetComponent<PlayerMove>().GetSittingPosition();
     }
 
     IEnumerator StartShooting()
@@ -205,7 +205,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         if (gotZero)
         {
             RealShotMenu.SetActive(true);
-            StartCoroutine(Utility.MoveTo(RealShotMenu.transform, new Vector3(0, 4, 25), 0.5f));
+            StartCoroutine(Utility.MoveTo(RealShotMenu.transform, new Vector3(0, 6, 25), 0.2f));
         }
     }
 
