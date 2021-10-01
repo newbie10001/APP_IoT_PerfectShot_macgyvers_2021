@@ -20,6 +20,8 @@ public class ZeroPointShootingManager : MonoBehaviour
     const int AMMO = 5;
     // 크리크 세팅 메뉴창 (3D)
     public GameObject ClickSettingMenu;
+    // 가장 최근에 판정한 결과.
+    private JudgeResult _result;
     // 안내 UI
     public Text Indicator;
     // 사운드를 재생하는 스크립트
@@ -75,6 +77,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
         yield return new WaitForSeconds(1.5f);
+        Indicator.text = "자신의 사로를\n외치면서 입장합니다.";
         coroutine = StartCoroutine(playerMove.EnteringShootingLane());
         yield return SkipInputCheckForSeconds(9.0f);
         // 스킵버튼이 눌려서 도착하였을 때
@@ -168,6 +171,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         var playerController = player.GetComponent<PlayerController>();
         // 시작 전에는 자이로 off
         playerController.SetGyroEnabled(false);
+        playerController.SetStaringModeEnabled(false);
         // 사로 입장
         yield return EnteringShootingLane();
         yield return SkipInputCheckForSeconds(2.0f);
@@ -180,6 +184,7 @@ public class ZeroPointShootingManager : MonoBehaviour
             yield return GetReadyToShot();
             StartCoroutine(ShotCounting());
             Indicator.text = "사격 개시";
+            playerController.SetStaringModeEnabled(true);
             while (gun.Ammo > 0)
             {
                 yield return new WaitForSeconds(1.0f);
@@ -193,9 +198,8 @@ public class ZeroPointShootingManager : MonoBehaviour
             else
             {
                 int len = zeroPaper.HitPoints.Count;
-                JudgeResult result = JudgePointsBetter(zeroPaper.HitPoints.GetRange(len - AMMO, AMMO));
-                if (result == JudgeResult.영점획득) gotZero = true;
-                Indicator.text = $"{result}";
+                _result = JudgePointsBetter(zeroPaper.HitPoints.GetRange(len - AMMO, AMMO));
+                if (_result == JudgeResult.영점획득) gotZero = true;
             }
             yield return StartClickSetting();
         }
@@ -219,6 +223,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         if(!ClickSettingMenu.activeSelf) ClickSettingMenu.GetComponent<ToggleObject>().Toggle();
         zeroPaper.MoveToPlayer();
+        Indicator.text = $"{_result}";
         isSettingDone = false;
         // 무한 탄창 (총을 쏴서 크리크 수정하기 떄문에)
         gun.Reload(-1);
@@ -290,8 +295,8 @@ public class ZeroPointShootingManager : MonoBehaviour
     {
         // 평균 지점
         _avg = new Vector2(0, 0);
-        // 커트라인 (중앙으로부터 5크리크 이내에 있어야 영점을 획득했다고 판정)
-        float _cutOffPoint = 0.075f;
+        // 커트라인 (중앙으로부터 4크리크 이내에 있어야 영점을 획득했다고 판정)
+        float _cutOffPoint = 0.060f;
         // 중앙 지점(플레이어가 직선 정면으로 총을 쐈을 때, 탄도학 반영)
         Vector2 _curPos = new Vector2(0, 0.5f);
         Vector2 _center = new Vector2(_curPos.x, _curPos.y) - new Vector2(0, 0.015f);

@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private Gun gun;
     // 플레이어 자이로 무브 스크립트
     private GyroRotate gyro;
+    // 가늠쇠 오브젝트에 있는 응시모드 스크립트
+    private StaringMode staring;
     // 플레이어의 입력 여부를 계속하여 갱신
     public bool PlayerInput { get; private set; }
     // 누르고 있을 경우 true, 떼는 순간 false가 됨.
@@ -18,6 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         gun = GetComponentInChildren<Gun>();
         gyro = GetComponent<GyroRotate>();
+        staring = gun.gameObject.GetComponentInChildren<StaringMode>();
     }
 
     void Update()
@@ -63,4 +66,5 @@ public class PlayerController : MonoBehaviour
     }
     
     public void SetGyroEnabled(bool value) => gyro.enabled = value;
+    public void SetStaringModeEnabled(bool value) => staring.enabled = value;
 }

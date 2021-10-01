@@ -101,6 +101,8 @@
     <Compile Include="Assets\Imported Assets\ArduinoBluetoothAPI\Scripts\BTManager.cs" />
     <Compile Include="Assets\Scripts\ZeroPointShooting\ZeroTarget\ZeroTarget.cs" />
     <Compile Include="Assets\Scripts\Interface\IMuzzle.cs" />
+    <Compile Include="Assets\Scripts\RestrainObjectNotToOverflow.cs" />
+    <Compile Include="Assets\Scripts\Setting Camera\SetCameraByStaringMode.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Imported Assets\3D Quest Markers\Read Me.txt" />

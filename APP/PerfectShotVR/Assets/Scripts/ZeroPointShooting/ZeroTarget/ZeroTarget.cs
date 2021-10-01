@@ -53,7 +53,7 @@ public class ZeroTarget : MonoBehaviour, ITarget
         {
             Renderer renderer = this.transform.GetChild(i).GetComponentInChildren<Renderer>();
             Color c = renderer.material.color;
-            c.a *= 0.5f;
+            c.a *= 0.3f;
             renderer.material.color = c;
         }
         StartCoroutine(Utility.MoveTo(transform, _initPos, 5f));

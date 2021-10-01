@@ -9,11 +9,7 @@ public class SetCamByShooting : MonoBehaviour, IMuzzle
 {
     // 플레이어가 겨냥할 타겟
     public GameObject Target;
-
-    private void Update()
-    {
-
-    }
+    public AudioClip FireSound;
 
     // 발사 => 카메라를 저장하고 메인화면으로 감.
     public void Fire()
@@ -32,6 +28,8 @@ public class SetCamByShooting : MonoBehaviour, IMuzzle
         // 카메라 렌즈시프트 적용
         Debug.Log($"렌즈시프트 이동 : {lensShiftX}, {lensShiftY}");
         GameManager.instance.InitialCameraShift = new Vector2(lensShiftX, lensShiftY);
+        // 총 발사하는 소리 재생
+        gameObject.GetComponent<AudioSource>().PlayOneShot(FireSound);
         SceneManager.LoadScene("MainScene");
     }
 }

@@ -99,6 +99,7 @@ public class RealShootingManager : MonoBehaviour
         Indicator.text = "사로 입장";
         narrator.PlayEntrance();
         yield return new WaitForSeconds(1.5f);
+        Indicator.text = "자신의 사로를\n외치면서 입장합니다.";
         coroutine = StartCoroutine(playerMove.EnteringShootingLane());
         yield return SkipInputCheckForSeconds(9.0f);
         // 스킵버튼이 눌려서 도착하였을 때

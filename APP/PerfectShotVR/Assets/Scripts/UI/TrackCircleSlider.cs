@@ -34,4 +34,10 @@ public class TrackCircleSlider : MonoBehaviour
         // false일 경우 루프가 멈춤.
         if(GameManager.instance.StaringMode) StartCoroutine(updateUI());
     }
+
+    // 설정창에서 토글하면 반응하는 메서드
+    public void ToggleStaringSlider(Toggle _toggle)
+    {
+        this.gameObject.SetActive(_toggle.isOn);
+    }
 }
