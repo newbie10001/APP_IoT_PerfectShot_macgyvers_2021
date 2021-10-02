@@ -203,6 +203,7 @@ public class ZeroPointShootingManager : MonoBehaviour
             }
             yield return StartClickSetting();
         }
+        gun.Reload(-1);
         StartCoroutine(Utility.MoveTo(RetryMenu.transform, RetryMenu.transform.position + new Vector3(0, 0, 20), 1.0f));
         StartCoroutine(Utility.MoveTo(MainMenu.transform, MainMenu.transform.position + new Vector3(0, 0, 20), 1.0f));
         // gotZero == true 여야만 실거리사격을 제안함
