@@ -4,31 +4,31 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// ÃÑÀ» ½÷¼­ Ä«¸Ş¶ó¸¦ ÃÊ±âÈ­ÇÏ´Â ½ºÅ©¸³Æ®
+// ì´ì„ ì´ì„œ ì¹´ë©”ë¼ë¥¼ ì´ˆê¸°í™”í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
 public class SetCamByShooting : MonoBehaviour, IMuzzle
 {
-    // ÇÃ·¹ÀÌ¾î°¡ °Ü³ÉÇÒ Å¸°Ù
+    // í”Œë ˆì´ì–´ê°€ ê²¨ëƒ¥í•  íƒ€ê²Ÿ
     public GameObject Target;
     public AudioClip FireSound;
 
-    // ¹ß»ç => Ä«¸Ş¶ó¸¦ ÀúÀåÇÏ°í ¸ŞÀÎÈ­¸éÀ¸·Î °¨.
+    // ë°œì‚¬ => ì¹´ë©”ë¼ë¥¼ ì €ì¥í•˜ê³  ë©”ì¸í™”ë©´ìœ¼ë¡œ ê°.
     public void Fire()
     {
         Vector2 screenPos = Camera.main.WorldToScreenPoint(Target.transform.position);
-        // È­¸éÀÇ Àı¹İ Å©±â
+        // í™”ë©´ì˜ ì ˆë°˜ í¬ê¸°
         float xScreenHalfSize = Screen.width * 0.5f;
         float yScreenHalfSize = Screen.height * 0.5f;
 
-        // ¿Å°Ü¾ß ÇÒ x, y °ª(pixels).
+        // ì˜®ê²¨ì•¼ í•  x, y ê°’(pixels).
         float shiftX = screenPos.x - xScreenHalfSize;
         float shiftY = screenPos.y - yScreenHalfSize;
-        // Ä«¸Ş¶ó ·»Áî½ÃÇÁÆ® Àû¿ë°ª (ratio)
+        // ì¹´ë©”ë¼ ë Œì¦ˆì‹œí”„íŠ¸ ì ìš©ê°’ (ratio)
         float lensShiftX = (shiftX / xScreenHalfSize) * (-0.5f);
         float lensShiftY = (shiftY / yScreenHalfSize) * (-0.5f);
-        // Ä«¸Ş¶ó ·»Áî½ÃÇÁÆ® Àû¿ë
-        Debug.Log($"·»Áî½ÃÇÁÆ® ÀÌµ¿ : {lensShiftX}, {lensShiftY}");
+        // ì¹´ë©”ë¼ ë Œì¦ˆì‹œí”„íŠ¸ ì ìš©
+        Debug.Log($"ë Œì¦ˆì‹œí”„íŠ¸ ì´ë™ : {lensShiftX}, {lensShiftY}");
         GameManager.instance.InitialCameraShift = new Vector2(lensShiftX, lensShiftY);
-        // ÃÑ ¹ß»çÇÏ´Â ¼Ò¸® Àç»ı
+        // ì´ ë°œì‚¬í•˜ëŠ” ì†Œë¦¬ ì¬ìƒ
         gameObject.GetComponent<AudioSource>().PlayOneShot(FireSound);
         SceneManager.LoadScene("MainScene");
     }

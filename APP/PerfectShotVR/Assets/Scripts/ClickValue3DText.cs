@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
@@ -10,13 +10,13 @@ public class ClickValue3DText : MonoBehaviour
     private void Start()
     {
         textMesh = GetComponent<TextMesh>();
-        if(textMesh.text.Contains("ÁÂ¿ì"))
+        if(textMesh.text.Contains("ì¢Œìš°"))
         {
-            textMesh.text = $"ÁÂ¿ì : {GameManager.instance.Click.x}";
+            textMesh.text = $"ì¢Œìš° : {GameManager.instance.Click.x}";
         }
         else
         {
-            textMesh.text = $"»óÇÏ : {GameManager.instance.Click.y}";
+            textMesh.text = $"ìƒí•˜ : {GameManager.instance.Click.y}";
         }
     }
 
@@ -31,7 +31,7 @@ public class ClickValue3DText : MonoBehaviour
         int num = (int)_click.x;
         num = Mathf.Clamp(num + 1, -17, 17);
         GameManager.instance.Click = new Vector2(num, _click.y);
-        textMesh.text = $"ÁÂ¿ì : {num}";
+        textMesh.text = $"ì¢Œìš° : {num}";
         SaveClick();
     }
 
@@ -41,7 +41,7 @@ public class ClickValue3DText : MonoBehaviour
         int num = (int)_click.x;
         num = Mathf.Clamp(num - 1, -17, 17);
         GameManager.instance.Click = new Vector2(num, _click.y);
-        textMesh.text = $"ÁÂ¿ì : {num}";
+        textMesh.text = $"ì¢Œìš° : {num}";
         SaveClick();
     }
 
@@ -51,7 +51,7 @@ public class ClickValue3DText : MonoBehaviour
         int num = (int)_click.y;
         num = Mathf.Clamp(num + 1, -20, 20);
         GameManager.instance.Click = new Vector2(_click.x, num);
-        textMesh.text = $"»óÇÏ : {num}";
+        textMesh.text = $"ìƒí•˜ : {num}";
         SaveClick();
     }
 
@@ -61,7 +61,7 @@ public class ClickValue3DText : MonoBehaviour
         int num = (int)_click.y;
         num = Mathf.Clamp(num - 1, -20, 20);
         GameManager.instance.Click = new Vector2(_click.x, num);
-        textMesh.text = $"»óÇÏ : {num}";
+        textMesh.text = $"ìƒí•˜ : {num}";
         SaveClick();
     }
 

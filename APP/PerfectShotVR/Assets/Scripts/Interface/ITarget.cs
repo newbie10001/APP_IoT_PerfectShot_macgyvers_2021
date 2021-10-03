@@ -1,10 +1,10 @@
 using UnityEngine;
 
-// Target ÀÎÅÍÆäÀÌ½º
+// Target ì¸í„°í˜ì´ìŠ¤
 public interface ITarget
 {
-    // »óÅÂ¸¦ ¹İÈ¯ÇÏ´Â ¸Ş¼­µå.
+    // ìƒíƒœë¥¼ ë°˜í™˜í•˜ëŠ” ë©”ì„œë“œ.
     bool GetState();
-    // ¸Â¾ÒÀ» ¶§ È£ÃâµÇ´Â ¸Ş¼­µå.
+    // ë§ì•˜ì„ ë•Œ í˜¸ì¶œë˜ëŠ” ë©”ì„œë“œ.
     void OnHit(RaycastHit hit);
 }

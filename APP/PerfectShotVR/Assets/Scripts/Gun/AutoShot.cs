@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÃÑ ÀÚµ¿¹ß»ç ÄÄÆ÷³ÍÆ®
+// ì´ ìë™ë°œì‚¬ ì»´í¬ë„ŒíŠ¸
 public class AutoShot : MonoBehaviour
 {
     Muzzle muzzle;
@@ -12,7 +12,7 @@ public class AutoShot : MonoBehaviour
         StartCoroutine(AutoFire());
     }
 
-    // 0.5ÃÊ¸¶´Ù ÃÑ ¹ß»ç
+    // 0.5ì´ˆë§ˆë‹¤ ì´ ë°œì‚¬
     IEnumerator AutoFire()
     {
         while (true)

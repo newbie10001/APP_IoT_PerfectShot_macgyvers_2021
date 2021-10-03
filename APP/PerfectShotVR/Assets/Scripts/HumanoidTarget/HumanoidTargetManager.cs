@@ -2,29 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ³»·Á°¬´Ù ¿Ã¶ó°¡´Â ±â´ÉÀÌ ÀÖ´Â ÀÎ°£Çü Å¸°ÙÀÇ ¸Å´ÏÀú
+// ë‚´ë ¤ê°”ë‹¤ ì˜¬ë¼ê°€ëŠ” ê¸°ëŠ¥ì´ ìˆëŠ” ì¸ê°„í˜• íƒ€ê²Ÿì˜ ë§¤ë‹ˆì €
 public class HumanoidTargetManager : MonoBehaviour
 {
-    // ¾Ö´Ï¸ŞÀÌ¼Ç ÀÎ¼ö ¹Ş¾Æ¿À±â.
+    // ì• ë‹ˆë©”ì´ì…˜ ì¸ìˆ˜ ë°›ì•„ì˜¤ê¸°.
     private Animator animator;
-    // ÅºÂø ÁöÁ¡¿¡ ³õÀ» ÇÁ¸®ÆÕ.
+    // íƒ„ì°© ì§€ì ì— ë†“ì„ í”„ë¦¬íŒ¹.
     public GameObject hitMarkPrefab;
-    // 3D Textµé.
+    // 3D Textë“¤.
     public GameObject Label;
     public GameObject Result;
 
-    // ÀÌ Ç¥ÀûÀÌ È°¼ºÈ­µÇ¾îÀÖ´Â°¡?
+    // ì´ í‘œì ì´ í™œì„±í™”ë˜ì–´ìˆëŠ”ê°€?
     public bool IsSet { get; private set; }
-    // ¸ÂÀº ÁöÁ¡µéÀ» ÀúÀå.
+    // ë§ì€ ì§€ì ë“¤ì„ ì €ì¥.
     public List<Vector3> Hits { get; private set; }
 
     void Awake()
     {
-        // ÀÎ¼öµé ÃÊ±âÈ­
+        // ì¸ìˆ˜ë“¤ ì´ˆê¸°í™”
         animator = GetComponent<Animator>();
         IsSet = false;
         Hits = new List<Vector3>();
-        // 3D UIµé ºñÈ°¼ºÈ­
+        // 3D UIë“¤ ë¹„í™œì„±í™”
         Label.SetActive(false);
         Result.SetActive(false);
     }
@@ -43,7 +43,7 @@ public class HumanoidTargetManager : MonoBehaviour
         IsSet = false;
     }
 
-    // ÀÏ¾î³ª±â¸¸ ÇÏ°í ¸ÂÃçµµ OnHitÀÌ µÇÁö ¾ÊÀ½.
+    // ì¼ì–´ë‚˜ê¸°ë§Œ í•˜ê³  ë§ì¶°ë„ OnHitì´ ë˜ì§€ ì•ŠìŒ.
     public void OnlyGetUp()
     {
         animator.ResetTrigger("GetDown");
@@ -51,20 +51,20 @@ public class HumanoidTargetManager : MonoBehaviour
         IsSet = false;
     }
 
-    // ¸Â¾ÒÀ» ¶§ È£Ãâ.
+    // ë§ì•˜ì„ ë•Œ í˜¸ì¶œ.
     public void OnHit(RaycastHit hit)
     {
         if(IsSet)
         {
             Hits.Add(hit.point);
-            Debug.Log($"{this.gameObject.name} ¸íÁß È½¼ö {Hits.Count}");
+            Debug.Log($"{this.gameObject.name} ëª…ì¤‘ íšŸìˆ˜ {Hits.Count}");
             GameObject hithole = Instantiate(hitMarkPrefab, hit.point - new Vector3(0, 0, 0.1f), Quaternion.FromToRotation(Vector3.up, hit.normal));
             hithole.transform.parent = this.transform;
             GetDown();
         }
     }
 
-    // °á°ú¸¦ º¸¿©ÁÜ.
+    // ê²°ê³¼ë¥¼ ë³´ì—¬ì¤Œ.
     public void ShowResult(string result)
     {
         Label.SetActive(true);

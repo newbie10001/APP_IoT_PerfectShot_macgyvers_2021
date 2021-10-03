@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// ¾ÀÀ» ÀüÈ¯ÇØÁÖ´Â 3D ¿ÀºêÁ§Æ®. ¸ÂÀ¸¸é Á¤ÇØÁø ¾ÀÀ¸·Î ÀÌµ¿
+// ì”¬ì„ ì „í™˜í•´ì£¼ëŠ” 3D ì˜¤ë¸Œì íŠ¸. ë§ìœ¼ë©´ ì •í•´ì§„ ì”¬ìœ¼ë¡œ ì´ë™
 public class SceneChanger3D : MonoBehaviour, ITarget
 {
-    // ÀÌµ¿ÇÒ ¾ÀÀÇ ÀÌ¸§
+    // ì´ë™í•  ì”¬ì˜ ì´ë¦„
     public string sceneName;
 
-    // ³¯¾Æ°¡±â À§ÇÑ ¸öÃ¼
+    // ë‚ ì•„ê°€ê¸° ìœ„í•œ ëª¸ì²´
     private Rigidbody _rigidbody;
-    // Ãæµ¹ ½Ã °¡ÇØÁö´Â Èû
+    // ì¶©ëŒ ì‹œ ê°€í•´ì§€ëŠ” í˜
     public Vector3 force = new Vector3(0, 500, 300);
 
     void Awake()
     {
-        // ¸®Áöµå¹Ùµğ ¾ò¾î¿À±â
+        // ë¦¬ì§€ë“œë°”ë”” ì–»ì–´ì˜¤ê¸°
         _rigidbody = GetComponent<Rigidbody>();
     }
 
     public bool GetState() => true;
 
-    // ¸Â¾ÒÀ» ¶§ ³¯¾Æ°¨
-    // ³¯¾Æ°¡°í ¾À º¯°æ
+    // ë§ì•˜ì„ ë•Œ ë‚ ì•„ê°
+    // ë‚ ì•„ê°€ê³  ì”¬ ë³€ê²½
     public void OnHit(RaycastHit hit)
     {
         _rigidbody.useGravity = true;
@@ -31,7 +31,7 @@ public class SceneChanger3D : MonoBehaviour, ITarget
         StartCoroutine(LoadScene());
     }
 
-    // sceneName¿¡ ÇØ´çÇÏ´Â ¾ÀÀ¸·Î 1ÃÊÈÄ ÀÌµ¿
+    // sceneNameì— í•´ë‹¹í•˜ëŠ” ì”¬ìœ¼ë¡œ 1ì´ˆí›„ ì´ë™
     private IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(1);

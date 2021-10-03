@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class Utility
 {
-    // speed¿¡ ¹İºñ·ÊÇÏ¿© 
+    // speedì— ë°˜ë¹„ë¡€í•˜ì—¬ 
     public static IEnumerator MoveTo(Transform transform, Vector3 dest, float speed)
     {
         float count = 0;
@@ -23,7 +23,7 @@ public static class Utility
         }
     }
 
-    // ±¸Çü Ç¥¸éÀ» µû¶ó¼­ ÀÌµ¿
+    // êµ¬í˜• í‘œë©´ì„ ë”°ë¼ì„œ ì´ë™
     public static IEnumerator MoveSlerpTo(Transform transform, Vector3 dest, float speed)
     {
         float count = 0;

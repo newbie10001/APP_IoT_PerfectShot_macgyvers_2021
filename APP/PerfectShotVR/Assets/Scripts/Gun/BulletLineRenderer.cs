@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÅºµµÇĞ ±¸ÇöÀ» º¸¿©ÁÖ±â À§ÇØ ¶óÀÎ·»´õ·¯·Î ±ËÀûÀ» ±×¸²
+// íƒ„ë„í•™ êµ¬í˜„ì„ ë³´ì—¬ì£¼ê¸° ìœ„í•´ ë¼ì¸ë Œë”ëŸ¬ë¡œ ê¶¤ì ì„ ê·¸ë¦¼
 public class BulletLineRenderer : MonoBehaviour
 {
     private LineRenderer lineRenderer;
@@ -21,10 +21,10 @@ public class BulletLineRenderer : MonoBehaviour
         StartCoroutine(DrawLine());
     }
 
-    // 0.01ÃÊ¸¶´Ù ¶óÀÎÀ» ±×¸²
+    // 0.01ì´ˆë§ˆë‹¤ ë¼ì¸ì„ ê·¸ë¦¼
     IEnumerator DrawLine()
     {
-        // ´ë·« 5ÃÊµ¿¾È.
+        // ëŒ€ëµ 5ì´ˆë™ì•ˆ.
         while(idx < 500)
         {
             lineRenderer.positionCount = idx + 1;

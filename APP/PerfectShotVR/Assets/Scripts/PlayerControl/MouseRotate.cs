@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ╣П╧Ж╠К©К ╦╤©Л╫╨ ют╥б ╫╨е╘╦Ёф╝
+// К■■К╡└Й╧┘Л ╘ К╖┬Л ╟Л┼╓ Л·┘К═╔ Л┼╓М│╛К╕╫М┼╦
 public class MouseRotate : MonoBehaviour
 {
     readonly float rot_speed = 30;

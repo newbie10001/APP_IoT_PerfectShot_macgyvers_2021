@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-// ¼³Á¤ ÆĞ³Î
+// ì„¤ì • íŒ¨ë„
 public class SettingPanel : MonoBehaviour
 {
     public Text ClickHorizontal;
@@ -39,7 +39,7 @@ public class SettingPanel : MonoBehaviour
         
     }
 
-    // ¼¼ÆÃ°ªµéÀ» ºÒ·¯¿Í¼­ UI¿¡ °»½Å
+    // ì„¸íŒ…ê°’ë“¤ì„ ë¶ˆëŸ¬ì™€ì„œ UIì— ê°±ì‹ 
     void SetSettings()
     {
         ClickHorizontal.text = GameManager.instance.Click.x.ToString();
@@ -49,7 +49,7 @@ public class SettingPanel : MonoBehaviour
         Bluetooth.isOn = GameManager.instance.Bluetooth;
     }
 
-    // ¸®¼Â ¹öÆ°À» ´©¸£¸é È£ÃâµÇ´Â ¸Ş¼­µå. ¼³Á¤µéÀ» ¸ğµÎ ÃÊ±âÈ­ÇÏ´Â ÇÔ¼ö...!
+    // ë¦¬ì…‹ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ í˜¸ì¶œë˜ëŠ” ë©”ì„œë“œ. ì„¤ì •ë“¤ì„ ëª¨ë‘ ì´ˆê¸°í™”í•˜ëŠ” í•¨ìˆ˜...!
     void ResetSettings()
     {
         PlayerPrefs.DeleteAll();
@@ -57,7 +57,7 @@ public class SettingPanel : MonoBehaviour
         SaveClick();
     }
 
-    // ÆĞ³ÎÀ» º¸¿©ÁÖ°í °¡¸®´Â Åä±Û
+    // íŒ¨ë„ì„ ë³´ì—¬ì£¼ê³  ê°€ë¦¬ëŠ” í† ê¸€
     public void TogglePanel()
     {
         if (this.gameObject.activeSelf)
@@ -68,7 +68,7 @@ public class SettingPanel : MonoBehaviour
         else this.gameObject.SetActive(true);
     }
 
-    // ÇöÀç ¼¼ÆÃÃ¢¿¡ ÀÖ´Â °ªµéÀ» °ÔÀÓ¸Å´ÏÀú¿¡ ÀúÀå. ÀúÀå ¹öÆ°À» ´©¸£¸é È£ÃâµÊ.
+    // í˜„ì¬ ì„¸íŒ…ì°½ì— ìˆëŠ” ê°’ë“¤ì„ ê²Œì„ë§¤ë‹ˆì €ì— ì €ì¥. ì €ì¥ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ í˜¸ì¶œë¨.
     public void SaveSettings()
     {
         SaveClick();
@@ -77,7 +77,7 @@ public class SettingPanel : MonoBehaviour
         GameManager.instance.Bluetooth = Bluetooth.isOn;
     }
 
-    // Å©¸®Å© °ªÀ» ¼öÁ¤ÇÏ°í ¹İ¿µ.
+    // í¬ë¦¬í¬ ê°’ì„ ìˆ˜ì •í•˜ê³  ë°˜ì˜.
     public void SaveClick()
     {
         GameManager.instance.Click = new Vector2(int.Parse(ClickHorizontal.text), int.Parse(ClickVertical.text));

@@ -1,8 +1,8 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ¿µÁ¡»ç°İÁö °ü¸®
+// ì˜ì ì‚¬ê²©ì§€ ê´€ë¦¬
 public class ZeroTargetController : MonoBehaviour
 {
     void Start()

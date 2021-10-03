@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Ä«¸Ş¶ó¸¦ ¼³Á¤ÇÏ´Â ½ºÅ©¸³Æ®
+// ì¹´ë©”ë¼ë¥¼ ì„¤ì •í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
 public class SettingCamera : MonoBehaviour
 {
     void Start()
@@ -15,7 +15,7 @@ public class SettingCamera : MonoBehaviour
 
     }
 
-    // Å©¸®Å© ÇÏ³ª ´ç ¿òÁ÷¿©¾ß ÇÒ °ª (Ä«¸Ş¶óÀÇ ¼¾¼­ »çÀÌÁî°¡ x : 4, y : 8, fov : 21.78679 ÀÏ ¶§)
+    // í¬ë¦¬í¬ í•˜ë‚˜ ë‹¹ ì›€ì§ì—¬ì•¼ í•  ê°’ (ì¹´ë©”ë¼ì˜ ì„¼ì„œ ì‚¬ì´ì¦ˆê°€ x : 4, y : 8, fov : 21.78679 ì¼ ë•Œ)
     private const float VALUE_PER_CLICK = -0.0015f;
     public Vector2 ConvertClickToLensShift()
     {
@@ -23,7 +23,7 @@ public class SettingCamera : MonoBehaviour
         return _click * VALUE_PER_CLICK;
     }
 
-    // ·»Áî½ÃÇÁÆ®°ªÀ» ÃÊ±âÈ­ÇÏ°í Å©¸®Å© °ªÀ» Àû¿ëÇÏ´Â ¸Ş¼­µå
+    // ë Œì¦ˆì‹œí”„íŠ¸ê°’ì„ ì´ˆê¸°í™”í•˜ê³  í¬ë¦¬í¬ ê°’ì„ ì ìš©í•˜ëŠ” ë©”ì„œë“œ
     public void InitCamAndApplyClick()
     {
         Camera.main.lensShift = GameManager.instance.InitialCameraShift + ConvertClickToLensShift();

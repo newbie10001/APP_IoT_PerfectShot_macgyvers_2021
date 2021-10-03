@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÇÃ·¹ÀÌ¾î°¡ ·¹ÀÌÄ³½ºÆ®¸¦ ½÷¼­ IReactAtLooking Å¬·¡½ºÆ² °¡Áø ¿ÀºêÁ§Æ®¿¡ ´ëÇØ OnLookÀ» ½ÇÇà½ÃÅ°´Â ¿ÀºêÁ§Æ®
-// »çÁ¤°Å¸®´Â 100À¯´Ö
+// í”Œë ˆì´ì–´ê°€ ë ˆì´ìºìŠ¤íŠ¸ë¥¼ ì´ì„œ IReactAtLooking í´ë˜ìŠ¤í‹€ ê°€ì§„ ì˜¤ë¸Œì íŠ¸ì— ëŒ€í•´ OnLookì„ ì‹¤í–‰ì‹œí‚¤ëŠ” ì˜¤ë¸Œì íŠ¸
+// ì‚¬ì •ê±°ë¦¬ëŠ” 100ìœ ë‹›
 public class PlayerLooking : MonoBehaviour
 {
     IReactAtLooking lookObject;

@@ -2,26 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// √—æÀ¿« Ω∫≈©∏≥∆Æ
-// º≥∏Ì : ¡ˆ≥™ø¬ ±À¿˚¿ª ∂Û¿Œ ∑ª¥ı∑Ø∑Œ ±◊∏∞¥Ÿ. ∏∏æ‡ ∂Û¿Œ ∑ª¥ı∑Ø∞° √Êµπ«œ∏È √Êµπ √≥∏Æ
-// ¿Ã Ω∫≈©∏≥∆Æ¥¬ √—æÀ ∏µ®¿Ã ¿÷¥¬ ∞˜ø° ¿˚øÎµ»¥Ÿ.
+// Ï¥ùÏïåÏùò Ïä§ÌÅ¨Î¶ΩÌä∏
+// ÏÑ§Î™Ö : ÏßÄÎÇòÏò® Í∂§Ï†ÅÏùÑ ÎùºÏù∏ Î†åÎçîÎü¨Î°ú Í∑∏Î¶∞Îã§. ÎßåÏïΩ ÎùºÏù∏ Î†åÎçîÎü¨Í∞Ä Ï∂©ÎèåÌïòÎ©¥ Ï∂©Îèå Ï≤òÎ¶¨
+// Ïù¥ Ïä§ÌÅ¨Î¶ΩÌä∏Îäî Ï¥ùÏïå Î™®Îç∏Ïù¥ ÏûàÎäî Í≥≥Ïóê Ï†ÅÏö©ÎêúÎã§.
 public class Bullet : MonoBehaviour
 {
     private void Start()
     {
-        Debug.Log($"Bullet √‚πﬂ : pos = ({transform.position.x}, {transform.position.y}, {transform.position.z})\nrot = ({this.transform.parent.transform.rotation.eulerAngles.x}, {this.transform.parent.transform.rotation.eulerAngles.y}, {this.transform.parent.transform.rotation.eulerAngles.z})");
+        Debug.Log($"Bullet Ï∂úÎ∞ú : pos = ({transform.position.x}, {transform.position.y}, {transform.position.z})\nrot = ({this.transform.parent.transform.rotation.eulerAngles.x}, {this.transform.parent.transform.rotation.eulerAngles.y}, {this.transform.parent.transform.rotation.eulerAngles.z})");
     }
 
     private void Update()
     {
         Vector3 pos = transform.position;
-        if (pos.z > 20 && pos.z < 30) Debug.Log($"{pos.z}m¿œ ∂ß y∞™ : {pos.y}");
-        else if (pos.z > 90 && pos.z < 110) Debug.Log($"{pos.z}m¿œ ∂ß y∞™ : {pos.y}");
-        else if (pos.z > 190 && pos.z < 210) Debug.Log($"{pos.z}m¿œ ∂ß y∞™ : {pos.y}");
-        else if (pos.z > 249 && pos.z < 251) Debug.Log($"{pos.z}m¿œ ∂ß y∞™ : {pos.y}");
+        if (pos.z > 20 && pos.z < 30) Debug.Log($"{pos.z}mÏùº Îïå yÍ∞í : {pos.y}");
+        else if (pos.z > 90 && pos.z < 110) Debug.Log($"{pos.z}mÏùº Îïå yÍ∞í : {pos.y}");
+        else if (pos.z > 190 && pos.z < 210) Debug.Log($"{pos.z}mÏùº Îïå yÍ∞í : {pos.y}");
+        else if (pos.z > 249 && pos.z < 251) Debug.Log($"{pos.z}mÏùº Îïå yÍ∞í : {pos.y}");
         if (pos.z > 600)
         {
-            Debug.Log("¿Ø»øªÁ∞≈∏Æ¥¬ 600");
+            Debug.Log("Ïú†Ìö®ÏÇ¨Í±∞Î¶¨Îäî 600");
             Destroy(this.transform.parent.gameObject);
         }
     }
@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         ITarget target = collision.gameObject.GetComponent<ITarget>();
-        Debug.Log($"{this.gameObject.name} √Êµπ : {collision.gameObject.name}");
+        Debug.Log($"{this.gameObject.name} Ï∂©Îèå : {collision.gameObject.name}");
         if (target == null) return;
         else
         {

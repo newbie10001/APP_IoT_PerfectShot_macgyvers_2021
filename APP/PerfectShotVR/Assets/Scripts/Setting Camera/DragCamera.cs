@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-// Ä«¸Ş¶ó¸¦ ²ø¾î¼­ °¡´ÆÀÚ¸¦ ¸ÂÃß´Â ¸ŞÄ¿´ÏÁòÀ» ±¸ÇöÇÑ ½ºÅ©¸³Æ®
+// ì¹´ë©”ë¼ë¥¼ ëŒì–´ì„œ ê°€ëŠ ìë¥¼ ë§ì¶”ëŠ” ë©”ì»¤ë‹ˆì¦˜ì„ êµ¬í˜„í•œ ìŠ¤í¬ë¦½íŠ¸
 public class DragCamera : MonoBehaviour
 {
     float drag_speed = -0.05f;
@@ -26,7 +26,7 @@ public class DragCamera : MonoBehaviour
             float dy;
             if(Input.touchCount > 0)
             {
-                // UI°¡ Á¸ÀçÇÏ´Â ºÎºĞÀÎ À§ÂÊ¿¡ ÅÍÄ¡°¡ ÀÔ·ÂµÇ¾ú´Â°¡?
+                // UIê°€ ì¡´ì¬í•˜ëŠ” ë¶€ë¶„ì¸ ìœ„ìª½ì— í„°ì¹˜ê°€ ì…ë ¥ë˜ì—ˆëŠ”ê°€?
                 if (Input.touches[0].position.y > Screen.height - 230)
                 {
                     dx = 0;
@@ -44,10 +44,10 @@ public class DragCamera : MonoBehaviour
                 dy = Input.GetAxis("Mouse Y");
             }
             Camera.main.lensShift += new Vector2(dx * drag_speed, dy * drag_speed);
-            // ¼¼ºÎ Á¶Á¤Àº ¿µÁ¡Á¶Àı·Î ÇÑ´Ù.
-            centerText.text = $"Ä«¸Ş¶ó ·»Áî ½ÃÇÁÆ® : ({Camera.main.lensShift.x}, {Camera.main.lensShift.y})";
+            // ì„¸ë¶€ ì¡°ì •ì€ ì˜ì ì¡°ì ˆë¡œ í•œë‹¤.
+            centerText.text = $"ì¹´ë©”ë¼ ë Œì¦ˆ ì‹œí”„íŠ¸ : ({Camera.main.lensShift.x}, {Camera.main.lensShift.y})";
             yield return null;
         }
-        centerText.text = "µå·¡±×ÇÏ¿© Ä«¸Ş¶ó Á¶Á¤";
+        centerText.text = "ë“œë˜ê·¸í•˜ì—¬ ì¹´ë©”ë¼ ì¡°ì •";
     }
 }

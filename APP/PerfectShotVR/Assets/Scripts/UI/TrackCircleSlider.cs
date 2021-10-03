@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ÇöÀç °¡´ÆÀÚ°¡ ¾îµğ ÀÖ´ÂÁö ÃßÀûÇØ¼­ UI¿¡ °»½ÅÇÔ. (¼­Å¬ ½½¶óÀÌ´õ)
+// í˜„ì¬ ê°€ëŠ ìê°€ ì–´ë”” ìˆëŠ”ì§€ ì¶”ì í•´ì„œ UIì— ê°±ì‹ í•¨. (ì„œí´ ìŠ¬ë¼ì´ë”)
 public class TrackCircleSlider : MonoBehaviour
 {
-    // Gun ¿ÀºêÁ§Æ® ¹Ø¿¡ ÀÖ´Â Front Sight
-    // ½ÇÁ¦ °¡´ÆÀÚÀÇ ¿ÀºêÁ§Æ®
+    // Gun ì˜¤ë¸Œì íŠ¸ ë°‘ì— ìˆëŠ” Front Sight
+    // ì‹¤ì œ ê°€ëŠ ìì˜ ì˜¤ë¸Œì íŠ¸
     public GameObject frontSight;
 
     private void Start()
@@ -25,17 +25,17 @@ public class TrackCircleSlider : MonoBehaviour
         
     }
 
-    // ¼º´ÉÀ» À§ÇØ 0.5ÃÊ °£°İÀ¸·Î ½ÇÇà
+    // ì„±ëŠ¥ì„ ìœ„í•´ 0.5ì´ˆ ê°„ê²©ìœ¼ë¡œ ì‹¤í–‰
     private IEnumerator updateUI()
     {
         Vector2 screenPos = Camera.main.WorldToScreenPoint(frontSight.transform.position);
         this.GetComponent<RectTransform>().position = screenPos;
         yield return new WaitForSeconds(0.5f);
-        // falseÀÏ °æ¿ì ·çÇÁ°¡ ¸ØÃã.
+        // falseì¼ ê²½ìš° ë£¨í”„ê°€ ë©ˆì¶¤.
         if(GameManager.instance.StaringMode) StartCoroutine(updateUI());
     }
 
-    // ¼³Á¤Ã¢¿¡¼­ Åä±ÛÇÏ¸é ¹İÀÀÇÏ´Â ¸Ş¼­µå
+    // ì„¤ì •ì°½ì—ì„œ í† ê¸€í•˜ë©´ ë°˜ì‘í•˜ëŠ” ë©”ì„œë“œ
     public void ToggleStaringSlider(Toggle _toggle)
     {
         this.gameObject.SetActive(_toggle.isOn);

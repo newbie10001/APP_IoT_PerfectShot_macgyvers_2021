@@ -1,21 +1,21 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ¿µÁ¡»ç°İÁö¿¡ Àû¿ëµÇ´Â ½ºÅ©¸³Æ®
+// ì˜ì ì‚¬ê²©ì§€ì— ì ìš©ë˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
 public class ZeroTarget : MonoBehaviour, ITarget
 {
-    // °á°ú µîÀ» ¾Ë·ÁÁÖ´Â ÅØ½ºÆ® UI
+    // ê²°ê³¼ ë“±ì„ ì•Œë ¤ì£¼ëŠ” í…ìŠ¤íŠ¸ UI
     public Text Indicator;
     public bool State { get; private set; }
     public bool GetState() => State;
     public GameObject bulletHolePrefab;
-    // ÃÊ±â À§Ä¡
+    // ì´ˆê¸° ìœ„ì¹˜
     private Vector3 _initPos;
-    // ÇÃ·¹ÀÌ¾î ´«¾Õ À§Ä¡
+    // í”Œë ˆì´ì–´ ëˆˆì• ìœ„ì¹˜
     private Vector3 DestPos { get => _initPos - new Vector3(0, -0.5f, 23.5f); }
-    // ¸ÂÀº ÁöÁ¡µéÀ» ±â·Ï
+    // ë§ì€ ì§€ì ë“¤ì„ ê¸°ë¡
     public List<Vector3> HitPoints { get; private set; }
 
 
@@ -38,17 +38,17 @@ public class ZeroTarget : MonoBehaviour, ITarget
         }
     }
 
-    // ÇÃ·¹ÀÌ¾î ´« ¾Õ¿¡ Á¾ÀÌ°¡ ³¯¾Æ¿È.
+    // í”Œë ˆì´ì–´ ëˆˆ ì•ì— ì¢…ì´ê°€ ë‚ ì•„ì˜´.
     public void MoveToPlayer()
     {
         State = false;
         StartCoroutine(Utility.MoveTo(transform, DestPos, 1f));
     }
 
-    // »ç°İÁö ÀÚ¸®·Î ³¯¾Æ°¨.
+    // ì‚¬ê²©ì§€ ìë¦¬ë¡œ ë‚ ì•„ê°.
     public void MoveToSet()
     {
-        // È®ÀÎµÈ ÃÑ¾ËµéÀ» ¹İÅõ¸íÇÏ°Ô Ã³¸®
+        // í™•ì¸ëœ ì´ì•Œë“¤ì„ ë°˜íˆ¬ëª…í•˜ê²Œ ì²˜ë¦¬
         for(int i = 0; i < this.transform.childCount; i++)
         {
             Renderer renderer = this.transform.GetChild(i).GetComponentInChildren<Renderer>();

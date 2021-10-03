@@ -1,54 +1,54 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ¿µÁ¡ »ç°İ ¸Å´ÏÀú(ÃÑ°ı)
+// ì˜ì  ì‚¬ê²© ë§¤ë‹ˆì €(ì´ê´„)
 /// <summary>
-/// ¿ªÇÒ : n¹ß¾¿ 3¹ø ½î°ÔÇÑ ÈÄ Ç¥ÀûÀ» º¸¿©ÁÖ°í, Å©¸®Å© ¼öÁ¤À» ÇÒ ¼ö ÀÖµµ·Ï ÇÔ. Å©¸®Å© ¼öÁ¤ UI¸¦ ¶ç¿ö¾ß ÇÔ.
-/// ¿µÁ¡È¹µæ ¿©ºÎ¸¦ ¾Ë·ÁÁÜ. »ç°İ ¹®Á¦Á¡À» ÇÇµå¹éÇÔ(³ªÁß¿¡ ±¸Çö).
-/// ¿µÁ¡»ç°İÀÌ ³¡³ª¸é '¸ŞÀÎÀ¸·Î', '´Ù½ÃÇÏ±â' ¶ó´Â ¸Ş´º¾ÆÀÌÅÛÀÌ È°¼ºÈ­µÊ.
-/// ±×¶§ ¿µÁ¡ÀÌ È¹µæµÇ¸é ½Ç°Å¸® »ç°İ ¸Ş´º¾ÆÀÌÅÛÀ» È°¼ºÈ­ÇÔ.
+/// ì—­í•  : në°œì”© 3ë²ˆ ì˜ê²Œí•œ í›„ í‘œì ì„ ë³´ì—¬ì£¼ê³ , í¬ë¦¬í¬ ìˆ˜ì •ì„ í•  ìˆ˜ ìˆë„ë¡ í•¨. í¬ë¦¬í¬ ìˆ˜ì • UIë¥¼ ë„ì›Œì•¼ í•¨.
+/// ì˜ì íšë“ ì—¬ë¶€ë¥¼ ì•Œë ¤ì¤Œ. ì‚¬ê²© ë¬¸ì œì ì„ í”¼ë“œë°±í•¨(ë‚˜ì¤‘ì— êµ¬í˜„).
+/// ì˜ì ì‚¬ê²©ì´ ëë‚˜ë©´ 'ë©”ì¸ìœ¼ë¡œ', 'ë‹¤ì‹œí•˜ê¸°' ë¼ëŠ” ë©”ë‰´ì•„ì´í…œì´ í™œì„±í™”ë¨.
+/// ê·¸ë•Œ ì˜ì ì´ íšë“ë˜ë©´ ì‹¤ê±°ë¦¬ ì‚¬ê²© ë©”ë‰´ì•„ì´í…œì„ í™œì„±í™”í•¨.
 /// </summary>
 public class ZeroPointShootingManager : MonoBehaviour
 {
-    // ¾À ³»¿¡ ÀÖ´Â ÇÃ·¹ÀÌ¾î
+    // ì”¬ ë‚´ì— ìˆëŠ” í”Œë ˆì´ì–´
     private GameObject player;
-    // ÇÃ·¹ÀÌ¾î°¡ µé°í ÀÖ´Â ÃÑ
+    // í”Œë ˆì´ì–´ê°€ ë“¤ê³  ìˆëŠ” ì´
     private Gun gun;
-    // ÇÑ ÅÏ¸¶´Ù ÀåÀüÇÒ Åº¾Ë ¼ö
+    // í•œ í„´ë§ˆë‹¤ ì¥ì „í•  íƒ„ì•Œ ìˆ˜
     const int AMMO = 5;
-    // Å©¸®Å© ¼¼ÆÃ ¸Ş´ºÃ¢ (3D)
+    // í¬ë¦¬í¬ ì„¸íŒ… ë©”ë‰´ì°½ (3D)
     public GameObject ClickSettingMenu;
-    // °¡Àå ÃÖ±Ù¿¡ ÆÇÁ¤ÇÑ °á°ú.
+    // ê°€ì¥ ìµœê·¼ì— íŒì •í•œ ê²°ê³¼.
     private JudgeResult _result;
-    // ¾È³» UI
+    // ì•ˆë‚´ UI
     public Text Indicator;
-    // »ç¿îµå¸¦ Àç»ıÇÏ´Â ½ºÅ©¸³Æ®
+    // ì‚¬ìš´ë“œë¥¼ ì¬ìƒí•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
     private ShootingNarrationSound narrator;
-    // ¿µÁ¡»ç°İÁö
+    // ì˜ì ì‚¬ê²©ì§€
     private ZeroTarget zeroPaper;
-    // ¿µÁ¡À» È¹µæÇß´ÂÁö ¿©ºÎ
+    // ì˜ì ì„ íšë“í–ˆëŠ”ì§€ ì—¬ë¶€
     bool gotZero = false;
-    // ¸Ş´ºµé
+    // ë©”ë‰´ë“¤
     public GameObject RetryMenu;
     public GameObject MainMenu;
     public GameObject RealShotMenu;
 
     void Start()
     {
-        // ÇÃ·¹ÀÌ¾î ÇÒ´ç
+        // í”Œë ˆì´ì–´ í• ë‹¹
         player = GameObject.FindGameObjectWithTag("Player");
-        // ÃÑ ÇÒ´ç
+        // ì´ í• ë‹¹
         gun = FindObjectOfType<Gun>();
-        // Å¸°Ù ÇÒ´ç
+        // íƒ€ê²Ÿ í• ë‹¹
         zeroPaper = FindObjectOfType<ZeroTarget>();
-        // ÇöÀç °ÔÀÓ¿ÀºêÁ§Æ® ³»¿¡ ÀÖ´Â ³»·¹ÀÌ¼Ç ÄÄÆ÷³ÍÆ® °¡Á®¿À±â
+        // í˜„ì¬ ê²Œì„ì˜¤ë¸Œì íŠ¸ ë‚´ì— ìˆëŠ” ë‚´ë ˆì´ì…˜ ì»´í¬ë„ŒíŠ¸ ê°€ì ¸ì˜¤ê¸°
         narrator = GetComponent<ShootingNarrationSound>();
         StartCoroutine(StartShooting());
     }
 
-    // ½ºÅµ ¿©ºÎ¸¦ È®ÀÎÇÏ±â À§ÇØ timeÃÊ µ¿¾È ÇÃ·¹ÀÌ¾îÀÇ ÀÔ·Â°ªÀ» °üÂûÇÔ.
+    // ìŠ¤í‚µ ì—¬ë¶€ë¥¼ í™•ì¸í•˜ê¸° ìœ„í•´ timeì´ˆ ë™ì•ˆ í”Œë ˆì´ì–´ì˜ ì…ë ¥ê°’ì„ ê´€ì°°í•¨.
     bool playerSkip;
     IEnumerator SkipInputCheckForSeconds(float endTime)
     {
@@ -60,7 +60,7 @@ public class ZeroPointShootingManager : MonoBehaviour
             t += Time.deltaTime;
             if (playerController.PlayerInput)
             {
-                Debug.Log("Àå¸é ½ºÅµ");
+                Debug.Log("ì¥ë©´ ìŠ¤í‚µ");
                 playerSkip = true;
                 break;
             }
@@ -69,18 +69,18 @@ public class ZeroPointShootingManager : MonoBehaviour
         }
     }
 
-    // »ç·Î ÀÔÀå ¹× ¾şµå·Á½÷
+    // ì‚¬ë¡œ ì…ì¥ ë° ì—ë“œë ¤ì´
     IEnumerator EnteringShootingLane()
     {
         PlayerMove playerMove = player.GetComponent<PlayerMove>();
         Coroutine coroutine;
-        Indicator.text = "»ç·Î ÀÔÀå";
+        Indicator.text = "ì‚¬ë¡œ ì…ì¥";
         narrator.PlayEntrance();
         yield return new WaitForSeconds(1.5f);
-        Indicator.text = "ÀÚ½ÅÀÇ »ç·Î¸¦\n¿ÜÄ¡¸é¼­ ÀÔÀåÇÕ´Ï´Ù.";
+        Indicator.text = "ìì‹ ì˜ ì‚¬ë¡œë¥¼\nì™¸ì¹˜ë©´ì„œ ì…ì¥í•©ë‹ˆë‹¤.";
         coroutine = StartCoroutine(playerMove.EnteringShootingLane());
         yield return SkipInputCheckForSeconds(9.0f);
-        // ½ºÅµ¹öÆ°ÀÌ ´­·Á¼­ µµÂøÇÏ¿´À» ¶§
+        // ìŠ¤í‚µë²„íŠ¼ì´ ëˆŒë ¤ì„œ ë„ì°©í•˜ì˜€ì„ ë•Œ
         if (playerSkip)
         {
             StopCoroutine(coroutine);
@@ -88,48 +88,48 @@ public class ZeroPointShootingManager : MonoBehaviour
         }
     }
 
-    // »ç°İ ÁØºñ ´Ü°è
+    // ì‚¬ê²© ì¤€ë¹„ ë‹¨ê³„
     IEnumerator GetReadyToShot()
     {
-        Indicator.text = "»ç°İ ÁØºñ...";
+        Indicator.text = "ì‚¬ê²© ì¤€ë¹„...";
         narrator.PlaySetProne();
-        Indicator.text = "»ç¼ö ¾şµå·Á ½÷";
+        Indicator.text = "ì‚¬ìˆ˜ ì—ë“œë ¤ ì´";
         yield return SkipInputCheckForSeconds(2.0f);
         player.GetComponent<PlayerMove>().AssumingPronePosition();
         do
         {
             if (!playerSkip)
             {
-                // ºÎ»ç¼ö Åº¾ËÁı ÀÎ°è
-                Indicator.text = "ºÎ»ç¼ö Åº¾ËÁı ÀÎ°è\n(ÁÂ»óÅº 5¹ß ÀÌ»ó¹«)";
+                // ë¶€ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ì¸ê³„
+                Indicator.text = "ë¶€ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ì¸ê³„\n(ì¢Œìƒíƒ„ 5ë°œ ì´ìƒë¬´)";
                 narrator.PlayTakeOverMagazine();
                 yield return SkipInputCheckForSeconds(3.0f);
                 if (playerSkip) break;
-                // »ç¼ö Åº¾ËÁı °áÇÕ
-                Indicator.text = "»ç¼ö Åº¾ËÁı °áÇÕ";
+                // ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ê²°í•©
+                Indicator.text = "ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ê²°í•©";
                 narrator.PlayCombineMagazine();
                 yield return SkipInputCheckForSeconds(4.0f);
                 if (playerSkip) break;
-                // Åº¾ËÀÏ¹ßÀåÀü
-                Indicator.text = "Åº¾Ë ÀÏ¹ß ÀåÀü";
+                // íƒ„ì•Œì¼ë°œì¥ì „
+                Indicator.text = "íƒ„ì•Œ ì¼ë°œ ì¥ì „";
                 narrator.PlayLoadShot();
                 yield return SkipInputCheckForSeconds(2.5f);
                 if (playerSkip) break;
-                // Á¶Á¤°£ ´Ü¹ß
-                Indicator.text = "Á¶Á¤°£ ´Ü¹ß";
+                // ì¡°ì •ê°„ ë‹¨ë°œ
+                Indicator.text = "ì¡°ì •ê°„ ë‹¨ë°œ";
                 narrator.PlaySetSingle();
                 yield return SkipInputCheckForSeconds(2.0f);
                 if (playerSkip) break;
             }
         } while (false);
-        // Åº¾Ë ÀåÀü
+        // íƒ„ì•Œ ì¥ì „
         gun.Reload(AMMO);
-        Indicator.text = "»ç°İ °³½Ã";
+        Indicator.text = "ì‚¬ê²© ê°œì‹œ";
         narrator.PlayInitiateShot();
         yield return new WaitForSeconds(3.0f);
     }
 
-    // ¹ß»ç °³¼ö ¾Ë·ÁÁÖ´Â ºÎ»ç¼ö ¿ªÇÒ
+    // ë°œì‚¬ ê°œìˆ˜ ì•Œë ¤ì£¼ëŠ” ë¶€ì‚¬ìˆ˜ ì—­í• 
     IEnumerator ShotCounting()
     {
         int lastAmmo = AMMO;
@@ -137,29 +137,29 @@ public class ZeroPointShootingManager : MonoBehaviour
         {
             if (gun.Ammo < lastAmmo)
             {
-                Indicator.text = $"{AMMO - gun.Ammo}¹ß";
+                Indicator.text = $"{AMMO - gun.Ammo}ë°œ";
                 lastAmmo = gun.Ammo;
             }
             yield return new WaitForSeconds(0.5f);
         }
     }
 
-    // »ç°İ Á¾·á ÀıÂ÷
+    // ì‚¬ê²© ì¢…ë£Œ ì ˆì°¨
     IEnumerator ShotEnd()
     {
-        Indicator.text = "»ç°İ Á¾·á";
+        Indicator.text = "ì‚¬ê²© ì¢…ë£Œ";
         narrator.PlayShotEnd();
         yield return new WaitForSeconds(2.0f);
-        // Á¶Á¤°£ ¾ÈÀü
-        Indicator.text = "Á¶Á¤°£ ¾ÈÀü";
+        // ì¡°ì •ê°„ ì•ˆì „
+        Indicator.text = "ì¡°ì •ê°„ ì•ˆì „";
         narrator.PlaySetSafe();
         yield return new WaitForSeconds(2.0f);
-        // Åº¾ËÁı Á¦°Å(ºĞÇØ)
-        Indicator.text = "Åº¾ËÁı Á¦°Å";
+        // íƒ„ì•Œì§‘ ì œê±°(ë¶„í•´)
+        Indicator.text = "íƒ„ì•Œì§‘ ì œê±°";
         narrator.PlayDetachMagazine();
         yield return new WaitForSeconds(2.0f);
-        // »ç¼ö ¼ÒÃÑ³õ°í ¹«¸­¾É¾Æ´ë±â
-        Indicator.text = "»ç¼ö ¼ÒÃÑ³õ°í ¹«¸­¾É¾Æ´ë±â";
+        // ì‚¬ìˆ˜ ì†Œì´ë†“ê³  ë¬´ë¦ì•‰ì•„ëŒ€ê¸°
+        Indicator.text = "ì‚¬ìˆ˜ ì†Œì´ë†“ê³  ë¬´ë¦ì•‰ì•„ëŒ€ê¸°";
         narrator.PlayLayGunAndSit();
         yield return new WaitForSeconds(2.0f);
         player.GetComponent<PlayerMove>().GetSittingPosition();
@@ -167,30 +167,30 @@ public class ZeroPointShootingManager : MonoBehaviour
 
     IEnumerator StartShooting()
     {
-        // ÇÃ·¹ÀÌ¾î¸¦ Á¶ÀÛÇÏ±â À§ÇÑ ½ºÅ©¸³Æ®
+        // í”Œë ˆì´ì–´ë¥¼ ì¡°ì‘í•˜ê¸° ìœ„í•œ ìŠ¤í¬ë¦½íŠ¸
         var playerController = player.GetComponent<PlayerController>();
-        // ½ÃÀÛ Àü¿¡´Â ÀÚÀÌ·Î off
+        // ì‹œì‘ ì „ì—ëŠ” ìì´ë¡œ off
         playerController.SetGyroEnabled(false);
         playerController.SetStaringModeEnabled(false);
-        // »ç·Î ÀÔÀå
+        // ì‚¬ë¡œ ì…ì¥
         yield return EnteringShootingLane();
         yield return SkipInputCheckForSeconds(2.0f);
         playerController.SetGyroEnabled(true);
-        // 5¹ß¾¿ 3¹ø »ç°İ
+        // 5ë°œì”© 3ë²ˆ ì‚¬ê²©
         for (int i = 0; i < 3; i++)
         {
-            // »ç°İ ÁØºñ
+            // ì‚¬ê²© ì¤€ë¹„
             zeroPaper.MoveToSet();
             yield return GetReadyToShot();
             StartCoroutine(ShotCounting());
-            Indicator.text = "»ç°İ °³½Ã";
+            Indicator.text = "ì‚¬ê²© ê°œì‹œ";
             playerController.SetStaringModeEnabled(true);
             while (gun.Ammo > 0)
             {
                 yield return new WaitForSeconds(1.0f);
             }
             yield return ShotEnd();
-            // ammo¹ßÀÌ ÀüºÎ ¸ÂÁö ¾Ê¾ÒÀ» °æ¿ì¸¦ ´ëºñ.
+            // ammoë°œì´ ì „ë¶€ ë§ì§€ ì•Šì•˜ì„ ê²½ìš°ë¥¼ ëŒ€ë¹„.
             if (zeroPaper.HitPoints.Count < AMMO)
             {
                 Indicator.text = $"{JudgePoints(zeroPaper.HitPoints)}";
@@ -199,14 +199,14 @@ public class ZeroPointShootingManager : MonoBehaviour
             {
                 int len = zeroPaper.HitPoints.Count;
                 _result = JudgePointsBetter(zeroPaper.HitPoints.GetRange(len - AMMO, AMMO));
-                if (_result == JudgeResult.¿µÁ¡È¹µæ) gotZero = true;
+                if (_result == JudgeResult.ì˜ì íšë“) gotZero = true;
             }
             yield return StartClickSetting();
         }
         gun.Reload(-1);
         StartCoroutine(Utility.MoveTo(RetryMenu.transform, RetryMenu.transform.position + new Vector3(0, 0, 20), 1.0f));
         StartCoroutine(Utility.MoveTo(MainMenu.transform, MainMenu.transform.position + new Vector3(0, 0, 20), 1.0f));
-        // gotZero == true ¿©¾ß¸¸ ½Ç°Å¸®»ç°İÀ» Á¦¾ÈÇÔ
+        // gotZero == true ì—¬ì•¼ë§Œ ì‹¤ê±°ë¦¬ì‚¬ê²©ì„ ì œì•ˆí•¨
         if (gotZero)
         {
             RealShotMenu.SetActive(true);
@@ -214,24 +214,24 @@ public class ZeroPointShootingManager : MonoBehaviour
         }
     }
 
-    // °¢°¢ÀÇ Å¬¸®Å© ¼öÁ¤¸¶´Ù ³¡³µ´ÂÁö ¿©ºÎ
+    // ê°ê°ì˜ í´ë¦¬í¬ ìˆ˜ì •ë§ˆë‹¤ ëë‚¬ëŠ”ì§€ ì—¬ë¶€
     private bool isSettingDone;
     IEnumerator StartClickSetting()
     {
         yield return new WaitForSeconds(1.0f);
-        Indicator.text = "Ç¥ÀûÁö È®ÀÎ";
+        Indicator.text = "í‘œì ì§€ í™•ì¸";
         narrator.PlayCheckPaper();
         yield return new WaitForSeconds(2.0f);
         if(!ClickSettingMenu.activeSelf) ClickSettingMenu.GetComponent<ToggleObject>().Toggle();
         zeroPaper.MoveToPlayer();
         Indicator.text = $"{_result}";
         isSettingDone = false;
-        // ¹«ÇÑ ÅºÃ¢ (ÃÑÀ» ½÷¼­ Å©¸®Å© ¼öÁ¤ÇÏ±â ‹š¹®¿¡)
+        // ë¬´í•œ íƒ„ì°½ (ì´ì„ ì´ì„œ í¬ë¦¬í¬ ìˆ˜ì •í•˜ê¸° ë–„ë¬¸ì—)
         gun.Reload(-1);
-        // ÀÌÁ¦ Å©¸®Å© ¼öÁ¤ ±¸Çö
+        // ì´ì œ í¬ë¦¬í¬ ìˆ˜ì • êµ¬í˜„
         while (!isSettingDone)
         {
-            // Å¬¸®Å© ¼¼ÆÃÃ¢ÀÌ ²¨Áö¸é ±×°É·Î ³¡
+            // í´ë¦¬í¬ ì„¸íŒ…ì°½ì´ êº¼ì§€ë©´ ê·¸ê±¸ë¡œ ë
             isSettingDone = !ClickSettingMenu.activeSelf;
             yield return new WaitForSeconds(1.0f);
         }
@@ -239,32 +239,32 @@ public class ZeroPointShootingManager : MonoBehaviour
         yield return null;
     }
 
-    // JudgePointsÀÇ ¹İÈ¯°ª.
+    // JudgePointsì˜ ë°˜í™˜ê°’.
     enum JudgeResult
     {
-        // È£Èí ºÒ·®(»óÇÏ Èğ¾îÁü)
-        È£ÈíºÒ·®,
-        // °İ¹ß ºÒ·®(ÁÂ¿ì Èğ¾îÁü)
-        °İ¹ßºÒ·®,
-        // »êÅº(»óÇÏÁÂ¿ì·Î Èğ¾îÁü)
-        »êÅº,
-        // ÅºÂø±º Çü¼º(±×·¯³ª °¡¿îµ¥¿¡ ¸ÂÁö´Â ¾ÊÀº »óÅÂ)
-        ÅºÂø±ºÇü¼º,
-        // ¿µÁ¡ È¹µæ
-        ¿µÁ¡È¹µæ,
+        // í˜¸í¡ ë¶ˆëŸ‰(ìƒí•˜ í©ì–´ì§)
+        í˜¸í¡ë¶ˆëŸ‰,
+        // ê²©ë°œ ë¶ˆëŸ‰(ì¢Œìš° í©ì–´ì§)
+        ê²©ë°œë¶ˆëŸ‰,
+        // ì‚°íƒ„(ìƒí•˜ì¢Œìš°ë¡œ í©ì–´ì§)
+        ì‚°íƒ„,
+        // íƒ„ì°©êµ° í˜•ì„±(ê·¸ëŸ¬ë‚˜ ê°€ìš´ë°ì— ë§ì§€ëŠ” ì•Šì€ ìƒíƒœ)
+        íƒ„ì°©êµ°í˜•ì„±,
+        // ì˜ì  íšë“
+        ì˜ì íšë“,
     }
-    // ¸ÂÀº ÁöÁ¡µéÀ» º¸°í ÅºÂø±ºÀÌ »ı°å´ÂÁö, ¿µÁ¡À» È¹µæÇß´ÂÁö µîÀ» ÆÇ´ÜÇÔ.
+    // ë§ì€ ì§€ì ë“¤ì„ ë³´ê³  íƒ„ì°©êµ°ì´ ìƒê²¼ëŠ”ì§€, ì˜ì ì„ íšë“í–ˆëŠ”ì§€ ë“±ì„ íŒë‹¨í•¨.
     JudgeResult JudgePoints(List<Vector3> points)
     {
-        // °¡Àå ÀÛÀº x, y
+        // ê°€ì¥ ì‘ì€ x, y
         Vector2 _min = new Vector2(float.MaxValue, float.MaxValue);
-        // °¡Àå Å« x, y
+        // ê°€ì¥ í° x, y
         Vector2 _max = new Vector2(float.MinValue, float.MinValue);
-        // Æò±Õ ÁöÁ¡
+        // í‰ê·  ì§€ì 
         Vector2 _avg = new Vector2(0, 0);
-        // Ä¿Æ®¶óÀÎ (5Å©¸®Å©)
+        // ì»¤íŠ¸ë¼ì¸ (5í¬ë¦¬í¬)
         float _cutOffPoint = 0.075f;
-        // Áß¾Ó ÁöÁ¡(ÇÃ·¹ÀÌ¾î)
+        // ì¤‘ì•™ ì§€ì (í”Œë ˆì´ì–´)
         Vector2 _center = gun.transform.position;
         foreach(Vector3 _point in points)
         {
@@ -275,30 +275,30 @@ public class ZeroPointShootingManager : MonoBehaviour
             _avg += new Vector2(_point.x, _point.y);
         }
         _avg *= Mathf.Pow(points.Count, -1);
-        // ÅºÂø±ºÀÌ ÁÂ¿ì·Î ³Ğ°Ô Çü¼ºµÇ¾ú´Â°¡?
+        // íƒ„ì°©êµ°ì´ ì¢Œìš°ë¡œ ë„“ê²Œ í˜•ì„±ë˜ì—ˆëŠ”ê°€?
         bool isWide = (_max.x - _min.x) > _cutOffPoint;
-        // ÅºÂø±ºÀÌ »óÇÏ·Î ³Ğ°Ô Çü¼ºµÇ¾ú´Â°¡?
+        // íƒ„ì°©êµ°ì´ ìƒí•˜ë¡œ ë„“ê²Œ í˜•ì„±ë˜ì—ˆëŠ”ê°€?
         bool isHigh = (_max.y - _min.y) > _cutOffPoint;
-        // °á°ú ¹İÈ¯
-        if (isWide && isHigh) return JudgeResult.»êÅº;
-        else if (isWide) return JudgeResult.°İ¹ßºÒ·®;
-        else if (isHigh) return JudgeResult.È£ÈíºÒ·®;
-        // _avg¿Í _centerÀÇ ()°Å¸®°¡ Ä¿Æ®¶óÀÎ ÀÌÇÏ¸é ¿µÁ¡È¹µæ. ¾Æ´Ï¶ó¸é ±×³É ÅºÂø±º Çü¼º.
+        // ê²°ê³¼ ë°˜í™˜
+        if (isWide && isHigh) return JudgeResult.ì‚°íƒ„;
+        else if (isWide) return JudgeResult.ê²©ë°œë¶ˆëŸ‰;
+        else if (isHigh) return JudgeResult.í˜¸í¡ë¶ˆëŸ‰;
+        // _avgì™€ _centerì˜ ()ê±°ë¦¬ê°€ ì»¤íŠ¸ë¼ì¸ ì´í•˜ë©´ ì˜ì íšë“. ì•„ë‹ˆë¼ë©´ ê·¸ëƒ¥ íƒ„ì°©êµ° í˜•ì„±.
         Debug.Log($"_avg : ({_avg.x}, {_avg.y}), _center : ({_center.x}, {_center.y})");
         Debug.Log($"_avg to _center : {Vector2.Distance(_avg, _center)}");
-        if (Vector2.Distance(_avg, _center) <= _cutOffPoint) return JudgeResult.¿µÁ¡È¹µæ;
-        else return JudgeResult.ÅºÂø±ºÇü¼º;
+        if (Vector2.Distance(_avg, _center) <= _cutOffPoint) return JudgeResult.ì˜ì íšë“;
+        else return JudgeResult.íƒ„ì°©êµ°í˜•ì„±;
     }
 
-    // Ç¥ÁØÆíÂ÷(StdDev)¸¦ ÀÌ¿ëÇÏ¿© º¸´Ù ´õ Á¤È®ÇÏ°Ô ÆÇ´ÜÇÏ´Â ¸Ş¼­µå
+    // í‘œì¤€í¸ì°¨(StdDev)ë¥¼ ì´ìš©í•˜ì—¬ ë³´ë‹¤ ë” ì •í™•í•˜ê²Œ íŒë‹¨í•˜ëŠ” ë©”ì„œë“œ
     private Vector2 _avg; 
     JudgeResult JudgePointsBetter(List<Vector3> points)
     {
-        // Æò±Õ ÁöÁ¡
+        // í‰ê·  ì§€ì 
         _avg = new Vector2(0, 0);
-        // Ä¿Æ®¶óÀÎ (Áß¾ÓÀ¸·ÎºÎÅÍ 4Å©¸®Å© ÀÌ³»¿¡ ÀÖ¾î¾ß ¿µÁ¡À» È¹µæÇß´Ù°í ÆÇÁ¤)
+        // ì»¤íŠ¸ë¼ì¸ (ì¤‘ì•™ìœ¼ë¡œë¶€í„° 4í¬ë¦¬í¬ ì´ë‚´ì— ìˆì–´ì•¼ ì˜ì ì„ íšë“í–ˆë‹¤ê³  íŒì •)
         float _cutOffPoint = 0.060f;
-        // Áß¾Ó ÁöÁ¡(ÇÃ·¹ÀÌ¾î°¡ Á÷¼± Á¤¸éÀ¸·Î ÃÑÀ» ½úÀ» ¶§, ÅºµµÇĞ ¹İ¿µ)
+        // ì¤‘ì•™ ì§€ì (í”Œë ˆì´ì–´ê°€ ì§ì„  ì •ë©´ìœ¼ë¡œ ì´ì„ ìˆì„ ë•Œ, íƒ„ë„í•™ ë°˜ì˜)
         Vector2 _curPos = new Vector2(0, 0.5f);
         Vector2 _center = new Vector2(_curPos.x, _curPos.y) - new Vector2(0, 0.015f);
         foreach (Vector3 _point in points)
@@ -317,42 +317,42 @@ public class ZeroPointShootingManager : MonoBehaviour
         stdDevY /= (points.Count - 1);
         stdDevX = Mathf.Sqrt(stdDevX);
         stdDevY = Mathf.Sqrt(stdDevY);
-        Debug.Log($"XÃà Ç¥ÁØÆíÂ÷ : {stdDevX}, YÃà Ç¥ÁØÆíÂ÷ : {stdDevY}");
-        // °á°ú ÆÇÁ¤
-        // Ç¥ÁØÆíÂ÷ÀÇ Ä¿Æ®¶óÀÎ
+        Debug.Log($"Xì¶• í‘œì¤€í¸ì°¨ : {stdDevX}, Yì¶• í‘œì¤€í¸ì°¨ : {stdDevY}");
+        // ê²°ê³¼ íŒì •
+        // í‘œì¤€í¸ì°¨ì˜ ì»¤íŠ¸ë¼ì¸
         const float STD_DEV_CUT = 0.03f;
-        // ÅºÂø±ºÀÌ ÁÂ¿ì·Î ³Ğ°Ô Çü¼ºµÇ¾ú´Â°¡?
+        // íƒ„ì°©êµ°ì´ ì¢Œìš°ë¡œ ë„“ê²Œ í˜•ì„±ë˜ì—ˆëŠ”ê°€?
         bool isWide = stdDevX > STD_DEV_CUT;
-        // ÅºÂø±ºÀÌ »óÇÏ·Î ³Ğ°Ô Çü¼ºµÇ¾ú´Â°¡?
+        // íƒ„ì°©êµ°ì´ ìƒí•˜ë¡œ ë„“ê²Œ í˜•ì„±ë˜ì—ˆëŠ”ê°€?
         bool isHigh = stdDevY > STD_DEV_CUT;
-        // °á°ú ¹İÈ¯
-        if (isWide && isHigh) return JudgeResult.»êÅº;
-        else if (isWide) return JudgeResult.°İ¹ßºÒ·®;
-        else if (isHigh) return JudgeResult.È£ÈíºÒ·®;
-        // _avg¿Í _centerÀÇ ()°Å¸®°¡ Ä¿Æ®¶óÀÎ ÀÌÇÏ¸é ¿µÁ¡È¹µæ. ¾Æ´Ï¶ó¸é ±×³É ÅºÂø±º Çü¼º.
+        // ê²°ê³¼ ë°˜í™˜
+        if (isWide && isHigh) return JudgeResult.ì‚°íƒ„;
+        else if (isWide) return JudgeResult.ê²©ë°œë¶ˆëŸ‰;
+        else if (isHigh) return JudgeResult.í˜¸í¡ë¶ˆëŸ‰;
+        // _avgì™€ _centerì˜ ()ê±°ë¦¬ê°€ ì»¤íŠ¸ë¼ì¸ ì´í•˜ë©´ ì˜ì íšë“. ì•„ë‹ˆë¼ë©´ ê·¸ëƒ¥ íƒ„ì°©êµ° í˜•ì„±.
         Debug.Log($"_avg : ({_avg.x}, {_avg.y}), _center : ({_center.x}, {_center.y})");
         Debug.Log($"_avg to _center : {Vector2.Distance(_avg, _center)}");
-        if (Vector2.Distance(_avg, _center) <= _cutOffPoint) return JudgeResult.¿µÁ¡È¹µæ;
-        else return JudgeResult.ÅºÂø±ºÇü¼º;
+        if (Vector2.Distance(_avg, _center) <= _cutOffPoint) return JudgeResult.ì˜ì íšë“;
+        else return JudgeResult.íƒ„ì°©êµ°í˜•ì„±;
     }
 
-    // _avg¸¦ ±â¹İÀ¸·Î ÀÚµ¿À¸·Î Å©¸®Å© ¼öÁ¤
+    // _avgë¥¼ ê¸°ë°˜ìœ¼ë¡œ ìë™ìœ¼ë¡œ í¬ë¦¬í¬ ìˆ˜ì •
     public void AutoSetClick()
     {
-        // Áß¾Ó ÁöÁ¡(ÇÃ·¹ÀÌ¾î°¡ Á÷¼± Àü¹æÀ¸·Î ÃÑÀ» ½ò ¶§)
+        // ì¤‘ì•™ ì§€ì (í”Œë ˆì´ì–´ê°€ ì§ì„  ì „ë°©ìœ¼ë¡œ ì´ì„ ì  ë•Œ)
         Vector2 _curPos = new Vector2(0, 0.5f);
         Vector2 _center = new Vector2(_curPos.x, _curPos.y) - new Vector2(0, 0.015f);
-        // ÇÑ Ä­¸¶´ÙÀÇ °Å¸®´Â 0.015À¯´Ö(Çö½ÇÀº 7mmÁö¸¸ Å©±â¸¦ °í·ÁÇÏ¿©...)
+        // í•œ ì¹¸ë§ˆë‹¤ì˜ ê±°ë¦¬ëŠ” 0.015ìœ ë‹›(í˜„ì‹¤ì€ 7mmì§€ë§Œ í¬ê¸°ë¥¼ ê³ ë ¤í•˜ì—¬...)
         const float DISTANCE_PER_CLICK = 0.015f;
-        // °¢°¢ ¼öÁ¤ÇØ¾ß ÇÒ Å©¸®Å© °ª
+        // ê°ê° ìˆ˜ì •í•´ì•¼ í•  í¬ë¦¬í¬ ê°’
         int dx = Mathf.FloorToInt((_center.x - _avg.x) / DISTANCE_PER_CLICK);
         int dy = Mathf.FloorToInt((_center.y - _avg.y) / DISTANCE_PER_CLICK);
         Debug.Log($"_center.y = {_center.y}, _avg.y = {_avg.y}, dy = {dy}");
-        // Å©¸®Å© °ª ¼öÁ¤
+        // í¬ë¦¬í¬ ê°’ ìˆ˜ì •
         GameManager.instance.Click += new Vector2(dx, dy);
-        // Å©¸®Å© ¼öÁ¤ ¹æÇâ
-        string _hori = dx < 0 ? "ÁÂ" : "¿ì";
-        string _vert = dy < 0 ? "ÇÏ" : "»ó";
-        Indicator.text = $"Å©¸®Å© °ª ÀÚµ¿ ¼öÁ¤\n{_hori} {Mathf.Abs(dx)}Å©¸®Å©, {_vert}  {Mathf.Abs(dy)}Å©¸®Å©";
+        // í¬ë¦¬í¬ ìˆ˜ì • ë°©í–¥
+        string _hori = dx < 0 ? "ì¢Œ" : "ìš°";
+        string _vert = dy < 0 ? "í•˜" : "ìƒ";
+        Indicator.text = $"í¬ë¦¬í¬ ê°’ ìë™ ìˆ˜ì •\n{_hori} {Mathf.Abs(dx)}í¬ë¦¬í¬, {_vert}  {Mathf.Abs(dy)}í¬ë¦¬í¬";
     }
 }

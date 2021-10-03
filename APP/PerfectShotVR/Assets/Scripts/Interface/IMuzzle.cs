@@ -1,4 +1,4 @@
-﻿public interface IMuzzle
+public interface IMuzzle
 {
     public void Fire();
 }

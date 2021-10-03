@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ÀÀ½Ã¸ğµå¸¦ ±¸ÇöÇÏ´Â ½ºÅ©¸³Æ®. °¡´Æ¼è ¿ÀºêÁ§Æ®ÀÇ ÄÄÆ÷³ÍÆ®·Î ÇÒ´çµÈ´Ù.
+// ì‘ì‹œëª¨ë“œë¥¼ êµ¬í˜„í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸. ê°€ëŠ ì‡  ì˜¤ë¸Œì íŠ¸ì˜ ì»´í¬ë„ŒíŠ¸ë¡œ í• ë‹¹ëœë‹¤.
 public class StaringMode : MonoBehaviour
 {
-    // °ğ ÀÀ½Ã¸ğµåÀÇ ½Ã°£À» ¼³Á¤ÇÒ ¼ö ÀÖ´Â ¹æ¹ıÀ» ±¸Çö
+    // ê³§ ì‘ì‹œëª¨ë“œì˜ ì‹œê°„ì„ ì„¤ì •í•  ìˆ˜ ìˆëŠ” ë°©ë²•ì„ êµ¬í˜„
     public float TriggerTime { get { return PlayerPrefs.GetFloat("StaringTime") == default ? 1.5f : PlayerPrefs.GetFloat("StaringTime"); } }
     float elapsed;
     Gun gun;
-    // ÀÀ½Ã¸ğµå ¿øÇü UI
+    // ì‘ì‹œëª¨ë“œ ì›í˜• UI
     public Image CircleSlider;
 
     void Start()

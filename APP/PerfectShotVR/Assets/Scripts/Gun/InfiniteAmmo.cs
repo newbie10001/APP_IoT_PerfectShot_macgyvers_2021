@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÃÑÀ» ¹«ÇÑ ´ë·Î ¾µ ¼ö ÀÖ°Ô ÇÏ´Â ½ºÅ©¸³Æ®
+// ì´ì„ ë¬´í•œ ëŒ€ë¡œ ì“¸ ìˆ˜ ìˆê²Œ í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
 public class InfiniteAmmo : MonoBehaviour
 {
     void Start()

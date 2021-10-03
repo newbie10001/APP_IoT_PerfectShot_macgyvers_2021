@@ -5,72 +5,72 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ½Ç°Å¸® »ç°İ ¸Å´ÏÀú
+// ì‹¤ê±°ë¦¬ ì‚¬ê²© ë§¤ë‹ˆì €
 public class RealShootingManager : MonoBehaviour
 {
-    // ¾À ³»¿¡ ÀÖ´Â ÇÃ·¹ÀÌ¾î
+    // ì”¬ ë‚´ì— ìˆëŠ” í”Œë ˆì´ì–´
     GameObject player;
-    // ¾À ³»¿¡ ÀÖ´Â ÃÑ
+    // ì”¬ ë‚´ì— ìˆëŠ” ì´
     Gun gun;
-    // 20¹ß ÀåÀü
+    // 20ë°œ ì¥ì „
     private int _ammo = 20;
-    // Å¸°ÙµéÀÇ ¸Å´ÏÀúµéÀ» ¸®½ºÆ®¿¡ µÎ¾î¼­ °ü¸®ÇÔ.
+    // íƒ€ê²Ÿë“¤ì˜ ë§¤ë‹ˆì €ë“¤ì„ ë¦¬ìŠ¤íŠ¸ì— ë‘ì–´ì„œ ê´€ë¦¬í•¨.
     public List<HumanoidTargetManager> targets;
-    // »ç¿îµå¸¦ Àç»ıÇÏ´Â ½ºÅ©¸³Æ®
+    // ì‚¬ìš´ë“œë¥¼ ì¬ìƒí•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
     private ShootingNarrationSound narrator;
-    // »ç·Î ÅëÁ¦, ºÎ»ç¼ö ¿ªÇÒÀ» ÇØÁÖ´Â ÀÎµğÄÉÀÌÅÍ
+    // ì‚¬ë¡œ í†µì œ, ë¶€ì‚¬ìˆ˜ ì—­í• ì„ í•´ì£¼ëŠ” ì¸ë””ì¼€ì´í„°
     public Text Indicator;
-    // »ç°İ ½Ç½Ã ÀıÂ÷¸¦ ¹â´ÂÁö ¿©ºÎ offÀÌ¸é ¹Ù·Î ½ÃÀÛ
+    // ì‚¬ê²© ì‹¤ì‹œ ì ˆì°¨ë¥¼ ë°ŸëŠ”ì§€ ì—¬ë¶€ offì´ë©´ ë°”ë¡œ ì‹œì‘
     public bool useShootingSequence;
-    // »ç°İ ½Ç½Ã ÀıÂ÷
-    readonly string[] _shootingSeq = { "Åº¾ËÁı ÀÎ°è\n(¿ì»óÅº 20¹ß ÀÌ»ó¹«)", "Åº¾ËÁı °áÇÕ", "Åº¾Ë ÀÏ¹ß ÀåÀü", "Á¶Á¤°£ ´Ü¹ß" };
-    // »ç°İ Á¾·á ÀıÂ÷
-    readonly string[] _shootEndingSeq = { "»ç°İ Á¾·á", "Á¶Á¤°£ ¾ÈÀü", "Åº¾ËÁı Á¦°Å", "¼ÒÃÑ ³õ°í ¹«¸­¾É¾Æ´ë±â", "" };
-    // Å¸°ÙµéÀ» ¼¼¿ì´Â ¼ø¼­. °¡±î¿î°Å(100m)ºÎÅÍ 0¹ø.
+    // ì‚¬ê²© ì‹¤ì‹œ ì ˆì°¨
+    readonly string[] _shootingSeq = { "íƒ„ì•Œì§‘ ì¸ê³„\n(ìš°ìƒíƒ„ 20ë°œ ì´ìƒë¬´)", "íƒ„ì•Œì§‘ ê²°í•©", "íƒ„ì•Œ ì¼ë°œ ì¥ì „", "ì¡°ì •ê°„ ë‹¨ë°œ" };
+    // ì‚¬ê²© ì¢…ë£Œ ì ˆì°¨
+    readonly string[] _shootEndingSeq = { "ì‚¬ê²© ì¢…ë£Œ", "ì¡°ì •ê°„ ì•ˆì „", "íƒ„ì•Œì§‘ ì œê±°", "ì†Œì´ ë†“ê³  ë¬´ë¦ì•‰ì•„ëŒ€ê¸°", "" };
+    // íƒ€ê²Ÿë“¤ì„ ì„¸ìš°ëŠ” ìˆœì„œ. ê°€ê¹Œìš´ê±°(100m)ë¶€í„° 0ë²ˆ.
     readonly string[] _targetName = { "100m", "200m", "250m"};
     readonly int[] _targetSeq = { 0, 1, 0, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2 };
-    // Å¸°Ù¸¶´Ù ¼¼¿öÁö´Â ½Ã°£ 100m : 5sec, 200m : 7sec, 250m : 10sec
+    // íƒ€ê²Ÿë§ˆë‹¤ ì„¸ì›Œì§€ëŠ” ì‹œê°„ 100m : 5sec, 200m : 7sec, 250m : 10sec
     readonly int[] _times = { 5, 7, 10 };
-    // °á°ú°¡ ³ª¿Ã ¶§ ¼¼¿öÁú Æ÷Áö¼Ç
+    // ê²°ê³¼ê°€ ë‚˜ì˜¬ ë•Œ ì„¸ì›Œì§ˆ í¬ì§€ì…˜
     readonly Vector3[] resultPos = { new Vector3(-2.5f, 1f, 20f), new Vector3(0, 1f, 20f), new Vector3(2.5f, 1f, 20f) };
-    // Å×½ºÆ®¿ë
-    // µî±Ş(0±Ş(Æ¯±Ş), 1±Ş, 2±Ş, 3±Ş)
+    // í…ŒìŠ¤íŠ¸ìš©
+    // ë“±ê¸‰(0ê¸‰(íŠ¹ê¸‰), 1ê¸‰, 2ê¸‰, 3ê¸‰)
     readonly int[] _grade = { 18, 16, 14, 12 };
-    // Á¡¼ö(¸ÂÃá È½¼ö)
+    // ì ìˆ˜(ë§ì¶˜ íšŸìˆ˜)
     public int Score { get; private set; }
-    // ÃÖ°í Á¡¼ö
+    // ìµœê³  ì ìˆ˜
     int HighScore
     {
         get => PlayerPrefs.GetInt("RealShootingHighScore");
         set
         {
-            // È¤½Ã³ª ÇÒ ¿À·ù¸¦ ´ëºñ
+            // í˜¹ì‹œë‚˜ í•  ì˜¤ë¥˜ë¥¼ ëŒ€ë¹„
             if(value > HighScore) PlayerPrefs.SetInt("RealShootingHighScore", value);
         }
     }
-    // °á°ú¸¦ º¸¿©ÁÖ±â À§ÇÑ 3D ÅØ½ºÆ®
+    // ê²°ê³¼ë¥¼ ë³´ì—¬ì£¼ê¸° ìœ„í•œ 3D í…ìŠ¤íŠ¸
     public GameObject ResultText;
-    // ¸Ş´ºµé (´Ù½ÃÇÏ±â, ¸ŞÀÎÀ¸·Î)
+    // ë©”ë‰´ë“¤ (ë‹¤ì‹œí•˜ê¸°, ë©”ì¸ìœ¼ë¡œ)
     public GameObject RetryMenuItem;
     public GameObject MainMenuItem;
 
     
     void Start()
     {
-        // ÇöÀç °ÔÀÓ¿ÀºêÁ§Æ® ³»¿¡ ÀÖ´Â ³»·¹ÀÌ¼Ç ÄÄÆ÷³ÍÆ® °¡Á®¿À±â
+        // í˜„ì¬ ê²Œì„ì˜¤ë¸Œì íŠ¸ ë‚´ì— ìˆëŠ” ë‚´ë ˆì´ì…˜ ì»´í¬ë„ŒíŠ¸ ê°€ì ¸ì˜¤ê¸°
         narrator = GetComponent<ShootingNarrationSound>();
-        // ÇÃ·¹ÀÌ¾î ÇÒ´ç
+        // í”Œë ˆì´ì–´ í• ë‹¹
         player = GameObject.FindGameObjectWithTag("Player");
-        // ÇöÀç ¾À¿¡ ÀÖ´Â ÃÑÀ» ÇÒ´ç.
+        // í˜„ì¬ ì”¬ì— ìˆëŠ” ì´ì„ í• ë‹¹.
         gun = FindObjectOfType<Gun>();
-        // Åº¾ËÀÇ °³¼ö´Â ¸ÂÃâ Å¸°ÙÀÇ °¹¼ö¸¸Å­
+        // íƒ„ì•Œì˜ ê°œìˆ˜ëŠ” ë§ì¶œ íƒ€ê²Ÿì˜ ê°¯ìˆ˜ë§Œí¼
         _ammo = _targetSeq.Length;
-        // Á¡¼ö ÃÊ±âÈ­.
+        // ì ìˆ˜ ì´ˆê¸°í™”.
         Score = 0;
         StartCoroutine(StartShooting());
     }
 
-    // ½ºÅµ ¿©ºÎ¸¦ È®ÀÎÇÏ±â À§ÇØ endTimeÃÊ µ¿¾È ÇÃ·¹ÀÌ¾îÀÇ ÀÔ·Â°ªÀ» °üÂûÇÔ.
+    // ìŠ¤í‚µ ì—¬ë¶€ë¥¼ í™•ì¸í•˜ê¸° ìœ„í•´ endTimeì´ˆ ë™ì•ˆ í”Œë ˆì´ì–´ì˜ ì…ë ¥ê°’ì„ ê´€ì°°í•¨.
     bool playerSkip;
     IEnumerator SkipInputCheckForSeconds(float endTime)
     {
@@ -82,7 +82,7 @@ public class RealShootingManager : MonoBehaviour
             t += Time.deltaTime;
             if (playerController.PlayerInput)
             {
-                Debug.Log("Àå¸é ½ºÅµ");
+                Debug.Log("ì¥ë©´ ìŠ¤í‚µ");
                 playerSkip = true;
                 break;
             }
@@ -91,84 +91,84 @@ public class RealShootingManager : MonoBehaviour
         }
     }
 
-    // »ç·Î ÀÔÀå ¹× ¾şµå·Á½÷
+    // ì‚¬ë¡œ ì…ì¥ ë° ì—ë“œë ¤ì´
     IEnumerator EnteringShootingLane()
     {
         PlayerMove playerMove = player.GetComponent<PlayerMove>();
         Coroutine coroutine;
-        Indicator.text = "»ç·Î ÀÔÀå";
+        Indicator.text = "ì‚¬ë¡œ ì…ì¥";
         narrator.PlayEntrance();
         yield return new WaitForSeconds(1.5f);
-        Indicator.text = "ÀÚ½ÅÀÇ »ç·Î¸¦\n¿ÜÄ¡¸é¼­ ÀÔÀåÇÕ´Ï´Ù.";
+        Indicator.text = "ìì‹ ì˜ ì‚¬ë¡œë¥¼\nì™¸ì¹˜ë©´ì„œ ì…ì¥í•©ë‹ˆë‹¤.";
         coroutine = StartCoroutine(playerMove.EnteringShootingLane());
         yield return SkipInputCheckForSeconds(9.0f);
-        // ½ºÅµ¹öÆ°ÀÌ ´­·Á¼­ µµÂøÇÏ¿´À» ¶§
+        // ìŠ¤í‚µë²„íŠ¼ì´ ëˆŒë ¤ì„œ ë„ì°©í•˜ì˜€ì„ ë•Œ
         if (playerSkip)
         {
             StopCoroutine(coroutine);
             playerMove.GoToShootingLane();
         }
         narrator.PlaySetProne();
-        Indicator.text = "»ç¼ö ¾şµå·Á ½÷";
+        Indicator.text = "ì‚¬ìˆ˜ ì—ë“œë ¤ ì´";
         yield return new WaitForSeconds(2.0f);
         playerMove.AssumingPronePosition();
     }
 
-    // »ç°İ ÁØºñ ´Ü°è
+    // ì‚¬ê²© ì¤€ë¹„ ë‹¨ê³„
     IEnumerator GetReadyToShot()
     {
-        Indicator.text = "»ç°İ ÁØºñ...";
+        Indicator.text = "ì‚¬ê²© ì¤€ë¹„...";
         do
         {
             if (!playerSkip)
             {
-                // ºÎ»ç¼ö Åº¾ËÁı ÀÎ°è
+                // ë¶€ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ì¸ê³„
                 Indicator.text = _shootingSeq[0];
                 narrator.PlayTakeOverMagazine();
                 yield return SkipInputCheckForSeconds(3.0f);
                 if (playerSkip) break;
-                // »ç¼ö Åº¾ËÁı °áÇÕ
+                // ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ê²°í•©
                 Indicator.text = _shootingSeq[1];
                 narrator.PlayCombineMagazine();
                 yield return SkipInputCheckForSeconds(4.0f);
                 if (playerSkip) break;
-                // Åº¾ËÀÏ¹ßÀåÀü
+                // íƒ„ì•Œì¼ë°œì¥ì „
                 Indicator.text = _shootingSeq[2];
                 narrator.PlayLoadShot();
                 yield return SkipInputCheckForSeconds(2.5f);
                 if (playerSkip) break;
-                // Á¶Á¤°£ ´Ü¹ß
+                // ì¡°ì •ê°„ ë‹¨ë°œ
                 Indicator.text = _shootingSeq[3];
                 narrator.PlaySetSingle();
                 yield return SkipInputCheckForSeconds(2.0f);
                 if (playerSkip) break;
             }
         } while (false);
-        // Åº¾Ë ÀåÀü
+        // íƒ„ì•Œ ì¥ì „
         gun.Reload(_ammo);
-        Indicator.text = "»ç°İ °³½Ã";
+        Indicator.text = "ì‚¬ê²© ê°œì‹œ";
         narrator.PlayInitiateShot();
         yield return new WaitForSeconds(3.0f);
     }
 
 
-    // »ç°İ ½ÃÀÛ
+    // ì‚¬ê²© ì‹œì‘
     IEnumerator StartShooting()
     {
-        // ÇÃ·¹ÀÌ¾î¸¦ Á¶ÀÛÇÏ±â À§ÇÑ ½ºÅ©¸³Æ®
+        // í”Œë ˆì´ì–´ë¥¼ ì¡°ì‘í•˜ê¸° ìœ„í•œ ìŠ¤í¬ë¦½íŠ¸
         var playerController = player.GetComponent<PlayerController>();
-        // ½ÃÀÛ Àü¿¡´Â ÀÚÀÌ·Î off
+        // ì‹œì‘ ì „ì—ëŠ” ìì´ë¡œ off
         playerController.SetGyroEnabled(false);
-        // »ç·Î ÀÔÀå
+        // ì‚¬ë¡œ ì…ì¥
         yield return EnteringShootingLane();
         yield return SkipInputCheckForSeconds(2.0f);
-        // »ç°İ ÁØºñ
+        // ì‚¬ê²© ì¤€ë¹„
         yield return GetReadyToShot();
-        // »ç°İ ½ÃÀÛ ¶§´Â ÀÚÀÌ·Î on
+        // ì‚¬ê²© ì‹œì‘ ë•ŒëŠ” ìì´ë¡œ on
         playerController.SetGyroEnabled(true);
-        // ¹ß»ç °³¼ö ¼¼±â (ÇÑ ¹ß, µÎ ¹ß...)
+        // ë°œì‚¬ ê°œìˆ˜ ì„¸ê¸° (í•œ ë°œ, ë‘ ë°œ...)
         StartCoroutine(ShotCounting());
-        // Å¸°ÙÀ» ¼ø¼­¿¡ µû¶ó ¼¼¿ò.
+        // íƒ€ê²Ÿì„ ìˆœì„œì— ë”°ë¼ ì„¸ì›€.
         foreach(int t in _targetSeq)
         {
             targets[t].GetUp();
@@ -193,36 +193,36 @@ public class RealShootingManager : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         while(gun.Ammo > 0)
         {
-            Indicator.text = "ÀÜÅº »ç°İ";
+            Indicator.text = "ì”íƒ„ ì‚¬ê²©";
             yield return new WaitForSeconds(1.0f);
         }
-        Indicator.text = "»ç°İ Á¾·á";
-        // »ç°İ ³¡. ÀÌÁ¦ °á°úÃ¢À» º¸¿©Áà¾ß ÇÔ.
+        Indicator.text = "ì‚¬ê²© ì¢…ë£Œ";
+        // ì‚¬ê²© ë. ì´ì œ ê²°ê³¼ì°½ì„ ë³´ì—¬ì¤˜ì•¼ í•¨.
         ShowResult();
     }
 
-    // »ç°İ Á¾·á ÀıÂ÷
+    // ì‚¬ê²© ì¢…ë£Œ ì ˆì°¨
     IEnumerator ShotEnd()
     {
         Indicator.text = _shootEndingSeq[0];
         narrator.PlayShotEnd();
         yield return new WaitForSeconds(2.0f);
-        // Á¶Á¤°£ ¾ÈÀü
+        // ì¡°ì •ê°„ ì•ˆì „
         Indicator.text = _shootEndingSeq[1];
         narrator.PlaySetSafe();
         yield return new WaitForSeconds(2.0f);
-        // Åº¾ËÁı Á¦°Å(ºĞÇØ)
+        // íƒ„ì•Œì§‘ ì œê±°(ë¶„í•´)
         Indicator.text = _shootEndingSeq[2];
         narrator.PlayDetachMagazine();
         yield return new WaitForSeconds(2.0f);
-        // »ç¼ö ¼ÒÃÑ³õ°í ¹«¸­¾É¾Æ´ë±â
+        // ì‚¬ìˆ˜ ì†Œì´ë†“ê³  ë¬´ë¦ì•‰ì•„ëŒ€ê¸°
         Indicator.text = _shootEndingSeq[3];
         narrator.PlayLayGunAndSit();
         yield return new WaitForSeconds(2.0f);
         player.GetComponent<PlayerMove>().GetSittingPosition();
     }
 
-    // ¹ß»ç °³¼ö ¾Ë·ÁÁÖ´Â ºÎ»ç¼ö ¿ªÇÒ
+    // ë°œì‚¬ ê°œìˆ˜ ì•Œë ¤ì£¼ëŠ” ë¶€ì‚¬ìˆ˜ ì—­í• 
     IEnumerator ShotCounting()
     {
         int lastAmmo = _ammo;
@@ -230,12 +230,12 @@ public class RealShootingManager : MonoBehaviour
         {
             if (gun.Ammo < lastAmmo) 
             {
-                Indicator.text = $"{_ammo - gun.Ammo}¹ß";
+                Indicator.text = $"{_ammo - gun.Ammo}ë°œ";
                 lastAmmo = gun.Ammo;
             }
             yield return new WaitForSeconds(0.5f);
         }
-        // »ç°İ Á¾·á
+        // ì‚¬ê²© ì¢…ë£Œ
         yield return ShotEnd();
     }
 
@@ -250,22 +250,22 @@ public class RealShootingManager : MonoBehaviour
     }
 
     /// <summary>
-    /// °á°ú¸¦ º¸¿©ÁÖ´Â ¸Ş¼­µå.
-    /// ÇÃ·¹ÀÌ¾î ¾Õ¿¡ Ç¥ÀûÁöµéÀÌ ³¯¾Æ¿Í¼­ °á°ú¸¦ º¸¿©ÁÜ.
-    /// 3D ÅØ½ºÆ®¸¦ ÀÌ¿ë.
-    /// À§¿¡´Â '¸ŞÀÎ¸Ş´º·Î', '´Ù½ÃÇÏ±â' ¸Ş´º°¡ ³ªÅ¸³².
+    /// ê²°ê³¼ë¥¼ ë³´ì—¬ì£¼ëŠ” ë©”ì„œë“œ.
+    /// í”Œë ˆì´ì–´ ì•ì— í‘œì ì§€ë“¤ì´ ë‚ ì•„ì™€ì„œ ê²°ê³¼ë¥¼ ë³´ì—¬ì¤Œ.
+    /// 3D í…ìŠ¤íŠ¸ë¥¼ ì´ìš©.
+    /// ìœ„ì—ëŠ” 'ë©”ì¸ë©”ë‰´ë¡œ', 'ë‹¤ì‹œí•˜ê¸°' ë©”ë‰´ê°€ ë‚˜íƒ€ë‚¨.
     /// </summary>
     void ShowResult()
     {
-        Debug.Log("»ç°İ ³¡. ShowResult È£Ãâ");
-        // ½ºÄÚ¾î ´Ù½Ã °»½Å
+        Debug.Log("ì‚¬ê²© ë. ShowResult í˜¸ì¶œ");
+        // ìŠ¤ì½”ì–´ ë‹¤ì‹œ ê°±ì‹ 
         UpdateScore();
-        // ¹«ÇÑ ÅºÃ¢ Àû¿ë
+        // ë¬´í•œ íƒ„ì°½ ì ìš©
         gun.Reload(-1);
-        // ÇÏÀÌ½ºÄÚ¾î °»½Å
+        // í•˜ì´ìŠ¤ì½”ì–´ ê°±ì‹ 
         if(Score > HighScore) HighScore = Score;
-        // Å¸°Ù¸¶´Ù °á°ú¸¦ º¸¿©ÁÖ´Â °úÁ¤
-        // À§·Î ³¯·Áº¸³½ ÈÄ ½º¹«½ºÇÏ°Ô ³»·Á¿È
+        // íƒ€ê²Ÿë§ˆë‹¤ ê²°ê³¼ë¥¼ ë³´ì—¬ì£¼ëŠ” ê³¼ì •
+        // ìœ„ë¡œ ë‚ ë ¤ë³´ë‚¸ í›„ ìŠ¤ë¬´ìŠ¤í•˜ê²Œ ë‚´ë ¤ì˜´
         for(int i = 0; i < targets.Count; i++)
         {
             targets[i].OnlyGetUp();
@@ -275,27 +275,27 @@ public class RealShootingManager : MonoBehaviour
         targets[1].ShowResult($"{targets[1].Hits.Count} / 9");
         targets[2].ShowResult($"{targets[2].Hits.Count} / 2");
 
-        ResultText.GetComponent<TextMesh>().text = $"°á°ú : {Score} / 20 ({GetGrade(Score)})\nÇÏÀÌ½ºÄÚ¾î : {HighScore} ({GetGrade(HighScore)})";
-        // 3D ¸Ş´º ¾ÆÀÌÅÛÀº ÃßÈÄ ±¸Çö ¿¹Á¤
+        ResultText.GetComponent<TextMesh>().text = $"ê²°ê³¼ : {Score} / 20 ({GetGrade(Score)})\ní•˜ì´ìŠ¤ì½”ì–´ : {HighScore} ({GetGrade(HighScore)})";
+        // 3D ë©”ë‰´ ì•„ì´í…œì€ ì¶”í›„ êµ¬í˜„ ì˜ˆì •
         StartCoroutine(Utility.MoveTo(RetryMenuItem.transform, new Vector3(-2, 7, 40), 1f));
         StartCoroutine(Utility.MoveTo(MainMenuItem.transform, new Vector3(2, 7, 40), 1f));
         StartCoroutine(ThrowMenuItems());
     }
 
-    // »ç°İ µî±ŞÀ» ¹®ÀÚ¿­·Î ¹İÈ¯.
+    // ì‚¬ê²© ë“±ê¸‰ì„ ë¬¸ìì—´ë¡œ ë°˜í™˜.
     string GetGrade(int Score)
     {
         if (Score >= _grade[0])
         {
-            return "Æ¯±Ş!";
+            return "íŠ¹ê¸‰!";
         }
-        else if (Score >= _grade[1]) return "1±Ş";
-        else if (Score >= _grade[2]) return "2±Ş";
-        else if (Score >= _grade[3]) return "3±Ş";
-        return "Å»¶ô";
+        else if (Score >= _grade[1]) return "1ê¸‰";
+        else if (Score >= _grade[2]) return "2ê¸‰";
+        else if (Score >= _grade[3]) return "3ê¸‰";
+        return "íƒˆë½";
     }
 
-    // ¸Ş´º ¾ÆÀÌÅÛµéÀ» ´øÁö´Â ¸Ş¼­µå
+    // ë©”ë‰´ ì•„ì´í…œë“¤ì„ ë˜ì§€ëŠ” ë©”ì„œë“œ
     IEnumerator ThrowMenuItems()
     {
         yield return new WaitForSeconds(300.0f);

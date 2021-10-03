@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Å¸°ÙÀÌ ¸Â´Â ºÎÀ§¸¦ ´ã´çÇÏ´Â ½ºÅ©¸³Æ®.
-// ÀÌ·¸°Ô ÇÏ´Â ÀÌÀ¯´Â... Äİ¶óÀÌ´õ¸¦ ¸ğµ¨ÀÌ µé°í ÀÖ±â ¶§¹®.
-// ±×¸®°í ¾Ö´Ï¸ŞÀÌ¼ÇÀº Å¸°ÙÀÇ ¹Ù±ù ºÎºĞÀÌ °®°í ÀÖ±â ¶§¹®ÀÌ´Ù.
+// íƒ€ê²Ÿì´ ë§ëŠ” ë¶€ìœ„ë¥¼ ë‹´ë‹¹í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸.
+// ì´ë ‡ê²Œ í•˜ëŠ” ì´ìœ ëŠ”... ì½œë¼ì´ë”ë¥¼ ëª¨ë¸ì´ ë“¤ê³  ìˆê¸° ë•Œë¬¸.
+// ê·¸ë¦¬ê³  ì• ë‹ˆë©”ì´ì…˜ì€ íƒ€ê²Ÿì˜ ë°”ê¹¥ ë¶€ë¶„ì´ ê°–ê³  ìˆê¸° ë•Œë¬¸ì´ë‹¤.
 public class HumanoidTargetHit : MonoBehaviour, ITarget
 {
-    // ÀÎ°£Çü Å¸°Ù Å¬·¡½º¸¦ °¡Á®¿È. Ãæµ¹Àº ¿©±â¼­ ¸Ã°í ³ª¸ÓÁö Ã³¸®´Â ±×°÷¿¡
+    // ì¸ê°„í˜• íƒ€ê²Ÿ í´ë˜ìŠ¤ë¥¼ ê°€ì ¸ì˜´. ì¶©ëŒì€ ì—¬ê¸°ì„œ ë§¡ê³  ë‚˜ë¨¸ì§€ ì²˜ë¦¬ëŠ” ê·¸ê³³ì—
     public HumanoidTargetManager targetManager;
     
     public bool GetState() => targetManager.IsSet;
@@ -16,7 +16,7 @@ public class HumanoidTargetHit : MonoBehaviour, ITarget
     {
         Vector3 position = hit.point;
         Debug.Log($"hit at : ({position.x}, {position.y}, {position.z})");
-        // ±â±â Áøµ¿
+        // ê¸°ê¸° ì§„ë™
         Handheld.Vibrate();
         targetManager.OnHit(hit);
     }

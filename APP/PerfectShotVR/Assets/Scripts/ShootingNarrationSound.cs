@@ -3,42 +3,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// »ç°Ý ³»·¹ÀÌ¼Ç »ç¿îµå
-// ¸Å´ÏÀúÀÇ ÄÄÆ÷³ÍÆ®·Î µé¾î°¨
+// ì‚¬ê²© ë‚´ë ˆì´ì…˜ ì‚¬ìš´ë“œ
+// ë§¤ë‹ˆì €ì˜ ì»´í¬ë„ŒíŠ¸ë¡œ ë“¤ì–´ê°
 public class ShootingNarrationSound : MonoBehaviour
 {
     private AudioSource audioSource;
-    // »ç·Î ÀÔÀå
+    // ì‚¬ë¡œ ìž…ìž¥
     public AudioClip Entrance;
-    // »ç¼ö ¾þµå·Á½÷
+    // ì‚¬ìˆ˜ ì—Žë“œë ¤ì´
     public AudioClip SetProne;
-    // Åº¾ËÁý ÀÎ°è
+    // íƒ„ì•Œì§‘ ì¸ê³„
     public AudioClip TakeOverMagazine;
-    // Åº¾ËÁý °áÇÕ
+    // íƒ„ì•Œì§‘ ê²°í•©
     public AudioClip CombineMagazine;
-    // Åº¾ËÀÏ¹ßÀåÀü
+    // íƒ„ì•Œì¼ë°œìž¥ì „
     public AudioClip LoadShot;
-    // Á¶Á¤°£ ´Ü¹ß
+    // ì¡°ì •ê°„ ë‹¨ë°œ
     public AudioClip SetSingle;
-    // »ç°Ý °³½Ã
+    // ì‚¬ê²© ê°œì‹œ
     public AudioClip InitiateShot;
 
-    // 100m À½¼º
+    // 100m ìŒì„±
     public AudioClip Sound100;
-    // 200m À½¼º
+    // 200m ìŒì„±
     public AudioClip Sound200;
-    // 250m À½¼º
+    // 250m ìŒì„±
     public AudioClip Sound250;
-    // Ç¥ÀûÁö È®ÀÎ
+    // í‘œì ì§€ í™•ì¸
     public AudioClip CheckPaper;
 
-    // »ç°Ý Á¾·á
+    // ì‚¬ê²© ì¢…ë£Œ
     public AudioClip ShotEnd;
-    // Á¶Á¤°£ ¾ÈÀü
+    // ì¡°ì •ê°„ ì•ˆì „
     public AudioClip SetSafe;
-    // Åº¾ËÁý Á¦°Å
+    // íƒ„ì•Œì§‘ ì œê±°
     public AudioClip DetachMagazine;
-    // ¼ÒÃÑ ³õ°í ¹«¸­¾É¾Æ´ë±â
+    // ì†Œì´ ë†“ê³  ë¬´ë¦Žì•‰ì•„ëŒ€ê¸°
     public AudioClip LayGunAndSit;
 
     private void Awake()
@@ -49,36 +49,36 @@ public class ShootingNarrationSound : MonoBehaviour
     }
 
     public void PlayAudioClip(AudioClip clip) => audioSource.PlayOneShot(clip);
-    #region »ç°Ý ½Ç½Ã ÀýÂ÷
-    // »ç·Î ÀÔÀå
+    #region ì‚¬ê²© ì‹¤ì‹œ ì ˆì°¨
+    // ì‚¬ë¡œ ìž…ìž¥
     public void PlayEntrance() => audioSource.PlayOneShot(Entrance);
-    // ¾þµå·Á½÷
+    // ì—Žë“œë ¤ì´
     public void PlaySetProne() => audioSource.PlayOneShot(SetProne);
-    // ºÎ»ç¼ö Åº¾ËÁý ÀÎ°è
+    // ë¶€ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ì¸ê³„
     public void PlayTakeOverMagazine() => audioSource.PlayOneShot(TakeOverMagazine);
-    // »ç¼ö Åº¾ËÁý °áÇÕ
+    // ì‚¬ìˆ˜ íƒ„ì•Œì§‘ ê²°í•©
     public void PlayCombineMagazine() => audioSource.PlayOneShot(CombineMagazine);
-    // Åº¾ËÀÏ¹ßÀåÀü
+    // íƒ„ì•Œì¼ë°œìž¥ì „
     public void PlayLoadShot() => audioSource.PlayOneShot(LoadShot);
-    // Á¶Á¤°£ ´Ü¹ß
+    // ì¡°ì •ê°„ ë‹¨ë°œ
     public void PlaySetSingle() => audioSource.PlayOneShot(SetSingle);
-    // »ç°Ý°³½Ã
+    // ì‚¬ê²©ê°œì‹œ
     public void PlayInitiateShot() => audioSource.PlayOneShot(InitiateShot);
     #endregion
-    #region »ç°Ý Áß À½¼º
+    #region ì‚¬ê²© ì¤‘ ìŒì„±
     public void Play100m() => audioSource.PlayOneShot(Sound100);
     public void Play200m() => audioSource.PlayOneShot(Sound200);
     public void Play250m() => audioSource.PlayOneShot(Sound250);
     public void PlayCheckPaper() => audioSource.PlayOneShot(CheckPaper);
     #endregion
-    #region »ç°Ý Á¾·á ÀýÂ÷
-    // »ç°Ý Á¾·á
+    #region ì‚¬ê²© ì¢…ë£Œ ì ˆì°¨
+    // ì‚¬ê²© ì¢…ë£Œ
     public void PlayShotEnd() => audioSource.PlayOneShot(ShotEnd);
-    // Á¶Á¤°£ ¾ÈÀü
+    // ì¡°ì •ê°„ ì•ˆì „
     public void PlaySetSafe() => audioSource.PlayOneShot(SetSafe);
-    // Åº¾ËÁý Á¦°Å
+    // íƒ„ì•Œì§‘ ì œê±°
     public void PlayDetachMagazine() => audioSource.PlayOneShot(DetachMagazine);
-    // ¼ÒÃÑ ³õ°í ¹«¸­¾É¾Æ´ë±â
+    // ì†Œì´ ë†“ê³  ë¬´ë¦Žì•‰ì•„ëŒ€ê¸°
     public void PlayLayGunAndSit() => audioSource.PlayOneShot(LayGunAndSit);
     #endregion
 }

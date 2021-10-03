@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ºø¸ÂÀº ºÎºĞÀ» ´ã´çÇÏ´Â Ã³¸®.
+// ë¹—ë§ì€ ë¶€ë¶„ì„ ë‹´ë‹¹í•˜ëŠ” ì²˜ë¦¬.
 public class NohitZone : MonoBehaviour, ITarget
 {
     public bool GetState() => true;
-    // ÅºÂø ÁöÁ¡¿¡ ³õÀ» ÇÁ¸®ÆÕ.
+    // íƒ„ì°© ì§€ì ì— ë†“ì„ í”„ë¦¬íŒ¹.
     public GameObject hitMarkPrefab;
 
     public void OnHit(RaycastHit hit)

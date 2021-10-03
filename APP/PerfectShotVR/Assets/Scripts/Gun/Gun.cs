@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    // ÃÑ±¸ ¿ÀºêÁ§Æ®¸¦ ÇÒ´ç
+    // ì´êµ¬ ì˜¤ë¸Œì íŠ¸ë¥¼ í• ë‹¹
     public GameObject MuzzleObject;
     private IMuzzle muzzle;
 
-    // ¹ß»ç ¼Óµµ Á¶Àı
+    // ë°œì‚¬ ì†ë„ ì¡°ì ˆ
     private float lastShot;
     private float timeBetShot = 0.5f;
-    // ÃÑ¾ËÀÇ °³¼ö
+    // ì´ì•Œì˜ ê°œìˆ˜
     public int Ammo { get; private set; }
 
     void Awake()
@@ -27,32 +27,32 @@ public class Gun : MonoBehaviour
         
     }
 
-    // ÀåÀüÇÏ´Â ¸Ş¼­µå. num¸¸Å­ ÃÑ¾ËÀ» ´Ù½Ã Ã¤¿ò.
-    // num < 0ÀÎ °æ¿ì ¹«ÇÑÅºÃ¢
+    // ì¥ì „í•˜ëŠ” ë©”ì„œë“œ. numë§Œí¼ ì´ì•Œì„ ë‹¤ì‹œ ì±„ì›€.
+    // num < 0ì¸ ê²½ìš° ë¬´í•œíƒ„ì°½
     public void Reload(int num)
     {
         Ammo = num;
-        Debug.Log($"ÀåÀüµÊ : {Ammo}¹ß");
+        Debug.Log($"ì¥ì „ë¨ : {Ammo}ë°œ");
     }
 
-    // ¹ß»ç¸¦ ½ÃµµÇØº¸°í °¡´ÉÇÏ¸é ¹ß»ç.
+    // ë°œì‚¬ë¥¼ ì‹œë„í•´ë³´ê³  ê°€ëŠ¥í•˜ë©´ ë°œì‚¬.
     public void Fire()
     {
-        // Åº¾ËÀÌ ¾øÀ¸¸é Åº¾ËÀÌ ¾ø´Ù°í °æ°í(±¸Çö ¿¹Á¤), ÃÑÀ» ½îÁö ¾ÊÀ½.
+        // íƒ„ì•Œì´ ì—†ìœ¼ë©´ íƒ„ì•Œì´ ì—†ë‹¤ê³  ê²½ê³ (êµ¬í˜„ ì˜ˆì •), ì´ì„ ì˜ì§€ ì•ŠìŒ.
         if(Ammo == 0)
         {
-            Debug.Log($"Ammo {Ammo}¹ß");
+            Debug.Log($"Ammo {Ammo}ë°œ");
             return;
         }
-        // ¿¬»ç ¹æÁö
+        // ì—°ì‚¬ ë°©ì§€
         if(Time.time >= lastShot + timeBetShot)
         {
-            Debug.Log("ÃÑ¾Ë ¹ß»ç!");
-            // hitPoint°¡ nullÀÌ¸é ÀûÁßÇÏÁö ¸øÇß´Ù´Â ¶æ.
+            Debug.Log("ì´ì•Œ ë°œì‚¬!");
+            // hitPointê°€ nullì´ë©´ ì ì¤‘í•˜ì§€ ëª»í–ˆë‹¤ëŠ” ëœ».
             muzzle.Fire();
             lastShot = Time.time;
             Ammo--;
-            Debug.Log($"ÃÑ¾Ë {Ammo}¹ß ³²À½.");
+            Debug.Log($"ì´ì•Œ {Ammo}ë°œ ë‚¨ìŒ.");
         }
     }
 }

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Å©¸®Å© ¼öÁ¤ UI¿¡¼­ ¹öÆ°À» ´­·¶À» ‹š È£ÃâÇÒ ¸Ş¼­µåµé.
-// ValueText¿¡ ÀÌ ½ºÅ©¸³Æ®¸¦ ÄÄÆ÷³ÍÆ®·Î ÇÒ´çÇÑ´Ù.
+// í¬ë¦¬í¬ ìˆ˜ì • UIì—ì„œ ë²„íŠ¼ì„ ëˆŒë €ì„ ë–„ í˜¸ì¶œí•  ë©”ì„œë“œë“¤.
+// ValueTextì— ì´ ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì»´í¬ë„ŒíŠ¸ë¡œ í• ë‹¹í•œë‹¤.
 public class ClickValueText : MonoBehaviour
 {
-    // ÀÚ±âÀÚ½ÅÀ» ÇÒ´ç.
+    // ìê¸°ìì‹ ì„ í• ë‹¹.
     public Text ValueText;
-    // ÁÂ¿ìÅ©¸®Å©ÀÇ °ªÀ» 1 Áõ°¡
+    // ì¢Œìš°í¬ë¦¬í¬ì˜ ê°’ì„ 1 ì¦ê°€
     public void AddHorizontal()
     {
         int value = int.Parse(ValueText.text) + 1;
         value = Mathf.Clamp(value, -17, 17);
         ValueText.text = value.ToString();
     }
-    // ÁÂ¿ìÅ©¸®Å©ÀÇ °ªÀ» 1 °¨¼Ò
+    // ì¢Œìš°í¬ë¦¬í¬ì˜ ê°’ì„ 1 ê°ì†Œ
     public void SubHorizontal()
     {
         int value = int.Parse(ValueText.text) - 1;
@@ -24,7 +24,7 @@ public class ClickValueText : MonoBehaviour
         ValueText.text = value.ToString();
     }
 
-    // »óÇÏÅ©¸®Å©ÀÇ °ªÀ» 1 Áõ°¡
+    // ìƒí•˜í¬ë¦¬í¬ì˜ ê°’ì„ 1 ì¦ê°€
     public void AddVertical()
     {
         int value = int.Parse(ValueText.text) + 1;
@@ -32,7 +32,7 @@ public class ClickValueText : MonoBehaviour
         ValueText.text = value.ToString();
     }
 
-    // »óÇÏÅ©¸®Å©ÀÇ °ªÀ» 1 °¨¼Ò
+    // ìƒí•˜í¬ë¦¬í¬ì˜ ê°’ì„ 1 ê°ì†Œ
     public void SubVertical()
     {
         int value = int.Parse(ValueText.text) - 1;

@@ -1,8 +1,8 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// °è¼Ó µ¹´Ù°¡ ½Ã¼±ÀÌ ¸¶ÁÖÄ¡¸é ÇÃ·¹ÀÌ¾î¸¦ ¹Ù¶óº¸´Â ¿ÀºêÁ§Æ®
+// ê³„ì† ëŒë‹¤ê°€ ì‹œì„ ì´ ë§ˆì£¼ì¹˜ë©´ í”Œë ˆì´ì–´ë¥¼ ë°”ë¼ë³´ëŠ” ì˜¤ë¸Œì íŠ¸
 public class KeepRotate : MonoBehaviour, IReactAtLooking
 {
     void Start()

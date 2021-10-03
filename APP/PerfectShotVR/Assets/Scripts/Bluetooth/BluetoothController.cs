@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ¼³Á¤Ã¢¿¡¼­ ºí·çÅõ½º °ü·Ã UI Á¦¾î ¹× ºí·çÅõ½º ¸Å´ÏÀú ¿¬°á
+// ì„¤ì •ì°½ì—ì„œ ë¸”ë£¨íˆ¬ìŠ¤ ê´€ë ¨ UI ì œì–´ ë° ë¸”ë£¨íˆ¬ìŠ¤ ë§¤ë‹ˆì € ì—°ê²°
 public class BluetoothController : MonoBehaviour
 {
-    // ºí·çÅõ½º ¼³Á¤À» ²ô°í ÄÑ´Â Åä±Û
+    // ë¸”ë£¨íˆ¬ìŠ¤ ì„¤ì •ì„ ë„ê³  ì¼œëŠ” í† ê¸€
     public Toggle BluetoothToggle;
-    // ÇöÀç »óÅÂ¸¦ ¾Ë·ÁÁÖ´Â ÀÎµğÄÉÀÌÅÍ
+    // í˜„ì¬ ìƒíƒœë¥¼ ì•Œë ¤ì£¼ëŠ” ì¸ë””ì¼€ì´í„°
     public Text StateIndicator;
-    // µğ¹ÙÀÌ½º ÀÌ¸§À» ´ãÀº ÅØ½ºÆ® ÀÎÇ² ÇÊµå
-    // ¿¬°á ¼º°ø ½Ã ÇØ´ç µğ¹ÙÀÌ½º ÀÌ¸§À» PlayerPrefs¿¡ DeviceNameÀ¸·Î ÀúÀå.
+    // ë””ë°”ì´ìŠ¤ ì´ë¦„ì„ ë‹´ì€ í…ìŠ¤íŠ¸ ì¸í’‹ í•„ë“œ
+    // ì—°ê²° ì„±ê³µ ì‹œ í•´ë‹¹ ë””ë°”ì´ìŠ¤ ì´ë¦„ì„ PlayerPrefsì— DeviceNameìœ¼ë¡œ ì €ì¥.
     public InputField DeviceNameInputField;
-    // ¿¬°á / ÇØÁ¦ ¹öÆ°µé.
+    // ì—°ê²° / í•´ì œ ë²„íŠ¼ë“¤.
     public Button ConnectButton;
     public Button DisconnectButton;
 
@@ -24,17 +24,17 @@ public class BluetoothController : MonoBehaviour
         });
         DeviceNameInputField.text = PlayerPrefs.GetString("DeviceName");
         ConnectButton.onClick.AddListener(() => {
-            StateIndicator.text = "¿¬°áÀ» ½ÃµµÇÕ´Ï´Ù...";
+            StateIndicator.text = "ì—°ê²°ì„ ì‹œë„í•©ë‹ˆë‹¤...";
             BluetoothManager.instance.deviceName = DeviceNameInputField.text;
             BluetoothManager.instance.OnConnectButtonClick();
             StateIndicator.text = UpdateState();
             SetButtonsEnabled();
         });
         DisconnectButton.onClick.AddListener(() => {
-            StateIndicator.text = "¿¬°áÀ» ÇØÁ¦ÇÕ´Ï´Ù...";
+            StateIndicator.text = "ì—°ê²°ì„ í•´ì œí•©ë‹ˆë‹¤...";
             BluetoothManager.instance.OnDisconnectButtonClick();
-            if (BluetoothManager.instance.IsConnected) StateIndicator.text = "ÇØÁ¦ ¿Ï·á";
-            else StateIndicator.text = "ÇØÁ¦ ½ÇÆĞ";
+            if (BluetoothManager.instance.IsConnected) StateIndicator.text = "í•´ì œ ì™„ë£Œ";
+            else StateIndicator.text = "í•´ì œ ì‹¤íŒ¨";
             SetButtonsEnabled();
         });
         this.gameObject.SetActive(GameManager.instance.Bluetooth);
@@ -53,7 +53,7 @@ public class BluetoothController : MonoBehaviour
         if(BluetoothManager.instance != null) StateIndicator.text = UpdateState() + $"\n{BluetoothManager.instance.State}";
     }
 
-    // ¹öÆ°ÀÇ È°¼ºÈ­¸¦ °»½ÅÇÔ.
+    // ë²„íŠ¼ì˜ í™œì„±í™”ë¥¼ ê°±ì‹ í•¨.
     void SetButtonsEnabled()
     {
         if (BluetoothManager.instance == null) return;
@@ -70,20 +70,20 @@ public class BluetoothController : MonoBehaviour
         }
     }
 
-    // »óÅÂ Áö½Ã±â ¾÷µ¥ÀÌÆ®
+    // ìƒíƒœ ì§€ì‹œê¸° ì—…ë°ì´íŠ¸
     string UpdateState()
     {
-        if (BluetoothManager.instance == null) return "ºí·çÅõ½º ¿¬°á ºÒ°¡´É";
+        if (BluetoothManager.instance == null) return "ë¸”ë£¨íˆ¬ìŠ¤ ì—°ê²° ë¶ˆê°€ëŠ¥";
         string state = "";
-        state += "Æä¾î¸µ" + (BluetoothManager.instance.IsPaired ? "O" : "X");
-        state += " ¿¬°á" + (BluetoothManager.instance.IsConnected ? "O" : "X");
+        state += "í˜ì–´ë§" + (BluetoothManager.instance.IsPaired ? "O" : "X");
+        state += " ì—°ê²°" + (BluetoothManager.instance.IsConnected ? "O" : "X");
         return state;
     }
 
     IEnumerator ConnectionMonitor()
     {
-        Debug.Log("Ä¿³Ø¼Ç ¸ğ´ÏÅÍ¸µ Áß...");
-        // ¿¬°áÀÌ µÇ¾îµµ onConnnected ÀÌº¥Æ®°¡ ½ÇÇàµÇÁö ¾Ê´Â ¹®Á¦¿¡ ´ëÇÑ Á¶Ä¡.
+        Debug.Log("ì»¤ë„¥ì…˜ ëª¨ë‹ˆí„°ë§ ì¤‘...");
+        // ì—°ê²°ì´ ë˜ì–´ë„ onConnnected ì´ë²¤íŠ¸ê°€ ì‹¤í–‰ë˜ì§€ ì•ŠëŠ” ë¬¸ì œì— ëŒ€í•œ ì¡°ì¹˜.
         if (BluetoothManager.instance.IsConnected)
         {
             BluetoothManager.instance.OnConnected();

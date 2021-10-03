@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// ½Ç°Å¸® »ç°İ¿¡¼­ ÇÃ·¹ÀÌ¾îÀÇ ¿òÁ÷ÀÓ. ´ÙÀ½°ú °°Àº ¼¼ °¡Áö ¿òÁ÷ÀÓÀ¸·Î ±¸ÇöÀÌ µÈ´Ù.
-/// 1. »ç·Î ÀÔÀå
-/// 2. ¾şµå·Á ½÷(»ç·Î ÀÔÀåÀÌ ³¡³­ »óÅÂ¿¡¼­)
-/// 3. ¹«¸­¾É¾Æ´ë±â(¾şµå·Á½÷ »óÅÂ¿¡¼­)
+/// ì‹¤ê±°ë¦¬ ì‚¬ê²©ì—ì„œ í”Œë ˆì´ì–´ì˜ ì›€ì§ì„. ë‹¤ìŒê³¼ ê°™ì€ ì„¸ ê°€ì§€ ì›€ì§ì„ìœ¼ë¡œ êµ¬í˜„ì´ ëœë‹¤.
+/// 1. ì‚¬ë¡œ ì…ì¥
+/// 2. ì—ë“œë ¤ ì´(ì‚¬ë¡œ ì…ì¥ì´ ëë‚œ ìƒíƒœì—ì„œ)
+/// 3. ë¬´ë¦ì•‰ì•„ëŒ€ê¸°(ì—ë“œë ¤ì´ ìƒíƒœì—ì„œ)
 /// </summary>
 public class PlayerMove : MonoBehaviour
 {
-    // {À§Ä¡, ¿ÀÀÏ·¯ È¸Àü°ª}À¸·Î ÇÃ·¹ÀÌ¾îÀÇ »óÅÂ¸¦ °áÁ¤ÇÔ.
-    // »ç·Î ÀÔÀå
+    // {ìœ„ì¹˜, ì˜¤ì¼ëŸ¬ íšŒì „ê°’}ìœ¼ë¡œ í”Œë ˆì´ì–´ì˜ ìƒíƒœë¥¼ ê²°ì •í•¨.
+    // ì‚¬ë¡œ ì…ì¥
     readonly Vector3[] Enter0 = { new Vector3(-15, 1.5f, -15), new Vector3(0, 0, 0) };
     readonly Vector3[] Enter1 = { new Vector3(-15, 1.5f, -2), new Vector3(0, 0, 0) };
     readonly Vector3[] Enter2 = { new Vector3(-15, 1.5f, -2), new Vector3(0, 90, 0) };
     readonly Vector3[] Enter3 = { new Vector3(0, 1.5f, -2), new Vector3(0, 90, 0) };
     readonly Vector3[] Enter4 = { new Vector3(0, 1.5f, -2), new Vector3(0, 0, 0) };
-    // ¾şµå·Á ½÷
+    // ì—ë“œë ¤ ì´
     readonly Vector3[] Prone0 = { new Vector3(0, 1.5f, -2), new Vector3(0, 0, 0) };
     readonly Vector3[] Prone1 = { new Vector3(0, 0.5f, 0), new Vector3(0, 0, 0) };
-    // ¹«¸­ ¾É¾Æ ´ë±â
+    // ë¬´ë¦ ì•‰ì•„ ëŒ€ê¸°
     readonly Vector3[] Sitting0 = { new Vector3(0, 0.5f, 0), new Vector3(0, 0, 0) };
     readonly Vector3[] Sitting1 = { new Vector3(0, 1.0f, -2), new Vector3(0, 0, 0) };
 
     /// <summary>
-    /// {À§Ä¡, È¸Àü} °ªÀ» µÎ °³ ¹Ş¾Æ from¿¡¼­ to·Î »óÅÂ ÀÌµ¿
+    /// {ìœ„ì¹˜, íšŒì „} ê°’ì„ ë‘ ê°œ ë°›ì•„ fromì—ì„œ toë¡œ ìƒíƒœ ì´ë™
     /// </summary>
-    /// <param name="from">½ÃÀÛ ÁöÁ¡</param>
-    /// <param name="to">¸ñÇ¥ ÁöÁ¡</param>
-    /// <param name="time">°É¸®´Â ½Ã°£</param>
+    /// <param name="from">ì‹œì‘ ì§€ì </param>
+    /// <param name="to">ëª©í‘œ ì§€ì </param>
+    /// <param name="time">ê±¸ë¦¬ëŠ” ì‹œê°„</param>
     private void MoveToState(Vector3[] from, Vector3[] to, float time)
     {
         transform.position = from[0];
@@ -51,22 +51,22 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    // »ç·Î ÀÔÀå ¾à 7ÃÊ °¡·® °É¸²
+    // ì‚¬ë¡œ ì…ì¥ ì•½ 7ì´ˆ ê°€ëŸ‰ ê±¸ë¦¼
     public IEnumerator EnteringShootingLane()
     {
-        // ½ÃÀÛ ÁöÁ¡À¸·Î °¡±â
+        // ì‹œì‘ ì§€ì ìœ¼ë¡œ ê°€ê¸°
         transform.position = Enter0[0];
         transform.eulerAngles = Enter0[1];
         yield return new WaitForSeconds(2.0f);
         yield return Utility.MoveTo(transform, Enter1[0], 1.5f / 3.0f);
-        // È¸Àü
+        // íšŒì „
         yield return Utility.RotateTo(transform, Enter2[1], 1.5f);
         yield return Utility.MoveTo(transform, Enter3[0], 1.0f / 3.0f);
-        // È¸Àü
+        // íšŒì „
         yield return (Utility.RotateTo(transform, Enter4[1], 1.5f));
     }
 
-    // ¾şµå·Á ½÷
+    // ì—ë“œë ¤ ì´
     public void AssumingPronePosition()
     {
         transform.position = Prone0[0];
@@ -74,14 +74,14 @@ public class PlayerMove : MonoBehaviour
         StartCoroutine(Utility.MoveTo(transform, Prone1[0], 1.25f));
     }
 
-    // ¹«¸­ ¾É¾Æ ´ë±â
+    // ë¬´ë¦ ì•‰ì•„ ëŒ€ê¸°
     public void GetSittingPosition()
     {
         transform.position = Sitting0[0];
         StartCoroutine(Utility.MoveSlerpTo(transform, Sitting1[0], 2.0f));
     }
 
-    // ¾î¶² À§Ä¡¿¡¼­µç Áï½Ã »ç·ÎÀÔÀå
+    // ì–´ë–¤ ìœ„ì¹˜ì—ì„œë“  ì¦‰ì‹œ ì‚¬ë¡œì…ì¥
     public void GoToShootingLane()
     {
         MoveToState(new Vector3[] { transform.position, transform.eulerAngles}, Enter4, 1.0f );

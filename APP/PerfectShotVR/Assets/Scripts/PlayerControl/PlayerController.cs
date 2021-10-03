@@ -5,15 +5,15 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    // ÇÃ·¹ÀÌ¾îÀÇ ÀÚ½ÄÀÎ ÃÑ
+    // í”Œë ˆì´ì–´ì˜ ìì‹ì¸ ì´
     private Gun gun;
-    // ÇÃ·¹ÀÌ¾î ÀÚÀÌ·Î ¹«ºê ½ºÅ©¸³Æ®
+    // í”Œë ˆì´ì–´ ìì´ë¡œ ë¬´ë¸Œ ìŠ¤í¬ë¦½íŠ¸
     private GyroRotate gyro;
-    // °¡´Æ¼è ¿ÀºêÁ§Æ®¿¡ ÀÖ´Â ÀÀ½Ã¸ğµå ½ºÅ©¸³Æ®
+    // ê°€ëŠ ì‡  ì˜¤ë¸Œì íŠ¸ì— ìˆëŠ” ì‘ì‹œëª¨ë“œ ìŠ¤í¬ë¦½íŠ¸
     private StaringMode staring;
-    // ÇÃ·¹ÀÌ¾îÀÇ ÀÔ·Â ¿©ºÎ¸¦ °è¼ÓÇÏ¿© °»½Å
+    // í”Œë ˆì´ì–´ì˜ ì…ë ¥ ì—¬ë¶€ë¥¼ ê³„ì†í•˜ì—¬ ê°±ì‹ 
     public bool PlayerInput { get; private set; }
-    // ´©¸£°í ÀÖÀ» °æ¿ì true, ¶¼´Â ¼ø°£ false°¡ µÊ.
+    // ëˆ„ë¥´ê³  ìˆì„ ê²½ìš° true, ë–¼ëŠ” ìˆœê°„ falseê°€ ë¨.
     private bool pressed;
 
     private void Awake()
@@ -28,16 +28,16 @@ public class PlayerController : MonoBehaviour
         GetInputAndFire();
     }
 
-    // ÀÔ·ÂÀ» °¨ÁöÇÏ¿© °İ¹ß ½ÇÇà
+    // ì…ë ¥ì„ ê°ì§€í•˜ì—¬ ê²©ë°œ ì‹¤í–‰
     void GetInputAndFire()
     {
         PlayerInput = GetInput();
         if (PlayerInput)
         {
-            // ¿¬»ç ¹æÁö
+            // ì—°ì‚¬ ë°©ì§€
             if (!pressed)
             {
-                Debug.Log("¹ß»ç ½Ãµµ");
+                Debug.Log("ë°œì‚¬ ì‹œë„");
                 gun.Fire();
                 pressed = true;
             }
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Çà¸¶´Ù °¢°¢ ÅÍÄ¡, ¸¶¿ì½º, ºí·çÅõ½º ÀÔ·ÂÀ» ¹Ş´Â´Ù.
+    // í–‰ë§ˆë‹¤ ê°ê° í„°ì¹˜, ë§ˆìš°ìŠ¤, ë¸”ë£¨íˆ¬ìŠ¤ ì…ë ¥ì„ ë°›ëŠ”ë‹¤.
     public bool GetInput()
     {
         return (
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
             );
     }
 
-    // ÇÃ·¹ÀÌ¾î°¡ Á¤¸éÀ» º¸µµ·Ï Àç¼³Á¤
+    // í”Œë ˆì´ì–´ê°€ ì •ë©´ì„ ë³´ë„ë¡ ì¬ì„¤ì •
     public void SetRotationFront()
     {
         //this.transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);

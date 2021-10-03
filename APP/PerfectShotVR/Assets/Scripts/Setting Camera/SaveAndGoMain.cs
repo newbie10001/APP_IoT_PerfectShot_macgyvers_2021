@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Save ¹öÆ°À» ´©¸£¸é ¼³Á¤À» ÇÑ ÈÄ ¸ŞÀÎ È­¸éÀ¸·Î ³ª°¨.
+// Save ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì„¤ì •ì„ í•œ í›„ ë©”ì¸ í™”ë©´ìœ¼ë¡œ ë‚˜ê°.
 public class SaveAndGoMain : MonoBehaviour
 {
     public void SaveAndExit()
     {
         Vector2 _clickShift = FindObjectOfType<SettingCamera>().ConvertClickToLensShift();
-        // Å©¸®Å© ¼öÁ¤ÀÌ Ä«¸Ş¶ó ¼öÁ¤¿¡ Æ÷ÇÔµÇ¹Ç·Î ±×¸¸Å­ Á¦¿ÜµÇ¾î¾ß ÇÔ.
+        // í¬ë¦¬í¬ ìˆ˜ì •ì´ ì¹´ë©”ë¼ ìˆ˜ì •ì— í¬í•¨ë˜ë¯€ë¡œ ê·¸ë§Œí¼ ì œì™¸ë˜ì–´ì•¼ í•¨.
         GameManager.instance.InitialCameraShift = Camera.main.lensShift - _clickShift;
         SceneManager.LoadScene("MainScene");
     }
