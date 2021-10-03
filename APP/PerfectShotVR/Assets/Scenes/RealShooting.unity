@@ -1426,11 +1426,10 @@ Transform:
   m_Father: {fileID: 1889127029397683293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3186927886002512969
+--- !u!114 &3186927886002512969 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3186927886002512969, guid: 8a97beec662d045439030fce1e1f0e27, type: 3}
+  m_PrefabInstance: {fileID: 8962670128353336815}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371228447}
   m_Enabled: 1
@@ -1438,7 +1437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c75476315629a48b84677d29decf9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CircleSlider: {fileID: 1026918997}
 --- !u!1001 &3238519452699992574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1579,6 +1577,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1889127029397683293}
     m_Modifications:
+    - target: {fileID: 3186927886002512969, guid: 8a97beec662d045439030fce1e1f0e27, type: 3}
+      propertyPath: CircleSlider
+      value: 
+      objectReference: {fileID: 1026918997}
     - target: {fileID: 7374164970961902560, guid: 8a97beec662d045439030fce1e1f0e27, type: 3}
       propertyPath: m_RootOrder
       value: 1
