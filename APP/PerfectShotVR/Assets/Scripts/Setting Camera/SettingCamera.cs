@@ -16,7 +16,7 @@ public class SettingCamera : MonoBehaviour
     }
 
     // 크리크 하나 당 움직여야 할 값 (카메라의 센서 사이즈가 x : 4, y : 8, fov : 21.78679 일 때)
-    private const float VALUE_PER_CLICK = -0.0015f;
+    private const float VALUE_PER_CLICK = -0.003f;
     public Vector2 ConvertClickToLensShift()
     {
         Vector2 _click = GameManager.instance.Click;

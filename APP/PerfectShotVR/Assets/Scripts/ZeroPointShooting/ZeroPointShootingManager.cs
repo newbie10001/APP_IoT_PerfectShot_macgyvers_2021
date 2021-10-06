@@ -175,7 +175,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         // 사로 입장
         yield return EnteringShootingLane();
         yield return SkipInputCheckForSeconds(2.0f);
-        playerController.SetGyroEnabled(true);
+        playerController.SetGyroEnabled(GameManager.instance.StaringMode);
         // 5발씩 3번 사격
         for (int i = 0; i < 3; i++)
         {
@@ -184,7 +184,7 @@ public class ZeroPointShootingManager : MonoBehaviour
             yield return GetReadyToShot();
             StartCoroutine(ShotCounting());
             Indicator.text = "사격 개시";
-            playerController.SetStaringModeEnabled(true);
+            playerController.SetStaringModeEnabled(GameManager.instance.StaringMode);
             while (gun.Ammo > 0)
             {
                 yield return new WaitForSeconds(1.0f);
@@ -222,7 +222,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         Indicator.text = "표적지 확인";
         narrator.PlayCheckPaper();
         yield return new WaitForSeconds(2.0f);
-        if(!ClickSettingMenu.activeSelf) ClickSettingMenu.GetComponent<ToggleObject>().Toggle();
+        if (!ClickSettingMenu.activeSelf) ClickSettingMenu.GetComponent<ToggleObject>().Toggle();
         zeroPaper.MoveToPlayer();
         Indicator.text = $"{_result}";
         isSettingDone = false;
@@ -266,7 +266,7 @@ public class ZeroPointShootingManager : MonoBehaviour
         float _cutOffPoint = 0.075f;
         // 중앙 지점(플레이어)
         Vector2 _center = gun.transform.position;
-        foreach(Vector3 _point in points)
+        foreach (Vector3 _point in points)
         {
             _min.x = Mathf.Min(_min.x, _point.x);
             _min.y = Mathf.Min(_min.y, _point.y);
@@ -291,7 +291,7 @@ public class ZeroPointShootingManager : MonoBehaviour
     }
 
     // 표준편차(StdDev)를 이용하여 보다 더 정확하게 판단하는 메서드
-    private Vector2 _avg; 
+    private Vector2 _avg;
     JudgeResult JudgePointsBetter(List<Vector3> points)
     {
         // 평균 지점

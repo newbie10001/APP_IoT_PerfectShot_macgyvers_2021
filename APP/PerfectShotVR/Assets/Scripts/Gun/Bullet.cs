@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
         if (target == null) return;
         else
         {
-            if(target.GetState()) target.OnHit(new RaycastHit { point = transform.position, normal = new Vector3(0,0,-1)});
+            if (target.GetState()) target.OnHit(new RaycastHit { point = transform.position, normal = new Vector3(0, 0, -1) });
         }
         Destroy(this.transform.parent.gameObject);
     }

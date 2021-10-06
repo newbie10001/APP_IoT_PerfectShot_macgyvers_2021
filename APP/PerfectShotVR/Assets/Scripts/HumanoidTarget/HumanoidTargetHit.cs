@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +9,7 @@ public class HumanoidTargetHit : MonoBehaviour, ITarget
 {
     // 인간형 타겟 클래스를 가져옴. 충돌은 여기서 맡고 나머지 처리는 그곳에
     public HumanoidTargetManager targetManager;
-    
+
     public bool GetState() => targetManager.IsSet;
 
     public void OnHit(RaycastHit hit)

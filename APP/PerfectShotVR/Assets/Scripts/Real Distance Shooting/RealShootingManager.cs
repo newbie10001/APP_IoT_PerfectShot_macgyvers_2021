@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ public class RealShootingManager : MonoBehaviour
     // 사격 종료 절차
     readonly string[] _shootEndingSeq = { "사격 종료", "조정간 안전", "탄알집 제거", "소총 놓고 무릎앉아대기", "" };
     // 타겟들을 세우는 순서. 가까운거(100m)부터 0번.
-    readonly string[] _targetName = { "100m", "200m", "250m"};
+    readonly string[] _targetName = { "100m", "200m", "250m" };
     readonly int[] _targetSeq = { 0, 1, 0, 1, 0, 1, 0, 1, 0, 2, 1, 0, 1, 0, 1, 0, 1, 0, 1, 2 };
     // 타겟마다 세워지는 시간 100m : 5sec, 200m : 7sec, 250m : 10sec
     readonly int[] _times = { 5, 7, 10 };
@@ -45,7 +45,7 @@ public class RealShootingManager : MonoBehaviour
         set
         {
             // 혹시나 할 오류를 대비
-            if(value > HighScore) PlayerPrefs.SetInt("RealShootingHighScore", value);
+            if (value > HighScore) PlayerPrefs.SetInt("RealShootingHighScore", value);
         }
     }
     // 결과를 보여주기 위한 3D 텍스트
@@ -54,7 +54,7 @@ public class RealShootingManager : MonoBehaviour
     public GameObject RetryMenuItem;
     public GameObject MainMenuItem;
 
-    
+
     void Start()
     {
         // 현재 게임오브젝트 내에 있는 내레이션 컴포넌트 가져오기
@@ -125,22 +125,22 @@ public class RealShootingManager : MonoBehaviour
                 // 부사수 탄알집 인계
                 Indicator.text = _shootingSeq[0];
                 narrator.PlayTakeOverMagazine();
-                yield return SkipInputCheckForSeconds(3.0f);
+                yield return SkipInputCheckForSeconds(5.0f);
                 if (playerSkip) break;
                 // 사수 탄알집 결합
                 Indicator.text = _shootingSeq[1];
                 narrator.PlayCombineMagazine();
-                yield return SkipInputCheckForSeconds(4.0f);
+                yield return SkipInputCheckForSeconds(5.0f);
                 if (playerSkip) break;
                 // 탄알일발장전
                 Indicator.text = _shootingSeq[2];
                 narrator.PlayLoadShot();
-                yield return SkipInputCheckForSeconds(2.5f);
+                yield return SkipInputCheckForSeconds(3.0f);
                 if (playerSkip) break;
                 // 조정간 단발
                 Indicator.text = _shootingSeq[3];
                 narrator.PlaySetSingle();
-                yield return SkipInputCheckForSeconds(2.0f);
+                yield return SkipInputCheckForSeconds(3.0f);
                 if (playerSkip) break;
             }
         } while (false);
@@ -169,7 +169,7 @@ public class RealShootingManager : MonoBehaviour
         // 발사 개수 세기 (한 발, 두 발...)
         StartCoroutine(ShotCounting());
         // 타겟을 순서에 따라 세움.
-        foreach(int t in _targetSeq)
+        foreach (int t in _targetSeq)
         {
             targets[t].GetUp();
             Indicator.text = _targetName[t];
@@ -191,7 +191,7 @@ public class RealShootingManager : MonoBehaviour
         }
         UpdateScore();
         yield return new WaitForSeconds(2.0f);
-        while(gun.Ammo > 0)
+        while (gun.Ammo > 0)
         {
             Indicator.text = "잔탄 사격";
             yield return new WaitForSeconds(1.0f);
@@ -204,21 +204,21 @@ public class RealShootingManager : MonoBehaviour
     // 사격 종료 절차
     IEnumerator ShotEnd()
     {
-        Indicator.text = _shootEndingSeq[0];
+        Indicator.text = "사격 종료";
         narrator.PlayShotEnd();
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         // 조정간 안전
-        Indicator.text = _shootEndingSeq[1];
+        Indicator.text = "조정간 안전";
         narrator.PlaySetSafe();
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         // 탄알집 제거(분해)
-        Indicator.text = _shootEndingSeq[2];
+        Indicator.text = "탄알집 제거";
         narrator.PlayDetachMagazine();
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         // 사수 소총놓고 무릎앉아대기
-        Indicator.text = _shootEndingSeq[3];
+        Indicator.text = "사수 소총놓고 무릎앉아대기";
         narrator.PlayLayGunAndSit();
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(3.0f);
         player.GetComponent<PlayerMove>().GetSittingPosition();
     }
 
@@ -226,9 +226,9 @@ public class RealShootingManager : MonoBehaviour
     IEnumerator ShotCounting()
     {
         int lastAmmo = _ammo;
-        while(gun.Ammo > 0)
+        while (gun.Ammo > 0)
         {
-            if (gun.Ammo < lastAmmo) 
+            if (gun.Ammo < lastAmmo)
             {
                 Indicator.text = $"{_ammo - gun.Ammo}발";
                 lastAmmo = gun.Ammo;
@@ -263,10 +263,10 @@ public class RealShootingManager : MonoBehaviour
         // 무한 탄창 적용
         gun.Reload(-1);
         // 하이스코어 갱신
-        if(Score > HighScore) HighScore = Score;
+        if (Score > HighScore) HighScore = Score;
         // 타겟마다 결과를 보여주는 과정
         // 위로 날려보낸 후 스무스하게 내려옴
-        for(int i = 0; i < targets.Count; i++)
+        for (int i = 0; i < targets.Count; i++)
         {
             targets[i].OnlyGetUp();
             StartCoroutine(Utility.MoveTo(targets[i].transform, resultPos[i], 1f / 5.0f));
@@ -300,7 +300,7 @@ public class RealShootingManager : MonoBehaviour
     {
         yield return new WaitForSeconds(300.0f);
         int count = 0;
-        while(count++ < 100)
+        while (count++ < 100)
         {
             GameObject retry = Instantiate(RetryMenuItem, new Vector3(-2, 7, 10), Quaternion.Euler(Vector3.zero));
             GameObject main = Instantiate(MainMenuItem, new Vector3(2, 7, 10), Quaternion.Euler(Vector3.zero));

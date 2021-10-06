@@ -23,7 +23,7 @@ public class SettingPanel : MonoBehaviour
         Reset.onClick.AddListener(ResetSettings);
         InitCam.onClick.AddListener(() => SceneManager.LoadScene("SetCamera"));
         Save.onClick.AddListener(() => SaveSettings());
-        Confirm.onClick.AddListener(() =>{
+        Confirm.onClick.AddListener(() => {
             SaveSettings();
             this.gameObject.SetActive(false);
         });
@@ -32,11 +32,6 @@ public class SettingPanel : MonoBehaviour
     private void OnEnable()
     {
         Start();
-    }
-
-    void Update()
-    {
-        
     }
 
     // 세팅값들을 불러와서 UI에 갱신
@@ -52,7 +47,9 @@ public class SettingPanel : MonoBehaviour
     // 리셋 버튼을 누르면 호출되는 메서드. 설정들을 모두 초기화하는 함수...!
     void ResetSettings()
     {
+        int realShootingHighScore = PlayerPrefs.GetInt("RealShootingHighScore");
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("RealShootingHighScore", realShootingHighScore);
         SetSettings();
         SaveClick();
     }
@@ -82,6 +79,6 @@ public class SettingPanel : MonoBehaviour
     {
         GameManager.instance.Click = new Vector2(int.Parse(ClickHorizontal.text), int.Parse(ClickVertical.text));
         SettingCamera settingCamera = FindObjectOfType<SettingCamera>();
-        if(settingCamera != null) settingCamera.InitCamAndApplyClick();
+        if (settingCamera != null) settingCamera.InitCamAndApplyClick();
     }
 }

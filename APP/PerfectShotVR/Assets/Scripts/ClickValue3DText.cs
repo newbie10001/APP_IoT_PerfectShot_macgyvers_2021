@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
@@ -6,11 +6,13 @@ using UnityEngine;
 public class ClickValue3DText : MonoBehaviour
 {
     private TextMesh textMesh;
+    private SettingCamera settingCamera;
 
     private void Start()
     {
         textMesh = GetComponent<TextMesh>();
-        if(textMesh.text.Contains("좌우"))
+        settingCamera = FindObjectOfType<SettingCamera>();
+        if (textMesh.text.Contains("좌우"))
         {
             textMesh.text = $"좌우 : {GameManager.instance.Click.x}";
         }
@@ -67,6 +69,6 @@ public class ClickValue3DText : MonoBehaviour
 
     private void SaveClick()
     {
-        FindObjectOfType<SettingCamera>().InitCamAndApplyClick();
+        settingCamera.InitCamAndApplyClick();
     }
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -54,7 +54,7 @@ public class HumanoidTargetManager : MonoBehaviour
     // 맞았을 때 호출.
     public void OnHit(RaycastHit hit)
     {
-        if(IsSet)
+        if (IsSet)
         {
             Hits.Add(hit.point);
             Debug.Log($"{this.gameObject.name} 명중 횟수 {Hits.Count}");

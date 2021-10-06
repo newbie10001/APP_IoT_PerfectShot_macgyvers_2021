@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Button3D: MonoBehaviour, ITarget
+public class Button3D : MonoBehaviour, ITarget
 {
     // 실제로 작동될 버튼을 컴포넌트로 할당
     private Button _button;
@@ -34,7 +34,7 @@ public class Button3D: MonoBehaviour, ITarget
     public IEnumerator Shake(float _amount, float _duration)
     {
         float timer = 0;
-        while(timer <= _duration)
+        while (timer <= _duration)
         {
             transform.localPosition = (Vector3)Random.insideUnitSphere * _amount + originPos;
             timer += Time.deltaTime;
