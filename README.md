@@ -13,9 +13,9 @@
 
 ## 개요
 
-어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B82.jpg?raw=true)<br>
+어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B8%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br>
 
-실제로 총을 쏴볼 수도 없고, 그렇다고 빈 총의 방아쇠를 당겨봤자 내가 잘 쏘고 있는지도 모릅니다. 결국 사격훈련 당일에서야 자신의 실력을 확인하고 그때에만 연습을 하는 수밖엔 없죠.<br>![i got an idea](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%83%9D%ED%99%9C%EA%B4%80%20%EC%B4%9D.jpg?raw=true)<br>
+실제로 총을 쏴볼 수도 없고, 그렇다고 빈 총의 방아쇠를 당겨봤자 내가 잘 쏘고 있는지도 모릅니다. 결국 사격훈련 당일에서야 자신의 실력을 확인하고 그때에만 연습을 하는 수밖엔 없죠.<br>![i got an idea](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%83%9D%ED%99%9C%EA%B4%80%20%EC%B4%9D%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br>
 
 '생활관에서도 사격 연습을 할 수 있게 만들 수 있을까?'<br>
 <br>그러자 우리 모두가 가지고 있는 휴대폰으로 사격 연습을 하면 좋겠다는 생각이 들었습니다. 퍼펙트샷 : 만발의 법칙은 이를 실현시키기 위해 시작한 프로젝트입니다. 시공간의 제약 없이, 저비용으로 우리 모두가 사격 연습을 할 수 있도록 도움을 주는 앱을 만들었습니다.<br>![sniper](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%A0%80%EA%B2%A9%EC%88%98.jpeg?raw=true)
@@ -69,7 +69,7 @@
 <br>가늠쇠 동기화라 함은, 게임 내의 카메라 중앙 지점을 현실 총의 가늠쇠에 맞추는 것을 말합니다. 이러한 카메라의 움직임을 반영하기 위해, 카메라 렌즈 시프트 값을 저장하여 사용합니다.
 <br>(가늠쇠 동기화하는 장면 gif) (가늠쇠 동기화하는 화면 gif)
 2. 탄도학
-<br>(탄도학 사진) <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/ballistic_show.gif?raw=true" width="300" height="150" />
+<br>![ballistic_img](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%ED%83%84%EB%8F%84%ED%95%99%20%EC%9D%B4%EB%AF%B8%EC%A7%80.jpg?raw=true)<img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/ballistic_show.gif?raw=true" width="300" height="150" />
 <br>탄도학을 구현하였습니다. 총알 오브젝트를 920m/s로 발사합니다. 총구는 가늠쇠 오브젝트의 0.055유닛(현실의 5.5cm에 해당합니다) 밑에 있으며, 아주 미세하게 위쪽을 향하고 있습니다. 덕분에 25m 지점에서 아주 조금 밑, 250m에서 정면을 맞히는 완곡한 포물선을 그리게 됩니다.
 3. 크리크 수정
 <br>(크리크 수정하는 gif)
