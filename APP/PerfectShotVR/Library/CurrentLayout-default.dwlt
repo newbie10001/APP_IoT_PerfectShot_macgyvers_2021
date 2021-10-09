@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1368
     height: 830
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 192
+  controlID: 17
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 198
+  controlID: 46
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 2160, y: 1080}
+  m_TargetSize: {x: 1080, y: 2160}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -332,16 +332,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000008000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000007000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -540
-    m_HBaseRangeMax: 540
-    m_VBaseRangeMin: -270
-    m_VBaseRangeMax: 270
+    m_HBaseRangeMin: -270
+    m_HBaseRangeMax: 270
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -361,7 +361,7 @@ MonoBehaviour:
       y: 21
       width: 482
       height: 738
-    m_Scale: {x: 0.4462963, y: 0.44629627}
+    m_Scale: {x: 0.68333334, y: 0.68333334}
     m_Translation: {x: 241, y: 369}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -369,12 +369,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -540
-      y: -826.805
-      width: 1080
-      height: 1653.61
+      x: -352.68292
+      y: -540
+      width: 705.36584
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.4462963
+  m_defaultScale: 0.68333334
   m_LastWindowPixelSize: {x: 964, y: 1518}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4e0b0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 52fbffff
+      m_SelectedIDs: a0efffff
+      m_LastClickedID: -4192
+      m_ExpandedIDs: c2efffff54f0ffff5ef0ffff60f1ffffeef2ffff80f3ffff8af3ffff74f5ffff3cf6ffffa0f7ffff32f8ffff3cf8ffff5cf8ffffa8faffff52fbffffae3e0000f83f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -589,22 +589,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Bluetooth
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scripts/Bluetooth
+  - Assets/Scenes
   m_LastFoldersGridSize: 60
   m_LastProjectPath: C:\src\git_local\APP_IoT_PerfectShot\APP\PerfectShotVR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 186}
-    m_SelectedIDs: 383b0000
-    m_LastClickedID: 15160
-    m_ExpandedIDs: 00000000083b00000a3b00000c3b00000e3b0000103b0000123b00002e3b000000ca9a3b
+    m_SelectedIDs: 223b0000
+    m_LastClickedID: 15138
+    m_ExpandedIDs: 00000000003b0000023b0000043b0000063b0000083b00000a3b0000243b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -632,7 +632,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000083b00000a3b00000c3b00000e3b0000103b0000123b0000
+    m_ExpandedIDs: 00000000003b0000023b0000043b0000063b0000083b00000a3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
