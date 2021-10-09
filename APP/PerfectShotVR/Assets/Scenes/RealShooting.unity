@@ -1548,6 +1548,10 @@ PrefabInstance:
       propertyPath: frontSight
       value: 
       objectReference: {fileID: 1371228447}
+    - target: {fileID: 5245927765034253411, guid: 1781d0d07f2d4b14292b31cf01a92efe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8305535756325914013, guid: 1781d0d07f2d4b14292b31cf01a92efe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

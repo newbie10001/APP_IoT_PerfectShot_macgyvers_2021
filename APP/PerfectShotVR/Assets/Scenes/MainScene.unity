@@ -510,7 +510,7 @@ PrefabInstance:
     - target: {fileID: 3171833278865304060, guid: 1781d0d07f2d4b14292b31cf01a92efe, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3186927884181501508}
+      objectReference: {fileID: 0}
     - target: {fileID: 3238519452163797736, guid: 1781d0d07f2d4b14292b31cf01a92efe, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: frontSight
       value: 
       objectReference: {fileID: 1889127028944825946}
+    - target: {fileID: 5245927765034253411, guid: 1781d0d07f2d4b14292b31cf01a92efe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8305535756325914013, guid: 1781d0d07f2d4b14292b31cf01a92efe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1278,19 +1282,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4783531261359172626}
   m_Mesh: {fileID: 6850454252096640104, guid: c357b5a4a8c326945b65f10fc5a112dc, type: 3}
---- !u!114 &3186927884181501508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889127028944825946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17c75476315629a48b84677d29decf9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CircleSlider: {fileID: 1130126096}
 --- !u!4 &3291460998695261162
 Transform:
   m_ObjectHideFlags: 0
@@ -1540,6 +1531,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1889127029724278352}
     m_Modifications:
+    - target: {fileID: 3186927886002512969, guid: 8a97beec662d045439030fce1e1f0e27, type: 3}
+      propertyPath: CircleSlider
+      value: 
+      objectReference: {fileID: 1130126096}
     - target: {fileID: 6879320815184452512, guid: 8a97beec662d045439030fce1e1f0e27, type: 3}
       propertyPath: m_Enabled
       value: 1

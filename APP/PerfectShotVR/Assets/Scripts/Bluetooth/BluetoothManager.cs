@@ -144,6 +144,15 @@ public class BluetoothManager : MonoBehaviour
         if (bluetoothHelper.Available) bluetoothHelper.SendData(msg);
     }
 
+    public void SetDeviceName(string name)
+    {
+        if (bluetoothHelper != null)
+        {
+            deviceName = name;
+            bluetoothHelper.setDeviceName(name);
+        }
+    }
+
     public void OnConnectButtonClick()
     {
         //TryConnectToDevice();
@@ -154,6 +163,7 @@ public class BluetoothManager : MonoBehaviour
             {
                 State = "기기 이름 반영";
                 bluetoothHelper.setDeviceName(deviceName);
+                Debug.Log($"현재 기기 이름 : {bluetoothHelper.getDeviceName()}");
                 State = "연결을 시도합니다...";
                 bluetoothHelper.Connect();
             }

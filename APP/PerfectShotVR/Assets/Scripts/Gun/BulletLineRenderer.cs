@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// íƒ„ë„í•™ êµ¬í˜„ì„ ë³´ì—¬ì£¼ê¸° ìœ„í•´ ë¼ì¸ë Œë”ëŸ¬ë¡œ ê¶¤ì ì„ ê·¸ë¦¼
+// ÅºµµÇĞ ±¸ÇöÀ» º¸¿©ÁÖ±â À§ÇØ ¶óÀÎ·»´õ·¯·Î ±ËÀûÀ» ±×¸²
 public class BulletLineRenderer : MonoBehaviour
 {
     private LineRenderer lineRenderer;
@@ -13,19 +13,19 @@ public class BulletLineRenderer : MonoBehaviour
         lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.material = LineMaterial;
         lineRenderer.startColor = Color.yellow;
-        lineRenderer.startWidth = 1f;
-        lineRenderer.endWidth = 1f;
+        lineRenderer.startWidth = 10f;
+        lineRenderer.endWidth = 10f;
         lineRenderer.endColor = Color.yellow;
         lineRenderer.positionCount = idx + 1;
         lineRenderer.SetPosition(idx++, transform.position);
         StartCoroutine(DrawLine());
     }
 
-    // 0.01ì´ˆë§ˆë‹¤ ë¼ì¸ì„ ê·¸ë¦¼
+    // 0.01ÃÊ¸¶´Ù ¶óÀÎÀ» ±×¸²
     IEnumerator DrawLine()
     {
-        // ëŒ€ëµ 5ì´ˆë™ì•ˆ.
-        while(idx < 500)
+        // ´ë·« 7ÃÊµ¿¾È.
+        while (idx < 700)
         {
             lineRenderer.positionCount = idx + 1;
             lineRenderer.SetPosition(idx++, transform.position);
