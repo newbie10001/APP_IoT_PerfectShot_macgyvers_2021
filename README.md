@@ -66,9 +66,11 @@
 1. 가늠쇠 동기화
 가늠쇠 동기화라 함은, 게임 내의 카메라 중앙 지점을 현실 총의 가늠쇠에 맞추는 것을 말합니다. 이러한 카메라의 움직임을 반영하기 위해, 카메라 렌즈 시프트 값을 저장하여 사용합니다.
 <br>(가늠쇠 동기화하는 장면 gif) ![가늠쇠동기화화면](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EC%A1%B0%EC%A0%95%EC%83%B7.gif?raw=true)
+
 <br>
 2. 탄도학
-<br>![ballistic_img](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%ED%83%84%EB%8F%84%ED%95%99%20%EC%9D%B4%EB%AF%B8%EC%A7%80.jpg?raw=true)<img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/ballistic_show.gif?raw=true" width="300" height="150" />
+
+![탄도학이미지](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%ED%83%84%EB%8F%84%ED%95%99%20%EC%9D%B4%EB%AF%B8%EC%A7%80.jpg?raw=true)<img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/ballistic_show.gif?raw=true" width="300" height="150" />
 <br>탄도학을 구현하였습니다. 총알 오브젝트를 920m/s로 발사합니다. 총구는 가늠쇠 오브젝트의 0.055유닛(현실의 5.5cm에 해당합니다) 밑에 있으며, 아주 미세하게 위쪽을 향하고 있습니다. 덕분에 25m 지점에서 아주 조금 밑, 250m에서 정면을 맞히는 완곡한 포물선을 그리게 됩니다.
 <br>
 3. 크리크 수정
@@ -86,11 +88,11 @@
 <br>![응시모드사격](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true)
 <br>블루투스 컨트롤러가 없어도 사격을 실시할 수 있는 모드입니다. 옵션 창에서 활성화시킬 수 있으며, 응시하고 있으면 발사됩니다.
 <br>
-7. 블루투스 컨트롤러 연결
+6. 블루투스 컨트롤러 연결
 <br>(블루투스를 연결하는 gif)
 <br>블루투스 컨트롤러를 연결할 수 있습니다. 블루투스 매니저, 블루투스 컨트롤러로 구성되는데, 아두이노 HC-06, HC-05 모델을 기준으로 제작하였기 때문에 호환성을 위해서 해당 모델을 사용하시길 권장드립니다.
 <br>
-8. 사로 통제
+7. 사로 통제
 <br>![사로통제](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%82%AC%EB%A1%9C%ED%86%B5%EC%A0%9C.gif?raw=true)
 <br>사로 통제도 구현하였습니다. 사격장에서 실수하지 않을 수 있겠죠?
   
