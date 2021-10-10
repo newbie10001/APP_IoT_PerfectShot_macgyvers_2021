@@ -48,7 +48,7 @@
 <br>블루투스 컨트롤러가 없으시다구요? 걱정하지 마세요. 그런 당신을 위해 응시모드가 있습니다. 조준하고 있으면 발사가 됩니다! 오조준 시에도 발사되기 때문에 잘 보고 있어야겠죠?
 <br>
 다음은 영점사격과 실거리사격입니다. 사격실력에 최대한 많은 도움을 주기 위해 노력하였습니다. 사격을 그 자체로 연습할 뿐만 아니라 사용자 스스로를 피드백시키기 위해서 탄착 지점을 표시합니다.
-
+<br>
 | 영점사격 | 실거리사격 |
 |:---:|:---:|
 | ![영점사격지](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true) | ![실거리결과](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true) |
