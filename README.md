@@ -1,5 +1,6 @@
 
   
+  
 
   
   
@@ -44,15 +45,13 @@
 <br>![응시모드실거리사격](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true)
 
 <br>블루투스 컨트롤러가 없으시다구요? 걱정하지 마세요. 그런 당신을 위해 응시모드가 있습니다. 조준하고 있으면 발사가 됩니다! 오조준 시에도 발사되기 때문에 잘 보고 있어야겠죠?
+<br>
+다음은 영점사격과 실거리사격입니다. 사격실력에 최대한 많은 도움을 주기 위해 노력하였습니다. 사격을 그 자체로 연습할 뿐만 아니라 사용자 스스로를 피드백시키기 위해서 탄착 지점을 표시합니다.
 
-<br>![영점사격지](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true)
-
-<br>이렇게 어디를 맞혔는지 확인하고 크리크 수정을 할 수 있답니다.
-
-<br>![실거리결과](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true)
-
-<br>자신이 몇 발을 어떻게 어디를 맞혔는지 다 나옵니다!
-
+| 영점사격 | 실거리사격 |
+|:---:|:---:|
+| ![영점사격지](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true) | ![실거리결과](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true) |
+| 이렇게 어디를 맞혔는지 확인하고 크리크 수정을 할 수 있답니다. | 자신이 몇 발을 어떻게 어디를 맞혔는지 다 나옵니다! |
 <br>
 
 ![victory](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%84%B1%EA%B3%B5%ED%95%9C%20%EC%82%AC%EB%9E%8C.jpeg?raw=true)
@@ -80,7 +79,7 @@
 <br>![영점사격지](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true)
 <br>호흡불량, 격발불량 등을 피드백해주며, 영점사격지를 확인하여 자신의 탄착군이 어디에 형성되어있는지를 알 수 있습니다.
 <br>![실거리타겟](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true) ![실거리결과](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true)
-<br>실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다. 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을 알려주니 이를 보고 사격을
+<br>실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다. 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요.
 5. 응시 모드
 <br>![응시모드사격](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true)
 <br>블루투스 컨트롤러가 없어도 사격을 실시할 수 있는 모드입니다. 옵션 창에서 활성화시킬 수 있으며, 응시하고 있으면 발사됩니다.
@@ -111,7 +110,7 @@
   
 
 ## 설치 안내 (Installation Process)
-
+- 유니티 프로젝트 이어서 하기
 ```bash
 
 $ git clone git주소
@@ -119,7 +118,7 @@ $ git clone git주소
 .\APP\PerfectShotVR 등록
 
 ```
-
+- 테스트 앱 다운로드 받기 -> [퍼펙트샷: 만발의 법칙 테스트 빌드](https://drive.google.com/file/d/1vmRtwtjsQnC8TA8OxZ6TE6pO0auvV6lW/view?usp=sharing)
 ## 프로젝트 관리 및 개발 문서
 
  - [유니티 스크립팅 API](https://docs.unity3d.com/kr/530/ScriptReference/index.html)
