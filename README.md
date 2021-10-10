@@ -55,6 +55,7 @@
 |:---:|:---:|
 | ![영점사격지](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true) | ![실거리결과](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true) |
 | 탄착지점을 확인하고 크리크 수정을 할 수 있습니다 | 자신이 몇 발을 어떻게 어디를 맞혔는지 다 나옵니다🙆‍♂️ |
+
 <br><br>
 ![victory](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%84%B1%EA%B3%B5%ED%95%9C%20%EC%82%AC%EB%9E%8C.jpeg?raw=true)
 
