@@ -46,14 +46,14 @@ public class BluetoothManager : MonoBehaviour
         }
     }
     // 현재 블루투스 연결 상태를 나타냄
-    public string State { get; private set; }
+    public string ConnectionState { get; private set; }
     // 블루투스의 입력 상태(on / off)를 나타냄.
-    public bool input = false;
+    public bool InputState { get; private set; }
     // 블루투스로 입력한 마지막 시간. 0.3초가 지나면 input을 false로 되돌림.
     float lastTime;
 
     // 디버그용.
-    public bool debugging = true;
+    public bool debugging = false;
     public Text debugText;
 
     // 안드로이드 블루투스 활성화 함수
@@ -89,7 +89,7 @@ public class BluetoothManager : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time > lastTime + 0.3f) input = false;
+        if (Time.time > lastTime + 0.3f) InputState = false;
         if (debugging)
         {
             debugText.text = $"페어링 : {IsPaired} 커넥팅 : {IsConnected}\n디바이스 이름 : {bluetoothHelper.getDeviceName()}" +
@@ -118,7 +118,7 @@ public class BluetoothManager : MonoBehaviour
         if (GameManager.instance.Bluetooth) OnConnectButtonClick();
     }
 
-    public void InstantiateBluetoothHelper()
+    private void InstantiateBluetoothHelper()
     {
         try
         {
@@ -131,7 +131,7 @@ public class BluetoothManager : MonoBehaviour
             bluetoothHelper.OnDataReceived += OnMessageReceived;
 
             bluetoothHelper.setTerminatorBasedStream("\n");
-            State = "TryConnectToDevice 성공";
+            ConnectionState = "TryConnectToDevice 성공";
         }
         catch (Exception ex)
         {
@@ -161,10 +161,10 @@ public class BluetoothManager : MonoBehaviour
         {
             if (bluetoothHelper != null)
             {
-                State = "기기 이름 반영";
+                ConnectionState = "기기 이름 반영";
                 bluetoothHelper.setDeviceName(deviceName);
                 Debug.Log($"현재 기기 이름 : {bluetoothHelper.getDeviceName()}");
-                State = "연결을 시도합니다...";
+                ConnectionState = "연결을 시도합니다...";
                 bluetoothHelper.Connect();
             }
         }
@@ -172,7 +172,7 @@ public class BluetoothManager : MonoBehaviour
 
     public void OnDisconnectButtonClick()
     {
-        State = "연결을 해제합니다.";
+        ConnectionState = "연결을 해제합니다.";
         if (bluetoothHelper != null) bluetoothHelper.Disconnect();
     }
 
@@ -184,7 +184,7 @@ public class BluetoothManager : MonoBehaviour
         {
             Debug.Log("블루투스 리스닝 스타트");
             bluetoothHelper.StartListening();
-            State = "연결 성공";
+            ConnectionState = "연결 성공";
         }
         catch
         {
@@ -196,7 +196,7 @@ public class BluetoothManager : MonoBehaviour
     void OnConnectionFailed()
     {
         Debug.Log("연결 실패");
-        State = "연결이 끊어졌습니다.";
+        ConnectionState = "연결이 끊어졌습니다.";
         // 연결 재시도(한번만)
         if (!_triedToConnect) OnConnectButtonClick();
         _triedToConnect = true;
@@ -205,7 +205,7 @@ public class BluetoothManager : MonoBehaviour
     void OnMessageReceived()
     {
         Debug.Log("블루투스 신호 들어옴");
-        input = true;
+        InputState = true;
         lastTime = Time.time;
     }
 

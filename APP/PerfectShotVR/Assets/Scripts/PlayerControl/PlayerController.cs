@@ -5,15 +5,15 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    // í”Œë ˆì´ì–´ì˜ ìžì‹ì¸ ì´
+    // ÇÃ·¹ÀÌ¾îÀÇ ÀÚ½ÄÀÎ ÃÑ
     private Gun gun;
-    // í”Œë ˆì´ì–´ ìžì´ë¡œ ë¬´ë¸Œ ìŠ¤í¬ë¦½íŠ¸
+    // ÇÃ·¹ÀÌ¾î ÀÚÀÌ·Î ¹«ºê ½ºÅ©¸³Æ®
     private GyroRotate gyro;
-    // ê°€ëŠ ì‡  ì˜¤ë¸Œì íŠ¸ì— ìžˆëŠ” ì‘ì‹œëª¨ë“œ ìŠ¤í¬ë¦½íŠ¸
+    // °¡´Æ¼è ¿ÀºêÁ§Æ®¿¡ ÀÖ´Â ÀÀ½Ã¸ðµå ½ºÅ©¸³Æ®
     private StaringMode staring;
-    // í”Œë ˆì´ì–´ì˜ ìž…ë ¥ ì—¬ë¶€ë¥¼ ê³„ì†í•˜ì—¬ ê°±ì‹ 
+    // ÇÃ·¹ÀÌ¾îÀÇ ÀÔ·Â ¿©ºÎ¸¦ °è¼ÓÇÏ¿© °»½Å
     public bool PlayerInput { get; private set; }
-    // ëˆ„ë¥´ê³  ìžˆì„ ê²½ìš° true, ë–¼ëŠ” ìˆœê°„ falseê°€ ë¨.
+    // ´©¸£°í ÀÖÀ» °æ¿ì true, ¶¼´Â ¼ø°£ false°¡ µÊ.
     private bool pressed;
 
     private void Awake()
@@ -28,16 +28,16 @@ public class PlayerController : MonoBehaviour
         GetInputAndFire();
     }
 
-    // ìž…ë ¥ì„ ê°ì§€í•˜ì—¬ ê²©ë°œ ì‹¤í–‰
+    // ÀÔ·ÂÀ» °¨ÁöÇÏ¿© °Ý¹ß ½ÇÇà
     void GetInputAndFire()
     {
         PlayerInput = GetInput();
         if (PlayerInput)
         {
-            // ì—°ì‚¬ ë°©ì§€
+            // ¿¬»ç ¹æÁö
             if (!pressed)
             {
-                Debug.Log("ë°œì‚¬ ì‹œë„");
+                Debug.Log("¹ß»ç ½Ãµµ");
                 gun.Fire();
                 pressed = true;
             }
@@ -48,23 +48,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // í–‰ë§ˆë‹¤ ê°ê° í„°ì¹˜, ë§ˆìš°ìŠ¤, ë¸”ë£¨íˆ¬ìŠ¤ ìž…ë ¥ì„ ë°›ëŠ”ë‹¤.
+    // Çà¸¶´Ù °¢°¢ ÅÍÄ¡, ¸¶¿ì½º, ºí·çÅõ½º ÀÔ·ÂÀ» ¹Þ´Â´Ù.
     public bool GetInput()
     {
         return (
             (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began && EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId) == false)
             || (Input.GetMouseButtonDown(1) && EventSystem.current.IsPointerOverGameObject() == false)
-            || (BluetoothManager.instance != null && BluetoothManager.instance.input)
+            || (BluetoothManager.instance != null && BluetoothManager.instance.InputState)
             );
     }
 
-    // í”Œë ˆì´ì–´ê°€ ì •ë©´ì„ ë³´ë„ë¡ ìž¬ì„¤ì •
+    // ÇÃ·¹ÀÌ¾î°¡ Á¤¸éÀ» º¸µµ·Ï Àç¼³Á¤
     public void SetRotationFront()
     {
         //this.transform.rotation = Quaternion.LookRotation(Vector3.forward, Vector3.up);
         transform.eulerAngles = Vector3.zero;
     }
-    
+
     public void SetGyroEnabled(bool value) => gyro.enabled = value;
     public void SetStaringModeEnabled(bool value) => staring.enabled = value;
 }

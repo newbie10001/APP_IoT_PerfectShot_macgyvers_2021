@@ -1318,4 +1318,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/RealShooting.unity
   - Assets/Scenes/ZeroPointShoot.unity
   - Assets/Scenes/SetCameraByShot.unity
-  playerPath: C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR/build/perfectshot_test.apk
+  playerPath: "C:/src/git_local/APP_IoT_PerfectShot/APP/PerfectShotVR/build/\uD37C\uD399\uD2B8\uC0F7_\uB9CC\uBC1C\uC758\uBC95\uCE59.apk"

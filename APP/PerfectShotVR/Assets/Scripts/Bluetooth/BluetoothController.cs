@@ -52,7 +52,7 @@ public class BluetoothController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (BluetoothManager.instance != null) StateIndicator.text = UpdateState() + $"\n{BluetoothManager.instance.State}";
+        if (BluetoothManager.instance != null) StateIndicator.text = UpdateState() + $"\n{BluetoothManager.instance.ConnectionState}";
         BluetoothManager.instance.deviceName = DeviceNameInputField.text;
     }
 
