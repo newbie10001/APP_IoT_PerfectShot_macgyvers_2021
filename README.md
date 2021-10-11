@@ -15,7 +15,7 @@
 
 언제 어디서나 실전보다 실전 같은 사격훈련
 
-## 개요
+## 개요 (Abstract)
 
 어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B8%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br><br>
 실제로 총을 쏴볼 수도 없고, 그렇다고 빈 총의 방아쇠를 당겨봤자 내가 잘 쏘고 있는지도 모릅니다. 결국 사격훈련 당일에서야 자신의 실력을 확인하고 그때에만 연습을 하는 수밖엔 없죠.
@@ -28,7 +28,7 @@
 <br>이 앱을 통해 연습하는 모두가 특등사수가 되었으면 좋겠습니다&nbsp;🔥
   
 
-## 소개
+## 소개 (Introduction)
 
 (소총에 휴대폰을 거치한 모습)
 
@@ -61,10 +61,10 @@
 
 <br>이 앱만 있으면 만발에 한 걸음 더 가까워지겠죠?
 
-## 소개 영상
+## 소개 영상 (Guide Video)
   (소개 영상이 들어갈 위치입니다)
 
-## 기능 설명
+## 기능 설명 (Functions)
 ### 1.  가늠쇠 동기화
 가늠쇠 동기화라 함은, 게임 내의 카메라 중앙 지점을 현실 총의 가늠쇠에 맞추는 것을 말합니다. 이러한 카메라의 움직임을 반영하기 위해, 카메라 렌즈 시프트 값을 저장하여 사용합니다.
 <br>(가늠쇠 동기화하는 장면 gif) ![가늠쇠동기화화면](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EC%A1%B0%EC%A0%95%EC%83%B7.gif?raw=true)
@@ -122,12 +122,12 @@
 ```bash
 
 $ git clone git주소
-유니티 허브 프로젝트 추가 버튼 누르기
+유니티 허브에서 프로젝트 추가 버튼 누르기
 .\APP\PerfectShotVR 등록
 
 ```
 ✔ [Releases](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/releases)에서 시험용 앱을 다운로드 받을 수 있습니다
-## 프로젝트 관리 및 개발 문서
+## 프로젝트 관리 및 개발 문서 (Project Management)
 
  - [유니티 스크립팅 API](https://docs.unity3d.com/kr/530/ScriptReference/index.html)
  - [오브젝트 구조](https://gitmind.com/app/doc/6fc28aba1aaebd54d9d9d8bba450951f)
