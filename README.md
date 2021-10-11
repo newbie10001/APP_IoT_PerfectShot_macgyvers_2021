@@ -130,7 +130,8 @@ $ git clone git주소
 ## 프로젝트 관리 및 개발 문서
 
  - [유니티 스크립팅 API](https://docs.unity3d.com/kr/530/ScriptReference/index.html)
- - 클래스 다이어그램
+ - [오브젝트 구조](https://gitmind.com/app/doc/6fc28aba1aaebd54d9d9d8bba450951f)
+ - [컴포넌트 구조](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/APP/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%20%EA%B5%AC%EC%A1%B0%20%ED%8D%BC%ED%8E%99%ED%8A%B8%EC%83%B7%20%EB%A7%8C%EB%B0%9C%EC%9D%98%20%EB%B2%95%EC%B9%99.pdf)
  - [Projects](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/projects/2)
  - [Wiki](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/wiki)
 
