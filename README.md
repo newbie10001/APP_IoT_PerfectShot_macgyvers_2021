@@ -1,4 +1,5 @@
 
+
   
 
   
@@ -30,15 +31,15 @@
 
 ## 소개 (Introduction)
 
-(소총에 휴대폰을 거치한 모습)
+![소총에 휴대폰을 거치한 모습](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B2%AC%EC%B0%A9%20%EC%83%81%ED%83%9C.jpg?raw=true)
 
 <br>우선, 총에 휴대폰을 매달아서 진행합니다.
 <br>
-<br>(정조준하여 휴대폰의 화면을 겨냥한 사진)
+<br>![정조준하여 휴대폰의 화면을 겨냥한 사진](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EB%B0%94%EB%9D%BC%EB%B3%B4%EB%8A%94%EC%83%B7.jpg?raw=true)
 <br>
 <br>앱에 있는 표적을 쏘아 맞히는 것이 목표입니다.
 <br>
-<br>(블루투스 컨트롤러 사진) (컨트롤러를 연결하여 방아쇠를 당기는 gif) ![넘어가는gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true)
+<br>![블루투스 컨트롤러 사진](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%EC%82%AC%EC%A7%84.jpg?raw=true) ![컨트롤러를 연결하여 방아쇠를 당기는 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B0%A9%EC%95%84%EC%87%A0%EB%8B%B9%EA%B8%B0%EA%B8%B0.gif?raw=true) ![넘어가는gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true)
 
 <br>블루투스 컨트롤러를 이용하여 방아쇠를 당겼을 때 발사가 되도록 할 수 있습니다. 이렇게 하면 더욱 실감 나는 연습이 가능합니다.
 <br>
@@ -67,7 +68,7 @@
 ## 기능 설명 (Functions)
 ### 1.  가늠쇠 동기화
 가늠쇠 동기화라 함은, 게임 내의 카메라 중앙 지점을 현실 총의 가늠쇠에 맞추는 것을 말합니다. 이러한 카메라의 움직임을 반영하기 위해, 카메라 렌즈 시프트 값을 저장하여 사용합니다.
-<br>(가늠쇠 동기화하는 장면 gif) ![가늠쇠동기화화면](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EC%A1%B0%EC%A0%95%EC%83%B7.gif?raw=true)
+<br>![가늠쇠 동기화하는 장면 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EB%8F%99%EA%B8%B0%ED%99%94%EC%9E%A5%EB%A9%B4.gif?raw=true) ![가늠쇠동기화화면](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EC%A1%B0%EC%A0%95%EC%83%B7.gif?raw=true)
 <br><br>
 ### 2. 탄도학
 
@@ -90,7 +91,7 @@
 <br>블루투스 컨트롤러가 없어도 사격을 실시할 수 있는 모드입니다. 옵션 창에서 활성화시킬 수 있으며, 응시하고 있으면 발사됩니다.
 <br>
 ### 6. 블루투스 컨트롤러 연결
-<br>(블루투스를 연결하는 gif)
+<br>![블루투스를 연결하는 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4%EC%97%B0%EA%B2%B0%ED%99%94%EB%A9%B4.gif?raw=true)
 <br>블루투스 컨트롤러를 연결할 수 있습니다. 블루투스 매니저, 블루투스 컨트롤러로 구성되는데, 아두이노 HC-06, HC-05 모델을 기준으로 제작하였기 때문에 호환성을 위해서 해당 모델을 사용하시길 권장드립니다.
 <br><br>
 ### 7. 사로 통제
