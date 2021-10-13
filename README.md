@@ -18,13 +18,12 @@
 
 ## 개요 (Abstract)
 
-어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B8%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br><br>
+어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br><br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B8%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br><br>
 실제로 총을 쏴볼 수도 없고, 그렇다고 빈 총의 방아쇠를 당겨봤자 내가 잘 쏘고 있는지도 모릅니다. 결국 사격훈련 당일에서야 자신의 실력을 확인하고 그때에만 연습을 하는 수밖엔 없죠.
 <br><br>![i got an idea](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%83%9D%ED%99%9C%EA%B4%80%20%EC%B4%9D%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br>
 '생활관에서도 사격 연습을 할 수 있게 만들 수 있을까?'
 <br><br>
-그러자 우리 모두가 가지고 있는 휴대폰으로 사격 연습을 하면 좋겠다는 생각이 들었습니다. 퍼펙트샷 : 만발의 법칙은 이를 실현시키기 위해 시작한 프로젝트입니다. 시공간의 제약 없이, 저비용으로 우리 모두가 사격 연습을 할 수 있도록 도움을 주는 앱을 만들었습니다.
-<br><br>또한 아이디어를 떠올리다보니, 훈련소에서 처음 총을 쏜 날을 떠올렸습니다. 그 때에는 정말 모든 게 두렵고 긴장됐었지요. 그래서 사격을 해보지 못한 훈련병들에게도 이 앱이 도움될 수 있도록 사격 절차를 더 현실감 있게 만들어보았습니다.
+그러자 우리 모두가 가지고 있는 휴대폰으로 사격 연습을 하면 좋겠다는 생각이 들었습니다. 퍼펙트샷 : 만발의 법칙은 이를 실현시키기 위해 시작한 프로젝트입니다. 시공간의 제약 없이, 안전하게 저비용으로 우리 모두가 사격 연습을 할 수 있도록 도움을 주는 앱을 만들었습니다.
 <br><br>![sniper](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%A0%80%EA%B2%A9%EC%88%98.jpeg?raw=true)
 <br>이 앱을 통해 연습하는 모두가 특등사수가 되었으면 좋겠습니다&nbsp;🔥
   
@@ -32,22 +31,27 @@
 ## 소개 (Introduction)
 
 ![소총에 휴대폰을 거치한 모습](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B2%AC%EC%B0%A9%20%EC%83%81%ED%83%9C.jpg?raw=true)
-
 <br>우선, 총에 휴대폰을 매달아서 진행합니다.
 <br>
-<br>![정조준하여 휴대폰의 화면을 겨냥한 사진](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EB%B0%94%EB%9D%BC%EB%B3%B4%EB%8A%94%EC%83%B7.jpg?raw=true)
-<br>
+<br><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EB%B0%94%EB%9D%BC%EB%B3%B4%EB%8A%94%EC%83%B7.jpg?raw=true" alt="정조준하여 휴대폰의 화면을 겨냥한 사진" width="33%" />
 <br>앱에 있는 표적을 쏘아 맞히는 것이 목표입니다.
 <br>
-<br>![블루투스 컨트롤러 사진](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%EC%82%AC%EC%A7%84.jpg?raw=true) ![컨트롤러를 연결하여 방아쇠를 당기는 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B0%A9%EC%95%84%EC%87%A0%EB%8B%B9%EA%B8%B0%EA%B8%B0.gif?raw=true) ![넘어가는gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true)
-
-<br>블루투스 컨트롤러를 이용하여 방아쇠를 당겼을 때 발사가 되도록 할 수 있습니다. 이렇게 하면 더욱 실감 나는 연습이 가능합니다.
+<br>
+<table>
+  <tr>
+    <td width="500px"><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%20%EC%82%AC%EC%A7%84.jpg?raw=true" alt="블루투스 컨트롤러 사진" /></td>
+    <th rowspan="2"><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="넘어가는gif" /></th>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B0%A9%EC%95%84%EC%87%A0%EB%8B%B9%EA%B8%B0%EA%B8%B0.gif?raw=true" alt="컨트롤러를 연결하여 방아쇠를 당기는 gif" /></td>
+  </tr>
+</table>
+블루투스 컨트롤러를 이용하여 방아쇠를 당겼을 때 발사가 되도록 할 수 있습니다. 이렇게 하면 더욱 실감 나는 연습이 가능합니다.
 <br>
 <br>(진동 모듈을 부착한 사진) (진동모듈을 부착한 채 반동을 제어하는 사진)
 <br>진동 모듈을 통해서 반동 제어를 연습할 수 있습니다.
 <br>
-<br>![응시모드실거리사격](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true)
-<br>
+<br><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true" alt="응시모드실거리사격" />
 <br>블루투스 컨트롤러가 없으시다구요? 걱정하지 마세요. 그런 당신을 위해 응시모드가 있습니다. 조준하고 있으면 발사가 됩니다! 오조준 시에도 발사되기 때문에 잘 보고 있어야겠죠?
 <br><br>
 다음은 영점사격과 실거리사격입니다. 사격실력에 최대한 많은 도움을 주기 위해 노력하였습니다. 사격을 그 자체로 연습할 뿐만 아니라 사용자 스스로를 피드백시키기 위해서 탄착 지점을 표시합니다.
@@ -59,7 +63,6 @@
 
 <br><br>
 ![victory](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%84%B1%EA%B3%B5%ED%95%9C%20%EC%82%AC%EB%9E%8C.jpeg?raw=true)
-
 <br>이 앱만 있으면 만발에 한 걸음 더 가까워지겠죠?
 
 ## 소개 영상 (Guide Video)
