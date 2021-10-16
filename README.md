@@ -16,6 +16,13 @@
 
 ><center><h3>언제 어디서나 실전보다 실전 같은 사격훈련</h3></center>
 
+## 목차
+
+``` bash
+
+
+```
+
 ## 개요 (Abstract)
 
 어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br><br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B8%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br><br>
@@ -106,15 +113,15 @@
 | <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%ED%81%AC%EB%A6%AC%ED%81%AC%EC%88%98%EC%A0%95.gif?raw=true" alt="크리크수정하는" /> | 크리크 수정은 가늠쇠 동기화를 더 정확하게 교정하는 과정입니다.<br> 현실에서는 총과 사수 간의 오차를 잡는 과정입니다만,<br> 총의 오차를 구현할 수는 없기에 앱 내에서는<br> 카메라 렌즈시프트를 수정하는 과정으로 구현하였습니다.<br> 주의해야 할 점은, 카메라 렌즈시프트 값과 크리크 값은<br> 독립적으로 다루어져야 한다는 것입니다.
 
 ### 4. 영점 사격 / 실거리 사격
-영점 사격은 상술한 크리크 수정을 도와주기 위한 사격 과정입니다. 다만 크리크 수정을 도와줄 뿐만 아니라 사격에 대한 피드백도 제공합니다
+영점 사격은 상술한 크리크 수정을 도와주기 위한 사격 과정입니다. 사격에 대한 피드백도 제공합니다
 
 |  영상 | 설명 |
 | :---: | :---: |
 | <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true" alt="영점사격지" /> | 호흡불량, 격발불량 등을 피드백해주며, 영점사격지를 확인하여<br> 자신의 탄착군이 어디에 형성되어있는지를 알 수 있습니다. |
 
-| 영상 | 설명 |
-| :-----------: | :--: |
-| <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="실거리타겟" /> <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true" alt="실거리결과" /> | 실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다.<br> 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을<br> 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요. |
+| 영 | 상 | 설명 |
+| :-----------: | :---: | :--: |
+| <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="실거리타겟" /> | <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true" alt="실거리결과" /> | 실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다.<br> 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을<br> 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요. |
 
 ### 5. 응시 모드
 
@@ -126,7 +133,7 @@
 
 | 영상                                                                                                                                                                                                             | 설명                                                                                                                                                                                                  |
 |---|---|
-| ![블루투스를 연결하는 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4%EC%97%B0%EA%B2%B0%ED%99%94%EB%A9%B4.gif?raw=true) | 블루투스 컨트롤러를 연결할 수 있습니다. 블루투스 매니저, 블루투스 컨트롤러로<br> 구성되는데, 아두이노 HC-06, HC-05 모델을 기준으로 제작하였기 때문에 호환성을<br> 위해서 해당 모델을 사용하시길 권장드립니다. |
+| ![블루투스를 연결하는 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4%EC%97%B0%EA%B2%B0%ED%99%94%EB%A9%B4.gif?raw=true) | 블루투스 컨트롤러를 연결할 수 있습니다. 블루투스 매니저,<br> 블루투스 컨트롤러로 구성되는데, 아두이노 HC-06, HC-05 모델을 기준으로<br> 제작하였기 때문에 호환성을 위해서 해당 모델을 사용하시길 권장드립니다. |
 
 ### 7. 사로 통제
 
@@ -142,11 +149,11 @@
 
 ## 기술 스택 (Technique Used)
 
-### App
+### 📱 App
 
 - Unity 3D (C# Script)
 
-### IoT
+### 🕹 IoT
 
 - Arduino
 
@@ -160,7 +167,7 @@ $ git clone git주소
 
 ```
 ✔ [Releases](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/releases)에서 시험용 앱을 다운로드 받을 수 있습니다
-## 프로젝트 관리 및 개발 문서 (Project Management)
+## 📝 프로젝트 관리 및 개발 문서 (Project Management)
 
  - [유니티 스크립팅 API](https://docs.unity3d.com/kr/530/ScriptReference/index.html)
  - [오브젝트 구조](https://gitmind.com/app/doc/6fc28aba1aaebd54d9d9d8bba450951f)
@@ -170,9 +177,12 @@ $ git clone git주소
 
 ## 팀 정보 (Team Information)
 
-- 최성민 : 팀장, 앱 개발, 프로젝트 총괄 (JadenChoi2k, jkya02@gmail.com)
+> ### ⚙ 맥가이버즈
+> *우리는 상상을 현실로 만듭니다. 상상도 못한 방식으로요.*
 
-- 마승훈 : 팀원, 컨트롤러 개발, 디자인 담당 (sseungh, ink0513@unist.ac.kr)
+🔨 최성민 : 팀장, 앱 개발, 프로젝트 총괄 (JadenChoi2k, jkya02@gmail.com)
+
+🔧 마승훈 : 팀원, 컨트롤러 개발, 모델링 및 디자인 담당 (sseungh, ink0513@unist.ac.kr)
 
   
 
