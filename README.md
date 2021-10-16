@@ -11,17 +11,22 @@
 
 # 퍼펙트 샷 : 만발의 법칙
 
-![Logo](https://raw.githubusercontent.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/main/APP/PerfectShotVR/Assets/Models/Logo/logo.PNG)
+![Logo](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/APP%20(Android)/PerfectShotVR/Assets/Models/Logo/logo.PNG?raw=true)
 <center><h3>퍼펙트 샷 : 만발의 법칙</h3></center>
 
 ><center><h3>언제 어디서나 실전보다 실전 같은 사격훈련</h3></center>
 
 ## 목차
 
-``` bash
-
-
-```
+1. [개요](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B0%9C%EC%9A%94-abstract)
+2. [소개](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%86%8C%EA%B0%9C-introduction)
+3. [기능 설명](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EB%8A%A5-%EC%84%A4%EB%AA%85-functions)
+4. [기기 구성/필수 조건 안내](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EA%B8%B0-%EA%B5%AC%EC%84%B1--%ED%95%84%EC%88%98-%EC%A1%B0%EA%B1%B4-%EC%95%88%EB%82%B4-prerequisites)
+5. [기술 스택](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D-technique-used)
+6. [설치 안내](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%84%A4%EC%B9%98-%EC%95%88%EB%82%B4-installation-process)
+7. [프로젝트 관리 및 개발 문서](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%EC%84%9C-project-management)
+8. [팀 정보](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%ED%8C%80-%EC%A0%95%EB%B3%B4-team-information)
+9. [저작권 및 사용권 정보](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%A0%80%EC%9E%91%EA%B6%8C-%EB%B0%8F-%EC%82%AC%EC%9A%A9%EA%B6%8C-%EC%A0%95%EB%B3%B4-copyleft--end-user-license)
 
 ## 개요 (Abstract)
 
