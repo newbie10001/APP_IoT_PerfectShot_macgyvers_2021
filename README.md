@@ -33,12 +33,14 @@
 어느 한 병사가 있었습니다. 이번에 사격훈련을 가는데, 만발을 맞히면 포상을 준다고 합니다. 분명 좋은 소식일텐데도 이 사람은 고민에 빠졌습니다. '어떻게 하면 사격을 연습할 수 있을까?'<br><br>![thinking_soldier](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B3%A0%EB%AF%BC%ED%95%98%EB%8A%94%20%EA%B5%B0%EC%9D%B8%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br><br>
 실제로 총을 쏴볼 수도 없고, 그렇다고 빈 총의 방아쇠를 당겨봤자 내가 잘 쏘고 있는지도 모릅니다. 결국 사격훈련 당일에서야 자신의 실력을 확인하고 그때에만 연습을 하는 수밖엔 없죠.
 <br><br>![i got an idea](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%83%9D%ED%99%9C%EA%B4%80%20%EC%B4%9D%20%EC%B9%B4%ED%88%B0%ED%99%94.jpeg?raw=true)<br>
-'생활관에서도 사격 연습을 할 수 있게 만들 수 있을까?'
+### '생활관에서도 사격 연습을 할 수 있게 만들 수 있을까?'
+### 💡 모바일 가상현실 사격훈련
 <br>
-그러자 우리 모두가 가지고 있는 휴대폰으로 사격 연습을 하면 좋겠다는 생각이 들었습니다. 퍼펙트샷 : 만발의 법칙은 이를 실현시키기 위해 시작한 프로젝트입니다. 시공간의 제약 없이, 안전하게 저비용으로 우리 모두가 사격 연습을 할 수 있도록 도움을 주는 앱을 만들었습니다.
-<br><br>![sniper](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%A0%80%EA%B2%A9%EC%88%98.jpeg?raw=true)
-<br>
-> ### 이 앱을 통해 연습하는 모두가 특등사수가 되었으면 좋겠습니다&nbsp;🔥
+그러자 우리 모두가 가지고 있는 휴대폰으로 사격 연습을 하면 좋겠다는 생각이 들었습니다. 퍼펙트샷 : 만발의 법칙은 이를 실현시키기 위해 시작한 프로젝트입니다. 시공간의 제약 없이, 안전하게 저비용으로 우리 모두가 사격 연습을 할 수 있도록 도움을 주는 앱을 만들고 있습니다.<br><br>
+
+![sniper](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%A0%80%EA%B2%A9%EC%88%98.jpeg?raw=true)<br>
+
+> <h3>이 앱을 통해 연습하는 모두가 특등사수가 되었으면 좋겠습니다&nbsp;🔥</h3>
   
 
 ## 소개 (Introduction)
