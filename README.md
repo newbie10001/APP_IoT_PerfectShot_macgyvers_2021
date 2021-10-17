@@ -171,6 +171,9 @@ $ git clone git주소
 .\APP\PerfectShotVR 등록
 
 ```
+몇몇 기능은 [에셋스토어](https://assetstore.unity.com/)에서 유료구매하였습니다. 따라서 완전한 개발환경을 갖추기 위해서는 다음 에셋을 구매해주시기 바랍니다.
+ - [아두이노 블루투스 API](https://assetstore.unity.com/packages/tools/input-management/arduino-bluetooth-plugin-98960)
+ - [Quest Markers 3D](https://assetstore.unity.com/packages/3d/characters/quest-markers-3d-83389) <br>
 ✔ [Releases](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/releases)에서 시험용 앱을 다운로드 받을 수 있습니다
 ## 📝 프로젝트 관리 및 개발 문서 (Project Management)
 
@@ -194,6 +197,7 @@ $ git clone git주소
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
 
 *  [MIT](https://github.com/osam2020-WEB/Sample-ProjectName-TeamName/blob/master/license.md)
+*  [Asset Store Terms of Service and EULA](https://unity3d.com/legal/as_terms?_gl=1*17i63dm*_gcl_aw*R0NMLjE2MzQzNzkxNTkuQ2p3S0NBanc4S21MQmhCOEVpd0FRYnFOb0ZUQWxmbGZQako1Z0RSSHZoLUpjS1RaNV9xYS1iYmZvTVRiZENwbzFWbVBENENNMGJLVmtob0MxeEVRQXZEX0J3RQ..&_ga=2.150068662.1453756139.1634379159-1561059678.1629718715&_gac=1.14174533.1634379159.CjwKCAjw8KmLBhB8EiwAQbqNoFTAlflfPjJ5gDRHvh-JcKTZ5_qa-bbfoMTbdCpo1VmPD4CM0bKVkhoC1xEQAvD_BwE)
 
 This project is licensed under the terms of the MIT license.
 
