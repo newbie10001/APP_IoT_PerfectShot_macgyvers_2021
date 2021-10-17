@@ -174,6 +174,7 @@ $ git clone git주소
 몇몇 기능은 [에셋스토어](https://assetstore.unity.com/)에서 유료구매하였습니다. 따라서 완전한 개발환경을 갖추기 위해서는 다음 에셋을 구매해주시기 바랍니다.
  - [아두이노 블루투스 API](https://assetstore.unity.com/packages/tools/input-management/arduino-bluetooth-plugin-98960)
  - [Quest Markers 3D](https://assetstore.unity.com/packages/3d/characters/quest-markers-3d-83389) <br>
+<
 ✔ [Releases](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/releases)에서 시험용 앱을 다운로드 받을 수 있습니다
 ## 📝 프로젝트 관리 및 개발 문서 (Project Management)
 
