@@ -180,11 +180,11 @@ $ git clone git주소
 
 ## 📝 프로젝트 관리 및 개발 문서 (Project Management)
 
- - [유니티 스크립팅 API](https://docs.unity3d.com/kr/530/ScriptReference/index.html)
- - [오브젝트 구조](https://gitmind.com/app/doc/6fc28aba1aaebd54d9d9d8bba450951f)
- - [컴포넌트 구조](https://gitmind.com/app/flowchart/db74723741)
  - [Projects](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/projects/2)
  - [Wiki](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/wiki)
+ - [오브젝트 구조](https://gitmind.com/app/doc/6fc28aba1aaebd54d9d9d8bba450951f)
+ - [컴포넌트 구조](https://gitmind.com/app/flowchart/db74723741)
+ - [유니티 스크립팅 API](https://docs.unity3d.com/kr/530/ScriptReference/index.html)
 
 ## 팀 정보 (Team Information)
 
