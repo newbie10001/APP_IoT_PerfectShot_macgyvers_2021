@@ -66,9 +66,12 @@
 <br>
 <br>
 
-|영상|설명|
-| :---: | :---: 
-| <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true" alt="응시모드실거리사격" /> | 블루투스 컨트롤러가 없으시다구요? 걱정마세요.<br> 그런 당신을 위해 응시모드가 있습니다.<br> 조준하고 있으면 발사가 됩니다! 오조준 시에도 발사되기 때문에 잘 보고 있어야겠죠? 
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true" alt="응시모드실거리사격" /></td>
+    <td width="400px">블루투스 컨트롤러가 없으시다구요? 걱정마세요. 그런 당신을 위해 응시모드가 있습니다. 조준하고 있으면 발사가 됩니다! 오조준 시에도 발사되기 때문에 잘 보고 있어야겠죠?</td>
+  </tr>
+</table>
 
 <br><br>
 다음은 영점사격과 실거리사격입니다. 사격실력에 최대한 많은 도움을 주기 위해 노력하였습니다. 사격을 그 자체로 연습할 뿐만 아니라 사용자 스스로를 피드백시키기 위해서 탄착 지점을 표시합니다.
@@ -113,38 +116,58 @@
 
 ### 3. 크리크 수정
 
-|영상|설명|
-| :---: | :---: 
-| <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%ED%81%AC%EB%A6%AC%ED%81%AC%EC%88%98%EC%A0%95.gif?raw=true" alt="크리크수정하는" /> | 크리크 수정은 가늠쇠 동기화를 더 정확하게 교정하는 과정입니다.<br> 현실에서는 총과 사수 간의 오차를 잡는 과정입니다만,<br> 총의 오차를 구현할 수는 없기에 앱 내에서는<br> 카메라 렌즈시프트를 수정하는 과정으로 구현하였습니다.<br> 주의해야 할 점은, 카메라 렌즈시프트 값과 크리크 값은<br> 독립적으로 다루어져야 한다는 것입니다.
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%ED%81%AC%EB%A6%AC%ED%81%AC%EC%88%98%EC%A0%95.gif?raw=true" alt="크리크수정하는" /></td>
+    <td width="400px">크리크 수정은 가늠쇠 동기화를 더 정확하게 교정하는 과정입니다.<br>
+      현실에서는 총과 사수 간의 오차를 잡는 과정입니다만, 총의 오차를 구현할 수는 없기에 앱 내에서는 카메라 렌즈시프트를 수정하는 과정으로 구현하였습니다.<br>
+      주의해야 할 점은, 카메라 렌즈시프트 값과 크리크 값은 독립적으로 다루어져야 한다는 것입니다.</td>
+  </tr>
+</table>
 
 ### 4. 영점 사격 / 실거리 사격
 영점 사격은 상술한 크리크 수정을 도와주기 위한 사격 과정입니다. 사격에 대한 피드백도 제공합니다
 
-|  영상 | 설명 |
-| :---: | :---: |
-| <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true" alt="영점사격지" /> | 호흡불량, 격발불량 등을 피드백해주며, 영점사격지를 확인하여<br> 자신의 탄착군이 어디에 형성되어있는지를 알 수 있습니다. |
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%98%81%EC%A0%90%EC%82%AC%EA%B2%A9.gif?raw=true" alt="영점사격지" /></td>
+    <td width="400px">호흡불량, 격발불량 등을 피드백해주며, 영점사격지를 확인하여 자신의 탄착군이 어디에 형성되어있는지를 알 수 있습니다.</td>
+  </tr>
+</table>
 
-| 영 | 상 | 설명 |
-| :-----------: | :---: | :--: |
-| <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="실거리타겟" /> | <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true" alt="실거리결과" /> | 실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다.<br> 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을<br> 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요. |
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="실거리타겟" /> <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true" alt="실거리결과" /></td>
+    <td width="350px">실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다. 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요.</td>
+  </tr>
+</table>
 
 ### 5. 응시 모드
 
-| 영상                                                                                                                                                                                                           | 설명                                                                                                                       |
-|---|---|
-| ![응시모드사격](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true) | 블루투스 컨트롤러가 없어도 사격을 실시할 수 있는 모드입니다.<br> 옵션 창에서 활성화시킬 수 있으며, 응시하고 있으면 발사됩니다. |
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%9D%91%EC%8B%9C%EB%AA%A8%EB%93%9C%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9.gif?raw=true" alt="응시모드사격" /></td>
+    <td width="400px">블루투스 컨트롤러가 없어도 사격을 실시할 수 있는 모드입니다. 옵션 창에서 활성화시킬 수 있으며, 응시하고 있으면 발사됩니다.</td>
+  </tr>
+</table>
 
 ### 6. 블루투스 컨트롤러 연결
 
-| 영상                                                                                                                                                                                                             | 설명                                                                                                                                                                                                  |
-|---|---|
-| ![블루투스를 연결하는 gif](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4%EC%97%B0%EA%B2%B0%ED%99%94%EB%A9%B4.gif?raw=true) | 블루투스 컨트롤러를 연결할 수 있습니다. 블루투스 매니저,<br> 블루투스 컨트롤러로 구성되는데, 아두이노 HC-06, HC-05 모델을 기준으로<br> 제작하였기 때문에 호환성을 위해서 해당 모델을 사용하시길 권장드립니다. |
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EB%B8%94%EB%A3%A8%ED%88%AC%EC%8A%A4%EC%97%B0%EA%B2%B0%ED%99%94%EB%A9%B4.gif?raw=true" alt="블루투스를 연결하는 gif" /></td>
+    <td width="400px">블루투스 컨트롤러를 연결할 수 있습니다. 블루투스 매니저, 블루투스 컨트롤러로 구성되는데, 아두이노 HC-06, HC-05 모델을 기준으로 제작하였기 때문에 호환성을 위해서 해당 모델을 사용하시길 권장드립니다.</td>
+  </tr>
+</table>
 
 ### 7. 사로 통제
 
-| 영상 | 설명 |
-|---|---|
-| ![사로통제](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%82%AC%EB%A1%9C%ED%86%B5%EC%A0%9C.gif?raw=true) | 사로 통제도 구현하였습니다. 사격장에서 실수하지 않을 수 있겠죠? |
+<table>
+  <tr>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%82%AC%EB%A1%9C%ED%86%B5%EC%A0%9C.gif?raw=true" alt="사로통제" /></td>
+    <td width="400px">사로 통제도 구현하였습니다. 사격장에서 실수하지 않을 수 있겠죠?</td>
+  </tr>
+</table>
 
 ## 기기 구성 / 필수 조건 안내 (Prerequisites)
 
