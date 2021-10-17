@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -84,6 +84,6 @@ public class PlayerMove : MonoBehaviour
     // 어떤 위치에서든 즉시 사로입장
     public void GoToShootingLane()
     {
-        MoveToState(new Vector3[] { transform.position, transform.eulerAngles}, Enter4, 1.0f );
+        MoveToState(new Vector3[] { transform.position, transform.eulerAngles }, Enter4, 1.0f);
     }
 }

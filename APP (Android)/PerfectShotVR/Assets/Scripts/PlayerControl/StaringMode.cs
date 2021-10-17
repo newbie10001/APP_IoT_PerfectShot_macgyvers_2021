@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ì‘ì‹œëª¨ë“œë¥¼ êµ¬í˜„í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸. ê°€ëŠ ì‡  ì˜¤ë¸Œì íŠ¸ì˜ ì»´í¬ë„ŒíŠ¸ë¡œ í• ë‹¹ëœë‹¤.
+// ÀÀ½Ã¸ğµå¸¦ ±¸ÇöÇÏ´Â ½ºÅ©¸³Æ®. °¡´Æ¼è ¿ÀºêÁ§Æ®ÀÇ ÄÄÆ÷³ÍÆ®·Î ÇÒ´çµÈ´Ù.
 public class StaringMode : MonoBehaviour
 {
-    // ê³§ ì‘ì‹œëª¨ë“œì˜ ì‹œê°„ì„ ì„¤ì •í•  ìˆ˜ ìˆëŠ” ë°©ë²•ì„ êµ¬í˜„
+    // °ğ ÀÀ½Ã¸ğµåÀÇ ½Ã°£À» ¼³Á¤ÇÒ ¼ö ÀÖ´Â ¹æ¹ıÀ» ±¸Çö
     public float TriggerTime { get { return PlayerPrefs.GetFloat("StaringTime") == default ? 1.5f : PlayerPrefs.GetFloat("StaringTime"); } }
     float elapsed;
     Gun gun;
-    // ì‘ì‹œëª¨ë“œ ì›í˜• UI
+    // ÀÀ½Ã¸ğµå ¿øÇü UI
     public Image CircleSlider;
 
     void Start()
@@ -31,7 +31,7 @@ public class StaringMode : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 600))
         {
-            if(hit.collider.TryGetComponent<ITarget>(out ITarget _target) && _target.GetState())
+            if (hit.collider.TryGetComponent<ITarget>(out ITarget _target) && _target.GetState())
             {
                 CircleSlider.fillAmount = elapsed / TriggerTime;
                 elapsed += Time.deltaTime;
