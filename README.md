@@ -48,7 +48,7 @@
 ![소총에 휴대폰을 거치한 모습](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EA%B2%AC%EC%B0%A9%20%EC%83%81%ED%83%9C.jpg?raw=true)
 <br>우선, 총에 휴대폰을 매달아서 진행합니다.
 <br>
-<br><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EB%B0%94%EB%9D%BC%EB%B3%B4%EB%8A%94%EC%83%B7.jpg?raw=true" alt="정조준하여 휴대폰의 화면을 겨냥한 사진" width="33%" />
+<br><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EB%8F%99%EA%B8%B0%ED%99%94%EC%9E%A5%EB%A9%B4.gif?raw=true" alt="정조준하여 휴대폰의 화면을 겨냥한 사진" />
 <br>앱에 있는 표적을 쏘아 맞히는 것이 목표입니다.
 <br>
 <br>
@@ -95,11 +95,11 @@
 
 <table>
   <tr>
-    <td width="500px">가늠쇠 동기화라 함은, 게임 내의 카메라 중앙 지점을 현실 총의 가늠쇠에 맞추는 것을 말합니다. 이러한 카메라의 움직임을 반영하기 위해, 카메라 렌즈 시프트 값을 저장하여 사용합니다.</td>
-    <th rowspan="2"><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EC%A1%B0%EC%A0%95%EC%83%B7.gif?raw=true" alt="가늠쇠동기화화면" /></th>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EB%8F%99%EA%B8%B0%ED%99%94%EC%9E%A5%EB%A9%B4.gif?raw=true" alt="가늠쇠 동기화하는 장면 gif" width="100%" /></td>
+    <th rowspan="2" width="330px"><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EC%A1%B0%EC%A0%95%EC%83%B7.gif?raw=true" alt="가늠쇠동기화화면" /></th>
   </tr>
   <tr>
-    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EA%B0%80%EB%8A%A0%EC%87%A0%EB%8F%99%EA%B8%B0%ED%99%94%EC%9E%A5%EB%A9%B4.gif?raw=true" alt="가늠쇠 동기화하는 장면 gif" />
+    <td>가늠쇠 동기화라 함은, 게임 내의 카메라 중앙 지점을 현실 총의 가늠쇠에 맞추는 것을 말합니다. 이러한 카메라의 움직임을 반영하기 위해, 카메라 렌즈 시프트 값을 저장하여 사용합니다.
     </td>
   </tr>
 </table>
@@ -139,8 +139,8 @@
 
 <table>
   <tr>
-    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="실거리타겟" /> <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true" alt="실거리결과" /></td>
-    <td width="300px">실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다. 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요.</td>
+    <td><img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/100m%ED%83%80%EA%B2%9F%EB%84%98%EC%84%9C%EA%B0%90_small.gif?raw=true" alt="실거리타겟" width="182px" /> <img src="https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/gif/%EC%8B%A4%EA%B1%B0%EB%A6%AC%EC%82%AC%EA%B2%A9%EA%B2%B0%EA%B3%BC.gif?raw=true" alt="실거리결과" width="182px"/></td>
+    <td width="301px">실거리 사격은 100m, 200m, 250m 표적을 순서에 따라 사격하는 사격 과정입니다. 이 표적들은 실제로 해당 거리에 위치해 있습니다. 이에 유념하여 사격해야겠죠? 또한 결과창을 보여주여 탄착지점을 알려주니 이를 보고 사격 실력을 향상시킬 수 있겠네요.</td>
   </tr>
 </table>
 
