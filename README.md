@@ -88,7 +88,14 @@
 <br>이 앱만 있으면 만발에 한 걸음 더 가까워지겠죠?
 
 ## 소개 영상 (Guide Video)
-  (소개 영상이 들어갈 위치입니다)
+  ### 영점 사격
+  [![영점사격](https://img.youtube.com/vi/ZrbMgOPct8M/0.jpg)](https://youtu.be/ZrbMgOPct8M)
+  
+  <iframe width="1280" height="735" src="https://www.youtube.com/embed/eqeHGePdpm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  ### 실거리 사격
+  [![실거리사격](https://img.youtube.com/vi/eqeHGePdpm0/0.jpg)](https://youtu.be/eqeHGePdpm0)
+  ### 시연 영상
 
 ## 기능 설명 (Functions)
 ### 1.  가늠쇠 동기화
