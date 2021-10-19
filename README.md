@@ -19,14 +19,15 @@
 ## 목차
 
 1. [개요](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B0%9C%EC%9A%94-abstract)
-2. [소개](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%86%8C%EA%B0%9C-introduction)
-3. [기능 설명](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EB%8A%A5-%EC%84%A4%EB%AA%85-functions)
-4. [기기 구성/필수 조건 안내](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EA%B8%B0-%EA%B5%AC%EC%84%B1--%ED%95%84%EC%88%98-%EC%A1%B0%EA%B1%B4-%EC%95%88%EB%82%B4-prerequisites)
-5. [기술 스택](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D-technique-used)
-6. [설치 안내](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%84%A4%EC%B9%98-%EC%95%88%EB%82%B4-installation-process)
-7. [프로젝트 관리 및 개발 문서](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%EC%84%9C-project-management)
-8. [팀 정보](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%ED%8C%80-%EC%A0%95%EB%B3%B4-team-information)
-9. [저작권 및 사용권 정보](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%A0%80%EC%9E%91%EA%B6%8C-%EB%B0%8F-%EC%82%AC%EC%9A%A9%EA%B6%8C-%EC%A0%95%EB%B3%B4-copyleft--end-user-license)
+2. [시연 영상](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%86%8C%EA%B0%9C-%EC%98%81%EC%83%81-guide-video)
+3. [소개](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%86%8C%EA%B0%9C-introduction)
+4. [기능 설명](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EB%8A%A5-%EC%84%A4%EB%AA%85-functions)
+5. [기기 구성/필수 조건 안내](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EA%B8%B0-%EA%B5%AC%EC%84%B1--%ED%95%84%EC%88%98-%EC%A1%B0%EA%B1%B4-%EC%95%88%EB%82%B4-prerequisites)
+6. [기술 스택](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D-technique-used)
+7. [설치 안내](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%84%A4%EC%B9%98-%EC%95%88%EB%82%B4-installation-process)
+8. [프로젝트 관리 및 개발 문서](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%EC%84%9C-project-management)
+9. [팀 정보](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%ED%8C%80-%EC%A0%95%EB%B3%B4-team-information)
+10. [저작권 및 사용권 정보](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers#%EC%A0%80%EC%9E%91%EA%B6%8C-%EB%B0%8F-%EC%82%AC%EC%9A%A9%EA%B6%8C-%EC%A0%95%EB%B3%B4-copyleft--end-user-license)
 
 ## 개요 (Abstract)
 
@@ -87,11 +88,9 @@
 ![victory](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/github_page/images/%EC%84%B1%EA%B3%B5%ED%95%9C%20%EC%82%AC%EB%9E%8C.jpeg?raw=true)
 <br>이 앱만 있으면 만발에 한 걸음 더 가까워지겠죠?
 
-## 소개 영상 (Guide Video)
+## 소개 영상 (Video Clips)
   ### 영점 사격
   [![영점사격](https://img.youtube.com/vi/ZrbMgOPct8M/0.jpg)](https://youtu.be/ZrbMgOPct8M)
-  
-  <iframe width="1280" height="735" src="https://www.youtube.com/embed/eqeHGePdpm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
   ### 실거리 사격
   [![실거리사격](https://img.youtube.com/vi/eqeHGePdpm0/0.jpg)](https://youtu.be/eqeHGePdpm0)
