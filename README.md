@@ -19,8 +19,8 @@
 ## 목차
 
 1. [개요](#%EA%B0%9C%EC%9A%94-abstract)
-2. [시연 영상](#%EC%86%8C%EA%B0%9C-%EC%98%81%EC%83%81-video-clips)
-3. [소개](#%EC%86%8C%EA%B0%9C-introduction)
+2. [소개](#%EC%86%8C%EA%B0%9C-introduction)
+3. [시연 영상](#%EC%86%8C%EA%B0%9C-%EC%98%81%EC%83%81-video-clips)
 4. [기능 설명](#%EA%B8%B0%EB%8A%A5-%EC%84%A4%EB%AA%85-functions)
 5. [기기 구성/필수 조건 안내](#%EA%B8%B0%EA%B8%B0-%EA%B5%AC%EC%84%B1--%ED%95%84%EC%88%98-%EC%A1%B0%EA%B1%B4-%EC%95%88%EB%82%B4-prerequisites)
 6. [기술 스택](#%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D-technique-used)
