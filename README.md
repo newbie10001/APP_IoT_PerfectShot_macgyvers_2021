@@ -94,7 +94,9 @@
   
   ### 실거리 사격
   [![실거리사격](https://img.youtube.com/vi/eqeHGePdpm0/0.jpg)](https://youtu.be/eqeHGePdpm0)
+  
   ### 시연 영상
+  [![시연영상](https://img.youtube.com/vi/sPtfgG3qP-Y/0.jpg)](https://youtu.be/sPtfgG3qP-Y)
 
 ## 기능 설명 (Functions)
 ### 1.  가늠쇠 동기화
