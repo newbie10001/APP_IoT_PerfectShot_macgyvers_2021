@@ -199,7 +199,7 @@
 
 $ git clone git주소
 유니티 허브에서 프로젝트 추가 버튼 누르기
-.\APP\PerfectShotVR 등록
+.\APP (Android)\PerfectShotVR 등록
 
 ```
 몇몇 기능은 [에셋스토어](https://assetstore.unity.com/)에서 유료구매하였습니다. 따라서 완전한 개발환경을 갖추기 위해서는 다음 에셋을 구매해주시기 바랍니다.
