@@ -11,7 +11,7 @@
 
 # 퍼펙트 샷 : 만발의 법칙
 
-![Logo](https://github.com/osamhack2021/APP_IoT_PerfectShot_macgyvers/blob/main/APP%20(Android)/PerfectShotVR/Assets/Models/Logo/logo.PNG?raw=true)
+![Logo](https://raw.githubusercontent.com/osamhack2021/APP_IoT_PerfectShot_macgyvers_2021/main/APP%20(Android)/PerfectShotVR/Image/logo.PNG)
 <center><h3>퍼펙트 샷 : 만발의 법칙</h3></center>
 
 ><center><h3>언제 어디서나 실전보다 실전 같은 사격훈련</h3></center>
